@@ -1,0 +1,20 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\CBSANTOMERA.BLL\CBSANTOMERA.BLL.csproj" />
+    <ProjectReference Include="..\CBSANTOMERA.DAL\CBSANTOMERA.DAL.csproj" />
+    <ProjectReference Include="..\CBSANTOMERA.DTO\CBSANTOMERA.DTO.csproj" />
+    <ProjectReference Include="..\CBSANTOMERA.UTILITY\CBSANTOMERA.UTILITY.csproj" />
+  </ItemGroup>
+
+</Project>

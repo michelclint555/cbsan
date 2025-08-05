@@ -1,0 +1,972 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\OREO\\Desktop\\TFG RESOURCE\\pagina web\\CBSANTOMERA_WEB\\CBSANTOMERA_WEB_API\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\OREO\\source\\repos\\CBSANTOMERA.IOC\\Dependencia.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\OREO\\source\\repos\\CBSANTOMERA.BLL\\Servicios\\OpenIAService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\OREO\\source\\repos\\CBSANTOMERA.BLL\\Servicios\\Contrato\\IOpenIAService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\OREO\\source\\repos\\CBSANTOMERA.BLL\\Servicios\\UsuarioService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\OREO\\source\\repos\\CBSANTOMERA.BLL\\Servicios\\TemporadaService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\OREO\\source\\repos\\CBSANTOMERA.BLL\\Servicios\\TecnicoService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\OREO\\source\\repos\\CBSANTOMERA.BLL\\Servicios\\SessionService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\OREO\\source\\repos\\CBSANTOMERA.BLL\\Servicios\\RolService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\OREO\\source\\repos\\CBSANTOMERA.IOC\\CBSANTOMERA.IOC.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\OREO\\source\\repos\\CBSANTOMERA.BLL\\Servicios\\PromocionService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\OREO\\source\\repos\\CBSANTOMERA.BLL\\Servicios\\ProductoService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\OREO\\source\\repos\\CBSANTOMERA.BLL\\Servicios\\NoticiaService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\OREO\\source\\repos\\CBSANTOMERA.BLL\\Servicios\\MenuService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\OREO\\source\\repos\\CBSANTOMERA.BLL\\Servicios\\JugadorService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\OREO\\source\\repos\\CBSANTOMERA.BLL\\Servicios\\FotoTecnicoEquipoService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\OREO\\source\\repos\\CBSANTOMERA.BLL\\Servicios\\FotoJugadorEquipoService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\OREO\\source\\repos\\CBSANTOMERA.BLL\\Servicios\\FotoEquipoService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\OREO\\source\\repos\\CBSANTOMERA.BLL\\Servicios\\FotoAlbumService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\OREO\\source\\repos\\CBSANTOMERA.BLL\\Servicios\\EquipoTecnicoService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\OREO\\source\\repos\\CBSANTOMERA.BLL\\Servicios\\EquipoService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\OREO\\source\\repos\\CBSANTOMERA.BLL\\Servicios\\EquipoJugadorService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\OREO\\source\\repos\\CBSANTOMERA.BLL\\Servicios\\EmpresaService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\OREO\\source\\repos\\CBSANTOMERA.BLL\\Servicios\\DashBoardService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\OREO\\source\\repos\\CBSANTOMERA.BLL\\Servicios\\ContratoEmpresaService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\OREO\\source\\repos\\CBSANTOMERA.BLL\\Servicios\\ClubService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\OREO\\source\\repos\\CBSANTOMERA.BLL\\Servicios\\CategoriaService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\OREO\\source\\repos\\CBSANTOMERA.BLL\\Servicios\\CategoriaJugadorService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\OREO\\source\\repos\\CBSANTOMERA.BLL\\Servicios\\ArchivosService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\OREO\\source\\repos\\CBSANTOMERA.BLL\\Servicios\\AlbumService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\OREO\\source\\repos\\CBSANTOMERA.BLL\\Servicios\\Contrato\\ISessionService .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\OREO\\source\\repos\\CBSANTOMERA.DAL\\DBContext\\CbsantomeraContext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\OREO\\source\\repos\\CBSANTOMERA.BLL\\Servicios\\Contrato\\IFotoTecnicoEquipoService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\OREO\\source\\repos\\CBSANTOMERA.BLL\\Servicios\\Contrato\\IFotoJugadorEquipoService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\OREO\\source\\repos\\CBSANTOMERA.BLL\\Servicios\\Contrato\\IArchivosService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\OREO\\source\\repos\\CBSANTOMERA.BLL\\Servicios\\Contrato\\IAlbumService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\OREO\\source\\repos\\CBSANTOMERA.MODEL\\CBSANTOMERA.MODEL.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\OREO\\source\\repos\\CBSANTOMERA.DAL\\Repositorios\\Contrato\\IGenericRepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\OREO\\source\\repos\\CBSANTOMERA.DTO\\AlbumDTO.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\OREO\\source\\repos\\CBSANTOMERA.UTILITY\\AutoMapperProfile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\OREO\\source\\repos\\CBSANTOMERA.DTO\\CategoriaDTO.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\OREO\\source\\repos\\CBSANTOMERA.DTO\\ContratoEmpresaDTO.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\OREO\\source\\repos\\CBSANTOMERA.DTO\\VentasSemanaDTO.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\OREO\\source\\repos\\CBSANTOMERA.DTO\\TecnicoEquipoDTO.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\OREO\\source\\repos\\CBSANTOMERA.DTO\\TecnicoDTO.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\OREO\\source\\repos\\CBSANTOMERA.DTO\\TemporadaDTO.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\OREO\\source\\repos\\CBSANTOMERA.DTO\\TokenApiDTO.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\OREO\\source\\repos\\CBSANTOMERA.DTO\\FotoAlbumDTO.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\OREO\\source\\repos\\CBSANTOMERA.DAL\\CBSANTOMERA.DAL.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\OREO\\source\\repos\\CBSANTOMERA.DTO\\UsuarioDTO.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\OREO\\source\\repos\\CBSANTOMERA.UTILITY\\CBSANTOMERA.UTILITY.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\OREO\\source\\repos\\CBSANTOMERA.DTO\\VentaDTO.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\OREO\\source\\repos\\CBSANTOMERA.DTO\\EquipoDTO.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\OREO\\source\\repos\\CBSANTOMERA.DTO\\EmpresaDTO.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\OREO\\source\\repos\\CBSANTOMERA.DTO\\CBSANTOMERA.DTO.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\OREO\\source\\repos\\CBSANTOMERA.BLL\\Class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\OREO\\source\\repos\\CBSANTOMERA.DAL\\Class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\OREO\\source\\repos\\CBSANTOMERA.IOC\\Class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\OREO\\source\\repos\\CBSANTOMERA.UTILITY\\Class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\OREO\\source\\repos\\CBSANTOMERA.MODEL\\Class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 1,
+      "VerticalTabListWidth": 122,
+      "DocumentGroups": [
+        {
+          "DockedHeight": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Dependencia.cs",
+              "DocumentMoniker": "C:\\Users\\OREO\\source\\repos\\CBSANTOMERA.IOC\\Dependencia.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\source\\repos\\CBSANTOMERA.IOC\\Dependencia.cs",
+              "ToolTip": "C:\\Users\\OREO\\source\\repos\\CBSANTOMERA.IOC\\Dependencia.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\source\\repos\\CBSANTOMERA.IOC\\Dependencia.cs",
+              "ViewState": "AQIAACQAAAAAAAAAAIBJwAsAAAAXAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-25T22:00:08.735Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "OpenIAService.cs",
+              "DocumentMoniker": "C:\\Users\\OREO\\source\\repos\\CBSANTOMERA.BLL\\Servicios\\OpenIAService.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\source\\repos\\CBSANTOMERA.BLL\\Servicios\\OpenIAService.cs",
+              "ToolTip": "C:\\Users\\OREO\\source\\repos\\CBSANTOMERA.BLL\\Servicios\\OpenIAService.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\source\\repos\\CBSANTOMERA.BLL\\Servicios\\OpenIAService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAACAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-25T21:59:28.847Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "IOpenIAService.cs",
+              "DocumentMoniker": "C:\\Users\\OREO\\source\\repos\\CBSANTOMERA.BLL\\Servicios\\Contrato\\IOpenIAService.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\source\\repos\\CBSANTOMERA.BLL\\Servicios\\Contrato\\IOpenIAService.cs",
+              "ToolTip": "C:\\Users\\OREO\\source\\repos\\CBSANTOMERA.BLL\\Servicios\\Contrato\\IOpenIAService.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\source\\repos\\CBSANTOMERA.BLL\\Servicios\\Contrato\\IOpenIAService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAEAAAAKAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-25T21:59:22.657Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "UsuarioService.cs",
+              "DocumentMoniker": "C:\\Users\\OREO\\source\\repos\\CBSANTOMERA.BLL\\Servicios\\UsuarioService.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\source\\repos\\CBSANTOMERA.BLL\\Servicios\\UsuarioService.cs",
+              "ToolTip": "C:\\Users\\OREO\\source\\repos\\CBSANTOMERA.BLL\\Servicios\\UsuarioService.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\source\\repos\\CBSANTOMERA.BLL\\Servicios\\UsuarioService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAXAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-25T21:58:27.491Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "TemporadaService.cs",
+              "DocumentMoniker": "C:\\Users\\OREO\\source\\repos\\CBSANTOMERA.BLL\\Servicios\\TemporadaService.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\source\\repos\\CBSANTOMERA.BLL\\Servicios\\TemporadaService.cs",
+              "ToolTip": "C:\\Users\\OREO\\source\\repos\\CBSANTOMERA.BLL\\Servicios\\TemporadaService.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\source\\repos\\CBSANTOMERA.BLL\\Servicios\\TemporadaService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAXAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-25T21:58:18.116Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "TecnicoService.cs",
+              "DocumentMoniker": "C:\\Users\\OREO\\source\\repos\\CBSANTOMERA.BLL\\Servicios\\TecnicoService.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\source\\repos\\CBSANTOMERA.BLL\\Servicios\\TecnicoService.cs",
+              "ToolTip": "C:\\Users\\OREO\\source\\repos\\CBSANTOMERA.BLL\\Servicios\\TecnicoService.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\source\\repos\\CBSANTOMERA.BLL\\Servicios\\TecnicoService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAXAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-25T21:58:12.331Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "SessionService.cs",
+              "DocumentMoniker": "C:\\Users\\OREO\\source\\repos\\CBSANTOMERA.BLL\\Servicios\\SessionService.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\source\\repos\\CBSANTOMERA.BLL\\Servicios\\SessionService.cs",
+              "ToolTip": "C:\\Users\\OREO\\source\\repos\\CBSANTOMERA.BLL\\Servicios\\SessionService.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\source\\repos\\CBSANTOMERA.BLL\\Servicios\\SessionService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAXAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-25T21:58:01.143Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "RolService.cs",
+              "DocumentMoniker": "C:\\Users\\OREO\\source\\repos\\CBSANTOMERA.BLL\\Servicios\\RolService.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\source\\repos\\CBSANTOMERA.BLL\\Servicios\\RolService.cs",
+              "ToolTip": "C:\\Users\\OREO\\source\\repos\\CBSANTOMERA.BLL\\Servicios\\RolService.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\source\\repos\\CBSANTOMERA.BLL\\Servicios\\RolService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAIBJwAoAAAAXAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-25T21:57:52.961Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "CBSANTOMERA.IOC.csproj",
+              "DocumentMoniker": "C:\\Users\\OREO\\source\\repos\\CBSANTOMERA.IOC\\CBSANTOMERA.IOC.csproj",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\source\\repos\\CBSANTOMERA.IOC\\CBSANTOMERA.IOC.csproj",
+              "ToolTip": "C:\\Users\\OREO\\source\\repos\\CBSANTOMERA.IOC\\CBSANTOMERA.IOC.csproj",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\source\\repos\\CBSANTOMERA.IOC\\CBSANTOMERA.IOC.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-04-25T21:20:52.369Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "PromocionService.cs",
+              "DocumentMoniker": "C:\\Users\\OREO\\source\\repos\\CBSANTOMERA.BLL\\Servicios\\PromocionService.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\source\\repos\\CBSANTOMERA.BLL\\Servicios\\PromocionService.cs",
+              "ToolTip": "C:\\Users\\OREO\\source\\repos\\CBSANTOMERA.BLL\\Servicios\\PromocionService.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\source\\repos\\CBSANTOMERA.BLL\\Servicios\\PromocionService.cs",
+              "ViewState": "AQIAAOAAAAAAAAAAAAAwwPEAAABKAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-25T21:57:13.05Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "ProductoService.cs",
+              "DocumentMoniker": "C:\\Users\\OREO\\source\\repos\\CBSANTOMERA.BLL\\Servicios\\ProductoService.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\source\\repos\\CBSANTOMERA.BLL\\Servicios\\ProductoService.cs",
+              "ToolTip": "C:\\Users\\OREO\\source\\repos\\CBSANTOMERA.BLL\\Servicios\\ProductoService.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\source\\repos\\CBSANTOMERA.BLL\\Servicios\\ProductoService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAXAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-25T21:57:06.27Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "NoticiaService.cs",
+              "DocumentMoniker": "C:\\Users\\OREO\\source\\repos\\CBSANTOMERA.BLL\\Servicios\\NoticiaService.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\source\\repos\\CBSANTOMERA.BLL\\Servicios\\NoticiaService.cs",
+              "ToolTip": "C:\\Users\\OREO\\source\\repos\\CBSANTOMERA.BLL\\Servicios\\NoticiaService.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\source\\repos\\CBSANTOMERA.BLL\\Servicios\\NoticiaService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAXAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-25T21:56:26.693Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "MenuService.cs",
+              "DocumentMoniker": "C:\\Users\\OREO\\source\\repos\\CBSANTOMERA.BLL\\Servicios\\MenuService.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\source\\repos\\CBSANTOMERA.BLL\\Servicios\\MenuService.cs",
+              "ToolTip": "C:\\Users\\OREO\\source\\repos\\CBSANTOMERA.BLL\\Servicios\\MenuService.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\source\\repos\\CBSANTOMERA.BLL\\Servicios\\MenuService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAXAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-25T21:56:18.916Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "JugadorService.cs",
+              "DocumentMoniker": "C:\\Users\\OREO\\source\\repos\\CBSANTOMERA.BLL\\Servicios\\JugadorService.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\source\\repos\\CBSANTOMERA.BLL\\Servicios\\JugadorService.cs",
+              "ToolTip": "C:\\Users\\OREO\\source\\repos\\CBSANTOMERA.BLL\\Servicios\\JugadorService.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\source\\repos\\CBSANTOMERA.BLL\\Servicios\\JugadorService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAXAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-25T21:56:10.221Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "FotoTecnicoEquipoService.cs",
+              "DocumentMoniker": "C:\\Users\\OREO\\source\\repos\\CBSANTOMERA.BLL\\Servicios\\FotoTecnicoEquipoService.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\source\\repos\\CBSANTOMERA.BLL\\Servicios\\FotoTecnicoEquipoService.cs",
+              "ToolTip": "C:\\Users\\OREO\\source\\repos\\CBSANTOMERA.BLL\\Servicios\\FotoTecnicoEquipoService.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\source\\repos\\CBSANTOMERA.BLL\\Servicios\\FotoTecnicoEquipoService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAXAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-25T21:56:05.257Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "FotoJugadorEquipoService.cs",
+              "DocumentMoniker": "C:\\Users\\OREO\\source\\repos\\CBSANTOMERA.BLL\\Servicios\\FotoJugadorEquipoService.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\source\\repos\\CBSANTOMERA.BLL\\Servicios\\FotoJugadorEquipoService.cs",
+              "ToolTip": "C:\\Users\\OREO\\source\\repos\\CBSANTOMERA.BLL\\Servicios\\FotoJugadorEquipoService.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\source\\repos\\CBSANTOMERA.BLL\\Servicios\\FotoJugadorEquipoService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAXAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-25T21:55:59.831Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "FotoEquipoService.cs",
+              "DocumentMoniker": "C:\\Users\\OREO\\source\\repos\\CBSANTOMERA.BLL\\Servicios\\FotoEquipoService.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\source\\repos\\CBSANTOMERA.BLL\\Servicios\\FotoEquipoService.cs",
+              "ToolTip": "C:\\Users\\OREO\\source\\repos\\CBSANTOMERA.BLL\\Servicios\\FotoEquipoService.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\source\\repos\\CBSANTOMERA.BLL\\Servicios\\FotoEquipoService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAXAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-25T21:55:54.681Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "FotoAlbumService.cs",
+              "DocumentMoniker": "C:\\Users\\OREO\\source\\repos\\CBSANTOMERA.BLL\\Servicios\\FotoAlbumService.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\source\\repos\\CBSANTOMERA.BLL\\Servicios\\FotoAlbumService.cs",
+              "ToolTip": "C:\\Users\\OREO\\source\\repos\\CBSANTOMERA.BLL\\Servicios\\FotoAlbumService.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\source\\repos\\CBSANTOMERA.BLL\\Servicios\\FotoAlbumService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAXAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-25T21:55:48.659Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "EquipoTecnicoService.cs",
+              "DocumentMoniker": "C:\\Users\\OREO\\source\\repos\\CBSANTOMERA.BLL\\Servicios\\EquipoTecnicoService.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\source\\repos\\CBSANTOMERA.BLL\\Servicios\\EquipoTecnicoService.cs",
+              "ToolTip": "C:\\Users\\OREO\\source\\repos\\CBSANTOMERA.BLL\\Servicios\\EquipoTecnicoService.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\source\\repos\\CBSANTOMERA.BLL\\Servicios\\EquipoTecnicoService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAXAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-25T21:55:43.474Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "EquipoService.cs",
+              "DocumentMoniker": "C:\\Users\\OREO\\source\\repos\\CBSANTOMERA.BLL\\Servicios\\EquipoService.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\source\\repos\\CBSANTOMERA.BLL\\Servicios\\EquipoService.cs",
+              "ToolTip": "C:\\Users\\OREO\\source\\repos\\CBSANTOMERA.BLL\\Servicios\\EquipoService.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\source\\repos\\CBSANTOMERA.BLL\\Servicios\\EquipoService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAXAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-25T21:55:34.969Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "EquipoJugadorService.cs",
+              "DocumentMoniker": "C:\\Users\\OREO\\source\\repos\\CBSANTOMERA.BLL\\Servicios\\EquipoJugadorService.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\source\\repos\\CBSANTOMERA.BLL\\Servicios\\EquipoJugadorService.cs",
+              "ToolTip": "C:\\Users\\OREO\\source\\repos\\CBSANTOMERA.BLL\\Servicios\\EquipoJugadorService.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\source\\repos\\CBSANTOMERA.BLL\\Servicios\\EquipoJugadorService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAXAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-25T21:55:25.411Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "EmpresaService.cs",
+              "DocumentMoniker": "C:\\Users\\OREO\\source\\repos\\CBSANTOMERA.BLL\\Servicios\\EmpresaService.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\source\\repos\\CBSANTOMERA.BLL\\Servicios\\EmpresaService.cs",
+              "ToolTip": "C:\\Users\\OREO\\source\\repos\\CBSANTOMERA.BLL\\Servicios\\EmpresaService.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\source\\repos\\CBSANTOMERA.BLL\\Servicios\\EmpresaService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAXAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-25T21:55:17.83Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "DashBoardService.cs",
+              "DocumentMoniker": "C:\\Users\\OREO\\source\\repos\\CBSANTOMERA.BLL\\Servicios\\DashBoardService.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\source\\repos\\CBSANTOMERA.BLL\\Servicios\\DashBoardService.cs",
+              "ToolTip": "C:\\Users\\OREO\\source\\repos\\CBSANTOMERA.BLL\\Servicios\\DashBoardService.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\source\\repos\\CBSANTOMERA.BLL\\Servicios\\DashBoardService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAXAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-25T21:55:11.174Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "ContratoEmpresaService.cs",
+              "DocumentMoniker": "C:\\Users\\OREO\\source\\repos\\CBSANTOMERA.BLL\\Servicios\\ContratoEmpresaService.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\source\\repos\\CBSANTOMERA.BLL\\Servicios\\ContratoEmpresaService.cs",
+              "ToolTip": "C:\\Users\\OREO\\source\\repos\\CBSANTOMERA.BLL\\Servicios\\ContratoEmpresaService.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\source\\repos\\CBSANTOMERA.BLL\\Servicios\\ContratoEmpresaService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAXAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-25T21:55:03.486Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "ClubService.cs",
+              "DocumentMoniker": "C:\\Users\\OREO\\source\\repos\\CBSANTOMERA.BLL\\Servicios\\ClubService.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\source\\repos\\CBSANTOMERA.BLL\\Servicios\\ClubService.cs",
+              "ToolTip": "C:\\Users\\OREO\\source\\repos\\CBSANTOMERA.BLL\\Servicios\\ClubService.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\source\\repos\\CBSANTOMERA.BLL\\Servicios\\ClubService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAXAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-25T21:54:53.502Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "CategoriaService.cs",
+              "DocumentMoniker": "C:\\Users\\OREO\\source\\repos\\CBSANTOMERA.BLL\\Servicios\\CategoriaService.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\source\\repos\\CBSANTOMERA.BLL\\Servicios\\CategoriaService.cs",
+              "ToolTip": "C:\\Users\\OREO\\source\\repos\\CBSANTOMERA.BLL\\Servicios\\CategoriaService.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\source\\repos\\CBSANTOMERA.BLL\\Servicios\\CategoriaService.cs",
+              "ViewState": "AQIAAB4AAAAAAAAAAAAowA0AAAA9AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-25T21:54:06.071Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "CategoriaJugadorService.cs",
+              "DocumentMoniker": "C:\\Users\\OREO\\source\\repos\\CBSANTOMERA.BLL\\Servicios\\CategoriaJugadorService.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\source\\repos\\CBSANTOMERA.BLL\\Servicios\\CategoriaJugadorService.cs",
+              "ToolTip": "C:\\Users\\OREO\\source\\repos\\CBSANTOMERA.BLL\\Servicios\\CategoriaJugadorService.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\source\\repos\\CBSANTOMERA.BLL\\Servicios\\CategoriaJugadorService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAXAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-25T21:53:52.384Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "ArchivosService.cs",
+              "DocumentMoniker": "C:\\Users\\OREO\\source\\repos\\CBSANTOMERA.BLL\\Servicios\\ArchivosService.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\source\\repos\\CBSANTOMERA.BLL\\Servicios\\ArchivosService.cs",
+              "ToolTip": "C:\\Users\\OREO\\source\\repos\\CBSANTOMERA.BLL\\Servicios\\ArchivosService.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\source\\repos\\CBSANTOMERA.BLL\\Servicios\\ArchivosService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAXAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-25T21:51:19.989Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "AlbumService.cs",
+              "DocumentMoniker": "C:\\Users\\OREO\\source\\repos\\CBSANTOMERA.BLL\\Servicios\\AlbumService.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\source\\repos\\CBSANTOMERA.BLL\\Servicios\\AlbumService.cs",
+              "ToolTip": "C:\\Users\\OREO\\source\\repos\\CBSANTOMERA.BLL\\Servicios\\AlbumService.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\source\\repos\\CBSANTOMERA.BLL\\Servicios\\AlbumService.cs",
+              "ViewState": "AQIAAIQAAAAAAAAAAAAowJkAAABKAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-25T21:50:34.052Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "ISessionService .cs",
+              "DocumentMoniker": "C:\\Users\\OREO\\source\\repos\\CBSANTOMERA.BLL\\Servicios\\Contrato\\ISessionService .cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\source\\repos\\CBSANTOMERA.BLL\\Servicios\\Contrato\\ISessionService .cs",
+              "ToolTip": "C:\\Users\\OREO\\source\\repos\\CBSANTOMERA.BLL\\Servicios\\Contrato\\ISessionService .cs",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\source\\repos\\CBSANTOMERA.BLL\\Servicios\\Contrato\\ISessionService .cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAEAAAAXAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-25T21:50:12.153Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "CbsantomeraContext.cs",
+              "DocumentMoniker": "C:\\Users\\OREO\\source\\repos\\CBSANTOMERA.DAL\\DBContext\\CbsantomeraContext.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\source\\repos\\CBSANTOMERA.DAL\\DBContext\\CbsantomeraContext.cs",
+              "ToolTip": "C:\\Users\\OREO\\source\\repos\\CBSANTOMERA.DAL\\DBContext\\CbsantomeraContext.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\source\\repos\\CBSANTOMERA.DAL\\DBContext\\CbsantomeraContext.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-25T21:43:53.577Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "IFotoTecnicoEquipoService.cs",
+              "DocumentMoniker": "C:\\Users\\OREO\\source\\repos\\CBSANTOMERA.BLL\\Servicios\\Contrato\\IFotoTecnicoEquipoService.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\source\\repos\\CBSANTOMERA.BLL\\Servicios\\Contrato\\IFotoTecnicoEquipoService.cs",
+              "ToolTip": "C:\\Users\\OREO\\source\\repos\\CBSANTOMERA.BLL\\Servicios\\Contrato\\IFotoTecnicoEquipoService.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\source\\repos\\CBSANTOMERA.BLL\\Servicios\\Contrato\\IFotoTecnicoEquipoService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAXAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-25T21:49:44.138Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "IFotoJugadorEquipoService.cs",
+              "DocumentMoniker": "C:\\Users\\OREO\\source\\repos\\CBSANTOMERA.BLL\\Servicios\\Contrato\\IFotoJugadorEquipoService.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\source\\repos\\CBSANTOMERA.BLL\\Servicios\\Contrato\\IFotoJugadorEquipoService.cs",
+              "ToolTip": "C:\\Users\\OREO\\source\\repos\\CBSANTOMERA.BLL\\Servicios\\Contrato\\IFotoJugadorEquipoService.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\source\\repos\\CBSANTOMERA.BLL\\Servicios\\Contrato\\IFotoJugadorEquipoService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAEAAAAXAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-25T21:49:19.927Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "IArchivosService.cs",
+              "DocumentMoniker": "C:\\Users\\OREO\\source\\repos\\CBSANTOMERA.BLL\\Servicios\\Contrato\\IArchivosService.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\source\\repos\\CBSANTOMERA.BLL\\Servicios\\Contrato\\IArchivosService.cs",
+              "ToolTip": "C:\\Users\\OREO\\source\\repos\\CBSANTOMERA.BLL\\Servicios\\Contrato\\IArchivosService.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\source\\repos\\CBSANTOMERA.BLL\\Servicios\\Contrato\\IArchivosService.cs",
+              "ViewState": "AQIAAAEAAAAAAAAAAIBJwBYAAAAZAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-25T21:45:49.55Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "IAlbumService.cs",
+              "DocumentMoniker": "C:\\Users\\OREO\\source\\repos\\CBSANTOMERA.BLL\\Servicios\\Contrato\\IAlbumService.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\source\\repos\\CBSANTOMERA.BLL\\Servicios\\Contrato\\IAlbumService.cs",
+              "ToolTip": "C:\\Users\\OREO\\source\\repos\\CBSANTOMERA.BLL\\Servicios\\Contrato\\IAlbumService.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\source\\repos\\CBSANTOMERA.BLL\\Servicios\\Contrato\\IAlbumService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-25T21:45:42.526Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "CBSANTOMERA.MODEL.csproj",
+              "DocumentMoniker": "C:\\Users\\OREO\\source\\repos\\CBSANTOMERA.MODEL\\CBSANTOMERA.MODEL.csproj",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\source\\repos\\CBSANTOMERA.MODEL\\CBSANTOMERA.MODEL.csproj",
+              "ToolTip": "C:\\Users\\OREO\\source\\repos\\CBSANTOMERA.MODEL\\CBSANTOMERA.MODEL.csproj",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\source\\repos\\CBSANTOMERA.MODEL\\CBSANTOMERA.MODEL.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-04-25T21:28:03.221Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "IGenericRepository.cs",
+              "DocumentMoniker": "C:\\Users\\OREO\\source\\repos\\CBSANTOMERA.DAL\\Repositorios\\Contrato\\IGenericRepository.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\source\\repos\\CBSANTOMERA.DAL\\Repositorios\\Contrato\\IGenericRepository.cs",
+              "ToolTip": "C:\\Users\\OREO\\source\\repos\\CBSANTOMERA.DAL\\Repositorios\\Contrato\\IGenericRepository.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\source\\repos\\CBSANTOMERA.DAL\\Repositorios\\Contrato\\IGenericRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-25T21:42:21.803Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "AlbumDTO.cs",
+              "DocumentMoniker": "C:\\Users\\OREO\\source\\repos\\CBSANTOMERA.DTO\\AlbumDTO.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\source\\repos\\CBSANTOMERA.DTO\\AlbumDTO.cs",
+              "ToolTip": "C:\\Users\\OREO\\source\\repos\\CBSANTOMERA.DTO\\AlbumDTO.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\source\\repos\\CBSANTOMERA.DTO\\AlbumDTO.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAZAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-25T21:34:27.154Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "AutoMapperProfile.cs",
+              "DocumentMoniker": "C:\\Users\\OREO\\source\\repos\\CBSANTOMERA.UTILITY\\AutoMapperProfile.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\source\\repos\\CBSANTOMERA.UTILITY\\AutoMapperProfile.cs",
+              "ToolTip": "C:\\Users\\OREO\\source\\repos\\CBSANTOMERA.UTILITY\\AutoMapperProfile.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\source\\repos\\CBSANTOMERA.UTILITY\\AutoMapperProfile.cs",
+              "ViewState": "AQIAAHQAAAAAAAAAAAAgwJ4AAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-25T21:38:49.714Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "CategoriaDTO.cs",
+              "DocumentMoniker": "C:\\Users\\OREO\\source\\repos\\CBSANTOMERA.DTO\\CategoriaDTO.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\source\\repos\\CBSANTOMERA.DTO\\CategoriaDTO.cs",
+              "ToolTip": "C:\\Users\\OREO\\source\\repos\\CBSANTOMERA.DTO\\CategoriaDTO.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\source\\repos\\CBSANTOMERA.DTO\\CategoriaDTO.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAZAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-25T21:34:46.72Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "ContratoEmpresaDTO.cs",
+              "DocumentMoniker": "C:\\Users\\OREO\\source\\repos\\CBSANTOMERA.DTO\\ContratoEmpresaDTO.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\source\\repos\\CBSANTOMERA.DTO\\ContratoEmpresaDTO.cs",
+              "ToolTip": "C:\\Users\\OREO\\source\\repos\\CBSANTOMERA.DTO\\ContratoEmpresaDTO.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\source\\repos\\CBSANTOMERA.DTO\\ContratoEmpresaDTO.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAEAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-25T21:35:12.47Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "VentasSemanaDTO.cs",
+              "DocumentMoniker": "C:\\Users\\OREO\\source\\repos\\CBSANTOMERA.DTO\\VentasSemanaDTO.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\source\\repos\\CBSANTOMERA.DTO\\VentasSemanaDTO.cs",
+              "ToolTip": "C:\\Users\\OREO\\source\\repos\\CBSANTOMERA.DTO\\VentasSemanaDTO.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\source\\repos\\CBSANTOMERA.DTO\\VentasSemanaDTO.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-25T21:38:00.48Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 42,
+              "Title": "TecnicoEquipoDTO.cs",
+              "DocumentMoniker": "C:\\Users\\OREO\\source\\repos\\CBSANTOMERA.DTO\\TecnicoEquipoDTO.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\source\\repos\\CBSANTOMERA.DTO\\TecnicoEquipoDTO.cs",
+              "ToolTip": "C:\\Users\\OREO\\source\\repos\\CBSANTOMERA.DTO\\TecnicoEquipoDTO.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\source\\repos\\CBSANTOMERA.DTO\\TecnicoEquipoDTO.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAXAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-25T21:37:03.631Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 43,
+              "Title": "TecnicoDTO.cs",
+              "DocumentMoniker": "C:\\Users\\OREO\\source\\repos\\CBSANTOMERA.DTO\\TecnicoDTO.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\source\\repos\\CBSANTOMERA.DTO\\TecnicoDTO.cs",
+              "ToolTip": "C:\\Users\\OREO\\source\\repos\\CBSANTOMERA.DTO\\TecnicoDTO.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\source\\repos\\CBSANTOMERA.DTO\\TecnicoDTO.cs",
+              "ViewState": "AQIAAAoAAAAAAAAAAIBJwBwAAAAOAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-25T21:37:12.143Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 44,
+              "Title": "TemporadaDTO.cs",
+              "DocumentMoniker": "C:\\Users\\OREO\\source\\repos\\CBSANTOMERA.DTO\\TemporadaDTO.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\source\\repos\\CBSANTOMERA.DTO\\TemporadaDTO.cs",
+              "ToolTip": "C:\\Users\\OREO\\source\\repos\\CBSANTOMERA.DTO\\TemporadaDTO.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\source\\repos\\CBSANTOMERA.DTO\\TemporadaDTO.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-25T21:37:49.836Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 45,
+              "Title": "TokenApiDTO.cs",
+              "DocumentMoniker": "C:\\Users\\OREO\\source\\repos\\CBSANTOMERA.DTO\\TokenApiDTO.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\source\\repos\\CBSANTOMERA.DTO\\TokenApiDTO.cs",
+              "ToolTip": "C:\\Users\\OREO\\source\\repos\\CBSANTOMERA.DTO\\TokenApiDTO.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\source\\repos\\CBSANTOMERA.DTO\\TokenApiDTO.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-25T21:37:53.114Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 46,
+              "Title": "FotoAlbumDTO.cs",
+              "DocumentMoniker": "C:\\Users\\OREO\\source\\repos\\CBSANTOMERA.DTO\\FotoAlbumDTO.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\source\\repos\\CBSANTOMERA.DTO\\FotoAlbumDTO.cs",
+              "ToolTip": "C:\\Users\\OREO\\source\\repos\\CBSANTOMERA.DTO\\FotoAlbumDTO.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\source\\repos\\CBSANTOMERA.DTO\\FotoAlbumDTO.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAEAAAAXAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-25T21:36:22.955Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 47,
+              "Title": "CBSANTOMERA.DAL.csproj",
+              "DocumentMoniker": "C:\\Users\\OREO\\source\\repos\\CBSANTOMERA.DAL\\CBSANTOMERA.DAL.csproj",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\source\\repos\\CBSANTOMERA.DAL\\CBSANTOMERA.DAL.csproj",
+              "ToolTip": "C:\\Users\\OREO\\source\\repos\\CBSANTOMERA.DAL\\CBSANTOMERA.DAL.csproj",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\source\\repos\\CBSANTOMERA.DAL\\CBSANTOMERA.DAL.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-04-25T21:19:55.58Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 48,
+              "Title": "UsuarioDTO.cs",
+              "DocumentMoniker": "C:\\Users\\OREO\\source\\repos\\CBSANTOMERA.DTO\\UsuarioDTO.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\source\\repos\\CBSANTOMERA.DTO\\UsuarioDTO.cs",
+              "ToolTip": "C:\\Users\\OREO\\source\\repos\\CBSANTOMERA.DTO\\UsuarioDTO.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\source\\repos\\CBSANTOMERA.DTO\\UsuarioDTO.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-25T21:37:56.358Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 49,
+              "Title": "CBSANTOMERA.UTILITY.csproj",
+              "DocumentMoniker": "C:\\Users\\OREO\\source\\repos\\CBSANTOMERA.UTILITY\\CBSANTOMERA.UTILITY.csproj",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\source\\repos\\CBSANTOMERA.UTILITY\\CBSANTOMERA.UTILITY.csproj",
+              "ToolTip": "C:\\Users\\OREO\\source\\repos\\CBSANTOMERA.UTILITY\\CBSANTOMERA.UTILITY.csproj",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\source\\repos\\CBSANTOMERA.UTILITY\\CBSANTOMERA.UTILITY.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-04-25T21:25:56.613Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 50,
+              "Title": "VentaDTO.cs",
+              "DocumentMoniker": "C:\\Users\\OREO\\source\\repos\\CBSANTOMERA.DTO\\VentaDTO.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\source\\repos\\CBSANTOMERA.DTO\\VentaDTO.cs",
+              "ToolTip": "C:\\Users\\OREO\\source\\repos\\CBSANTOMERA.DTO\\VentaDTO.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\source\\repos\\CBSANTOMERA.DTO\\VentaDTO.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-25T21:37:59.084Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 51,
+              "Title": "EquipoDTO.cs",
+              "DocumentMoniker": "C:\\Users\\OREO\\source\\repos\\CBSANTOMERA.DTO\\EquipoDTO.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\source\\repos\\CBSANTOMERA.DTO\\EquipoDTO.cs",
+              "ToolTip": "C:\\Users\\OREO\\source\\repos\\CBSANTOMERA.DTO\\EquipoDTO.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\source\\repos\\CBSANTOMERA.DTO\\EquipoDTO.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAEAAAAXAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-25T21:36:09.86Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 52,
+              "Title": "EmpresaDTO.cs",
+              "DocumentMoniker": "C:\\Users\\OREO\\source\\repos\\CBSANTOMERA.DTO\\EmpresaDTO.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\source\\repos\\CBSANTOMERA.DTO\\EmpresaDTO.cs",
+              "ToolTip": "C:\\Users\\OREO\\source\\repos\\CBSANTOMERA.DTO\\EmpresaDTO.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\source\\repos\\CBSANTOMERA.DTO\\EmpresaDTO.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAXAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-25T21:36:02.697Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 53,
+              "Title": "CBSANTOMERA.DTO.csproj",
+              "DocumentMoniker": "C:\\Users\\OREO\\source\\repos\\CBSANTOMERA.DTO\\CBSANTOMERA.DTO.csproj",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\source\\repos\\CBSANTOMERA.DTO\\CBSANTOMERA.DTO.csproj",
+              "ToolTip": "C:\\Users\\OREO\\source\\repos\\CBSANTOMERA.DTO\\CBSANTOMERA.DTO.csproj",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\source\\repos\\CBSANTOMERA.DTO\\CBSANTOMERA.DTO.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-04-25T21:20:25.691Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 54,
+              "Title": "Class1.cs",
+              "DocumentMoniker": "C:\\Users\\OREO\\source\\repos\\CBSANTOMERA.BLL\\Class1.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\source\\repos\\CBSANTOMERA.BLL\\Class1.cs",
+              "ToolTip": "C:\\Users\\OREO\\source\\repos\\CBSANTOMERA.BLL\\Class1.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\source\\repos\\CBSANTOMERA.BLL\\Class1.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-25T19:37:53.582Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 55,
+              "Title": "Class1.cs",
+              "DocumentMoniker": "C:\\Users\\OREO\\source\\repos\\CBSANTOMERA.DAL\\Class1.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\source\\repos\\CBSANTOMERA.DAL\\Class1.cs",
+              "ToolTip": "C:\\Users\\OREO\\source\\repos\\CBSANTOMERA.DAL\\Class1.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\source\\repos\\CBSANTOMERA.DAL\\Class1.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-25T19:37:34.187Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 56,
+              "Title": "Class1.cs",
+              "DocumentMoniker": "C:\\Users\\OREO\\source\\repos\\CBSANTOMERA.IOC\\Class1.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\source\\repos\\CBSANTOMERA.IOC\\Class1.cs",
+              "ToolTip": "C:\\Users\\OREO\\source\\repos\\CBSANTOMERA.IOC\\Class1.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\source\\repos\\CBSANTOMERA.IOC\\Class1.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-25T19:37:08.774Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 57,
+              "Title": "Class1.cs",
+              "DocumentMoniker": "C:\\Users\\OREO\\source\\repos\\CBSANTOMERA.UTILITY\\Class1.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\source\\repos\\CBSANTOMERA.UTILITY\\Class1.cs",
+              "ToolTip": "C:\\Users\\OREO\\source\\repos\\CBSANTOMERA.UTILITY\\Class1.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\source\\repos\\CBSANTOMERA.UTILITY\\Class1.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-25T19:36:45.507Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 58,
+              "Title": "Class1.cs",
+              "DocumentMoniker": "C:\\Users\\OREO\\source\\repos\\CBSANTOMERA.MODEL\\Class1.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\source\\repos\\CBSANTOMERA.MODEL\\Class1.cs",
+              "ToolTip": "C:\\Users\\OREO\\source\\repos\\CBSANTOMERA.MODEL\\Class1.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\source\\repos\\CBSANTOMERA.MODEL\\Class1.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-25T19:35:19.561Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

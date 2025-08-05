@@ -1,0 +1,28 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="LazZiya.ImageResize" Version="4.1.4" />
+    <PackageReference Include="OllamaSharp" Version="5.1.17" />
+    <PackageReference Include="PdfPig" Version="0.1.10" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\CBSANTOMERA.DAL\CBSANTOMERA.DAL.csproj" />
+    <ProjectReference Include="..\CBSANTOMERA.DTO\CBSANTOMERA.DTO.csproj" />
+    <ProjectReference Include="..\CBSANTOMERA.MODEL\CBSANTOMERA.MODEL.csproj" />
+    <ProjectReference Include="..\CBSANTOMERA.UTILITY\CBSANTOMERA.UTILITY.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\..\..\..\..\..\.nuget\packages\newtonsoft.json\9.0.1\lib\portable-net45+wp80+win8+wpa81\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>

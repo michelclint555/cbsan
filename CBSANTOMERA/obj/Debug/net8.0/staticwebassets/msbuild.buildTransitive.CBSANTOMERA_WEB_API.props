@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\CBSANTOMERA_WEB_API.props" />
+</Project>
