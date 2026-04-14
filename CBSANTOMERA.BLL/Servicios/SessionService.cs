@@ -3,12 +3,14 @@ using CBSANTOMERA.BLL.Servicios.Contrato;
 using CBSANTOMERA.DAL.Repositorios.Contrato;
 using CBSANTOMERA.DTO;
 using CBSANTOMERA.MODEL;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.IdentityModel.Tokens;
 using System;
 using System.Collections.Generic;
 using System.IdentityModel.Tokens.Jwt;
 using System.Linq;
+using System.Linq.Expressions;
 using System.Security.Claims;
 using System.Security.Cryptography;
 using System.Text;
@@ -31,76 +33,51 @@ namespace CBSANTOMERA.BLL.Servicios
 
         public string CreateJwt(Usuario user)
         {
+            var jwt = configuration.GetSection("Jwt");
 
-            var jwt = this.configuration.GetSection("Jwt");
-            JwtDTO jwtDTO = new JwtDTO();
-            jwtDTO.Issuer = jwt.GetSection("Issuer").Value;
-            jwtDTO.Audience = jwt.GetSection("Audience").Value;
-            jwtDTO.Subject = jwt.GetSection("Subject").Value;
-            jwtDTO.Key = jwt.GetSection("Key").Value;
-            //var tj = jwt.GetSection("Audience").Value;
-            //encapsulamos todo lo que va a formar nuestro token
+            var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(jwt["Key"]));
+            var creds = new SigningCredentials(key, SecurityAlgorithms.HmacSha256);
 
-            var claims = new[] {
-                    //new Claim(JwtRegisteredClaimNames.Sub, jwt.Subject),
-                     new Claim("id",user.IdUsuario.ToString()),
-                     new Claim("correo",user.Correo.ToString()),
-                      new Claim(JwtRegisteredClaimNames.Sub, Guid.NewGuid().ToString()),
-                       new Claim(JwtRegisteredClaimNames.Sub, DateTime.UtcNow.ToString()),
-                };
-
-            var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(jwtDTO.Key));
-            var singIn = new SigningCredentials(key, SecurityAlgorithms.HmacSha256);
+            var claims = new List<Claim>
+    {
+        new Claim("id", user.IdUsuario.ToString()),
+        new Claim("correo", user.Correo),
+        new Claim(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString()),
+        new Claim(JwtRegisteredClaimNames.Sub, user.Correo), // Subject correcto
+    };
 
             var token = new JwtSecurityToken(
-
-                jwtDTO.Issuer,
-                 jwtDTO.Audience,
-                claims,
-                expires: DateTime.Now.AddMinutes(2),
-                signingCredentials: singIn
-
-                );
+                issuer: jwt["Issuer"],
+                audience: jwt["Audience"],
+                claims: claims,
+                expires: DateTime.UtcNow.AddMinutes(60),
+                signingCredentials: creds
+            );
 
             return new JwtSecurityTokenHandler().WriteToken(token);
-
-
-
-
-          /*  var jwtTokenHandler = new JwtSecurityTokenHandler();
-            var key = Encoding.ASCII.GetBytes("veryverysceret..fasdfasdfadsfasdfadsfadsfasdfasdfasdfasdfasdfsadfasdfsadfdasfsdafasdfsdafasfsdafasdfasdfasfasdffasdfasdfsadfsadfasdfasdfasdfasdfasdfasdfadsfasdfasdfasdfasdfasdfsadfasdfasdfasdfasdfasdfasdfadsf...");
-            var identity = new ClaimsIdentity(new Claim[]
-            {
-                new Claim(ClaimTypes.Role, user.IdRol.ToString()),
-                new Claim(ClaimTypes.Name,$"{user.Nombre}{user.Apellidos}")
-            });
-
-            var credentials = new SigningCredentials(new SymmetricSecurityKey(key), SecurityAlgorithms.HmacSha256);
-
-            var tokenDescriptor = new SecurityTokenDescriptor
-            {
-                Subject = identity,
-                Expires = DateTime.Now.AddSeconds(10),
-                SigningCredentials = credentials
-            };
-            var token = jwtTokenHandler.CreateToken(tokenDescriptor);
-            return jwtTokenHandler.WriteToken(token);*/
         }
 
 
-        public string CreateRefreshToken()
-        {
-            var tokenBytes = RandomNumberGenerator.GetBytes(64);
-            var refreshToken = Convert.ToBase64String(tokenBytes);
 
-            var tokenInUser = this._SessionRepository.Consultar(a => a.Token == refreshToken);
-                
-            if (tokenInUser != null)
+        public async Task<string> CreateRefreshToken()
+        {
+            string refreshToken;
+            bool exists;
+
+            do
             {
-                return CreateRefreshToken();
-            }
+                refreshToken = Convert.ToBase64String(RandomNumberGenerator.GetBytes(64));
+
+                var query = await _SessionRepository.Consultar(a => a.Token == refreshToken);
+
+                exists = await query.AnyAsync();   // ⬅️ Aquí sí funciona
+
+            } while (exists);
+
             return refreshToken;
         }
+
+
 
         public async Task<bool> Eliminar(Session sesion)
         {
@@ -112,63 +89,53 @@ namespace CBSANTOMERA.BLL.Servicios
 
         }
 
-            public async Task <Session> CrearSesion(Usuario user) {
+           
+            public async Task<Session> CrearSesion(Usuario user)
+            {
+                var sesionesExistentes = (await _SessionRepository
+                    .Consultar(s => s.IdUsuario == user.IdUsuario))
+                    .ToList();
 
+                // Si existe una sesión válida, reutilizarla
+                var sesionValida = sesionesExistentes
+                    .FirstOrDefault(s => s.FechaExpiracion > DateTime.UtcNow);
 
-            SesionDTO sesion = new SesionDTO();
+                if (sesionValida != null)
+                    return sesionValida;
 
-            try {
+                // Eliminar sesiones antiguas
+                foreach (var sesion in sesionesExistentes)
+                    await _SessionRepository.Eliminar(sesion);
 
-                var tokenInUser = await this._SessionRepository.Consultar(a => a.Token == user.Token || a.IdUsuario ==  user.IdUsuario);
-
-                if (tokenInUser != null)
+                // Crear nueva sesión
+                var nuevaSesionDto = new SesionDTO
                 {
-                    if (tokenInUser.Count() > 1)
-                    {
-                        foreach (var item in tokenInUser)
-                        {
-                            await this._SessionRepository.Eliminar(item);
-                        }
-                    }
-                    if (tokenInUser.Count() == 1) {
+                    Token = CreateJwt(user),
+                    RefreshToken = CreateRefreshToken().Result,
+                    IdUsuario = user.IdUsuario,
+                    RefreshTokenExpiryTime = DateTime.UtcNow.AddDays(5),
+                    FechaExpiracion = DateTime.UtcNow.AddMinutes(60),
+                   
+                };
 
-                        if (user.IdUsuario == tokenInUser.First().IdUsuario) {
+                var nuevaSesion = _mapper.Map<Session>(nuevaSesionDto);
 
-                            return tokenInUser.First();
-                        }
-                    }
-                    
-                }
-
-             
-
-
-                sesion.Token = this.CreateJwt(user);
-                var newAccessToken = sesion.Token;
-                var newRefreshToken = "refrescar";
-                sesion.IdUsuario = user.IdUsuario;
-                sesion.RefreshToken = newRefreshToken;
-                sesion.RefreshTokenExpiryTime = DateTime.Now.AddDays(5);
-
-                Session ses = this._mapper.Map<Session>(sesion);
-
-
-                var sesi = await this._SessionRepository.Crear(ses);
-                return ses;
-
-            } catch (Exception ex) {
-                throw new Exception(ex.Message);
+                return await _SessionRepository.Crear(nuevaSesion);
             }
-           
 
-            
-            //ses.RefreshToken = this.CreateRefreshToken();
-           /* if (!await this._SessionRepository.Editar(ses)) {
-                return null;        
-               }*/
+            public async Task<Session> Crear(Session entity)
+        {
+            return await _SessionRepository.Crear(entity);
+        }
 
-           
+        public async Task<bool> Editar(Session entity)
+        {
+            return await _SessionRepository.Editar(entity);
+        }
 
+        public async Task<IQueryable<Session>> Consultar(Expression<Func<Session, bool>> filtro = null)
+        {
+            return await _SessionRepository.Consultar(filtro);
         }
 
         private ClaimsPrincipal GetPrincipleFromExpiredToken(string token)

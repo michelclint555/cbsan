@@ -31,7 +31,8 @@ namespace CBSANTOMERA.BLL.Servicios
         private readonly IArchivosService _ArchivosRepository;
         private readonly ITemporadaService temporadaService;
         private readonly IClubService clubService;
-        public EquipoService(IClubService clubService,IGenericRepository<Equipo> equipoRepository, IGenericRepository<Club> clubRepository,  IMapper mapper, ICategoriaJugadorService _categoriaService, IArchivosService _ArchivosRepository, ITemporadaService temporadaService)
+        private readonly IContratoEmpresaService contratoEmpresaService;
+        public EquipoService(IClubService clubService,IGenericRepository<Equipo> equipoRepository, IGenericRepository<Club> clubRepository,  IMapper mapper, ICategoriaJugadorService _categoriaService, IArchivosService _ArchivosRepository, ITemporadaService temporadaService, IContratoEmpresaService contratoEmpresaService)
         {
             _equipoRepository = equipoRepository;
             this.clubService = clubService;
@@ -40,6 +41,7 @@ namespace CBSANTOMERA.BLL.Servicios
             _mapper = mapper;
             this._ArchivosRepository = _ArchivosRepository;
             this.temporadaService = temporadaService;
+            this.contratoEmpresaService = contratoEmpresaService;
         }
 
         public async Task<EquipoDTO> Crear(EquipoDTO modelo)
@@ -299,8 +301,9 @@ namespace CBSANTOMERA.BLL.Servicios
                     }
 
 
-                    CategoriaJugadorDTO categoria = await this._categoriaService.Obtener(equipo.IdEquipo);
-                    listaEquipo.Categoria = categoria;
+                    //CategoriaJugadorDTO categoria = await this._categoriaService.Obtener(equipo.IdEquipo);
+                    //listaEquipo.Categoria = categoria;
+                   listaEquipo = await MapearMiObjeto(equipo);
 
 
                 }
@@ -384,11 +387,11 @@ namespace CBSANTOMERA.BLL.Servicios
             try
             {
                 //var clubEncontrado = await _clubRepository.Obtener(u => u.IdClub == _Miclub);
-                var equipo = await _equipoRepository.ObtenerUnModelo(p => p.IdEquipo == id);
+                Equipo equipo = await _equipoRepository.ObtenerUnModelo(p => p.IdEquipo == id);
 
-
+                
                 //var listaEquipos = queryEquipos.Include(cat => cat.IdCategoriaNavigation).ToList();
-                EquipoDTO listaEquipo = await MapearObjeto(equipo);
+                EquipoDTO listaEquipo = await MapearMiObjeto(equipo);
 
                 try
                 {
@@ -504,16 +507,26 @@ namespace CBSANTOMERA.BLL.Servicios
 
             EquipoDTO equipo = EquipoDTO.EquipoToDTO(item);
             equipo.temporada = await this.temporadaService.Ver((int)item.Temporada);
-            equipo.Categoria = await this._categoriaService.Obtener(equipo.idCategoria);
+            equipo.Categoria = await this._categoriaService.Obtener(item.IdCategoria);
+            equipo.patrocinador = await this.contratoEmpresaService.Ver((int)item.Patrocinador);
+
             return equipo;
         }
-        //para mis equipos
+        //para mis equipos, equipos de nuestro club
         public async Task<EquipoDTO> MapearMiObjeto(Equipo item)
         {
 
             EquipoDTO equipo = EquipoDTO.EquipoToDTO(item);
             equipo.temporada = await this.temporadaService.Ver((int)item.Temporada);
             equipo.Categoria = await this._categoriaService.Obtener(equipo.idCategoria);
+            if (item.Patrocinador == null || item.Patrocinador == 0)
+            {
+                
+            }
+            else {
+                equipo.patrocinador = await this.contratoEmpresaService.Ver((int)item.Patrocinador);
+            }
+            
 
             return equipo;
         }
@@ -523,7 +536,7 @@ namespace CBSANTOMERA.BLL.Servicios
             List<EquipoDTO> equipos = new List<EquipoDTO>();
             foreach (var item in lista)
             {
-                EquipoDTO equipo = await this.MapearObjeto(item);
+                EquipoDTO equipo = await this.MapearMiObjeto(item);
                 equipos.Add(equipo);
 
             }
@@ -619,7 +632,41 @@ namespace CBSANTOMERA.BLL.Servicios
 
             }
         }
-        public async Task<EquipoDTO> CrearMiEquipo(EquipoDTO modelo)
+
+
+        public async Task<EquipoDTO> AddPatrocinador(int equipo, int temporada, int patrocinador)
+        {
+            TemporadaDTOSmall temporada0 = await this.temporadaService.TemporadaActiva();
+            if (temporada0.Id == 0 ) {
+                throw new Exception("Selecciona una temporada como activa.");
+            }
+            ContratoEmpresaDTO empresa = await this.contratoEmpresaService.Ver(patrocinador);
+
+            if (empresa == null || empresa.Id == 0) {
+                throw new Exception("La empresa seleccionada no existe");
+            }
+
+            Equipo equipo0 = await this._equipoRepository.ObtenerUnModelo(e=> e.IdEquipo == equipo && e.Temporada == temporada0.Id );
+
+            if (equipo0== null || equipo0.IdEquipo == 0)
+            {
+                throw new Exception("El equipo seleccionado no se encuentra en la temporada actual.");
+            }
+
+            
+            equipo0.Patrocinador = empresa.Id;
+            await this._equipoRepository.Editar(equipo0);
+            equipo0 = await this._equipoRepository.ObtenerUnModelo(e => e.IdEquipo == equipo && e.Temporada == temporada0.Id);
+
+
+
+            return await this.MapearMiObjeto(equipo0);
+
+
+
+
+        }
+            public async Task<EquipoDTO> CrearMiEquipo(EquipoDTO modelo)
         {
             try
             {

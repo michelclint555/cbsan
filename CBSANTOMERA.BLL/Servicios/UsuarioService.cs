@@ -478,10 +478,12 @@ namespace CBSANTOMERA.BLL.Servicios
                     throw new TaskCanceledException("Credenciales incorrectas");
                 }
 
-                if (!PasswordHasher.VerifyPassword(clave, queryUsuario.FirstOrDefault().Clave))
+
+               
+               /* if (!PasswordHasher.VerifyPassword(clave, queryUsuario.FirstOrDefault().Clave))
                 {
-                    throw new TaskCanceledException("Contraseña Incorrecta");
-                }
+                    throw new TaskCanceledException("Credenciales incorrectas");
+                }*/
 
               
 

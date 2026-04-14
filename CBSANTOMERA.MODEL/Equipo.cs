@@ -41,11 +41,11 @@ public partial class Equipo
 
     public virtual ICollection<FotoTecnico> FotoTecnicos { get; set; } = new List<FotoTecnico>();
 
-    public virtual ICollection<Jornada> JornadaLocalNavigations { get; set; } = new List<Jornada>();
-
-    public virtual ICollection<Jornada> JornadaVisitanteNavigations { get; set; } = new List<Jornada>();
-
     public virtual ICollection<Liga> Ligas { get; set; } = new List<Liga>();
+
+    public virtual ICollection<Partido> PartidoLocalNavigations { get; set; } = new List<Partido>();
+
+    public virtual ICollection<Partido> PartidoVisitanteNavigations { get; set; } = new List<Partido>();
 
     public virtual ICollection<TecnicoEquipo> TecnicoEquipos { get; set; } = new List<TecnicoEquipo>();
 

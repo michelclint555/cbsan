@@ -6,12 +6,14 @@ using Microsoft.AspNetCore.Mvc;
 using CBSANTOMERA.Utilidad;
 //using CBSANTOMERA.Model;
 using System.Collections.Generic;
+using Microsoft.AspNetCore.Authorization;
 
 namespace CBSANTOMERA.Controllers
 {
 
     [Route("api/[controller]")]
     [ApiController]
+    [Authorize]   // ⬅️ Todas las rutas requieren JWT
     public class EquipoJugadorController : ControllerBase
     {
         private readonly IEquipoJugadorService _equipoJugadorService;
@@ -66,6 +68,7 @@ namespace CBSANTOMERA.Controllers
 
         [HttpGet]
         [Route("ListaEquipoJugadores/{id:int}")] // devuelve todos los jugadores de un equipo en concreto
+        [AllowAnonymous]   // ⬅️ Esta acción NO requiere token
         public async Task<IActionResult> ListaUnEquipoJugadores(int id)
         {
 
@@ -120,7 +123,7 @@ namespace CBSANTOMERA.Controllers
             {
                 rsp.status = true;
 
-                rsp.value = await _equipoJugadorService.ADDUpdateDeleteJugadoresEquipo(equipo);
+                rsp.value = await _equipoJugadorService.SincronizarJugadoresEquipo(equipo);
 
             }
             catch (Exception ex)
@@ -134,6 +137,11 @@ namespace CBSANTOMERA.Controllers
 
 
 
+        
+
+
 
     }
+
+  
 }

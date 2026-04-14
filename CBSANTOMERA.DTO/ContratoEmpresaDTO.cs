@@ -72,6 +72,31 @@ namespace CBSANTOMERA.DTO
 
             
         }
+
+        public ContratoEmpresaDTOSmall ToModeloSmall()
+        {
+
+            ContratoEmpresaDTOSmall empresa = new ContratoEmpresaDTOSmall();
+
+            empresa.Tipo = this.Tipo;
+            empresa.Url = this.Url;
+            empresa.Noticia = this.Noticia;
+            
+            empresa.Temporada = this.Temporada.Id;
+            empresa.Empresa = this.Empresa.Id;
+            
+            empresa.Tipo = this.Tipo;
+            empresa.LogoEmpresa= this.Empresa.Logo;
+            
+            return empresa;
+
+
+        }
+
+        public static implicit operator ContratoEmpresaDTO(EmpresaDTOSmall v)
+        {
+            throw new NotImplementedException();
+        }
     }
 
     public class ContratoEmpresaDTOSmall 
@@ -79,11 +104,12 @@ namespace CBSANTOMERA.DTO
        
 
         public string Tipo { get; set; } = null!;
+        public string Url { get; set; } = null!;
 
-       
 
-       
-        
+
+
+
 
         public int? Noticia { get; set; }
 
@@ -94,5 +120,8 @@ namespace CBSANTOMERA.DTO
         public int? Empresa { get; set; }
 
         public int Temporada { get; set; }
+
+
+
     }
 }

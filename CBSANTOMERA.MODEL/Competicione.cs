@@ -29,15 +29,17 @@ public partial class Competicione
 
     public string? Estado { get; set; }
 
-    public string? Tipo { get; set; }
-
     public int? NumVuelta { get; set; }
+
+    public int? PartidosPlayoff { get; set; }
+
+    public bool? TienePlayoff { get; set; }
 
     public virtual ICollection<FasesCompeticion> FasesCompeticions { get; set; } = new List<FasesCompeticion>();
 
-    public virtual TipoCompeticion? IdtipoNavigation { get; set; }
+    public virtual TipoFase? IdtipoNavigation { get; set; }
 
-    public virtual ICollection<Jornada> Jornada { get; set; } = new List<Jornada>();
+    public virtual ICollection<Jornadum> Jornada { get; set; } = new List<Jornadum>();
 
     public virtual ICollection<Liga> Ligas { get; set; } = new List<Liga>();
 

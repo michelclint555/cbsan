@@ -4,6 +4,7 @@ using CBSANTOMERA.DAL.Repositorios.Contrato;
 using Microsoft.EntityFrameworkCore;
 using System.Linq.Expressions;
 using CBSANTOMERA.DAL;
+using CBSANTOMERA.DAL.DBContext;
 
 
 namespace CBSANTOMERA.DAL.Repositorios

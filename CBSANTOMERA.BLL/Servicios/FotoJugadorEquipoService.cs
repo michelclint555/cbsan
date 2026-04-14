@@ -118,10 +118,10 @@ namespace CBSANTOMERA.BLL.Servicios
 
                     if (await this.Eliminar(item.Id) == true)
                     {
-                        return true;
+                        continue;
                     }
                     else {
-                        return false;
+                        
                     }
                 }
                 catch (Exception e)
@@ -131,7 +131,7 @@ namespace CBSANTOMERA.BLL.Servicios
                     return false;
 
                 }
-
+                
 
             }
 
@@ -152,8 +152,33 @@ namespace CBSANTOMERA.BLL.Servicios
                 return null;
             }
 
+            List<FotoJugadorEquipoDTO> fotos0 = await this.BuscarFotoSJugadorEquipo(jugador);
+            if (fotos0.Count() == 1 && fotos.Count() == 0 ) {
+                //EDITAR EL REGISTRO FOTO DE LA BBDD
 
-            for (int i = 0; i < fotos.Count(); i++)
+                
+                if (await this.Editar(fotos[0])) {
+                    throw new TaskCanceledException();
+                }
+            }
+            if (fotos0.Count() == 0 && fotos.Count() == 1)
+            {
+               
+                    var fotoCreado = await CrearFoto(fotos[0], JugadorDTO.ToModel(equipo));
+                    // jugador.fotos.Add(_mapper.Map<FotoJugadorEquipoDTO>(fotoCreado));
+                
+               
+            }
+
+            if (fotos0.Count() >1 && fotos.Count() == 1)
+            {
+                //ELIMINAR TODO Y CREAR UNO NUEVO
+                await this.EliminarFotoSJugador(fotos0, jugador.Equipo);
+                var fotoCreado = await CrearFoto(fotos[0], JugadorDTO.ToModel(equipo));
+
+            }
+
+           /* for (int i = 0; i < fotos.Count(); i++)
             {
 
                 FotoJugadorEquipoDTO foto = new FotoJugadorEquipoDTO();
@@ -208,9 +233,9 @@ namespace CBSANTOMERA.BLL.Servicios
                 {
                     throw new TaskCanceledException(e.Message);
                 }
-                */
+                
 
-            }
+            }*/
 
             return jugador;
         }

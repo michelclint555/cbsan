@@ -3,10 +3,12 @@ using CBSANTOMERA.DTO;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using CBSANTOMERA.Utilidad;
+using Microsoft.AspNetCore.Authorization;
 namespace CBSANTOMERA.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    [Authorize]   // ⬅️ Todas las rutas requieren JWT
     public class EmpresaController : ControllerBase
     {
 
@@ -138,6 +140,28 @@ namespace CBSANTOMERA.Controllers
             }
             return Ok(rsp);
         }
+
+[AllowAnonymous]
+        [HttpGet]
+[Route("Buscar")]
+public async Task<IActionResult> Buscar(string nombre)
+{
+    var rsp = new Response<EmpresaDTOSmall>();
+
+    try
+    {
+        rsp.status = true;
+        rsp.value = await _Service.VerPorNombre(nombre);
+        rsp.msg = "La empresa se ha cargado correctamente";
+    }
+    catch (Exception ex)
+    {
+        rsp.status = false;
+        rsp.msg = ex.Message;
+    }
+
+    return Ok(rsp);
+}
 
 
         [HttpDelete]

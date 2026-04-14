@@ -19,7 +19,8 @@ namespace CBSANTOMERA.BLL.Servicios.Contrato
         Task<bool> Eliminar(int id);
         Task<List<EmpresaDTOSmall>> Lista(int temporada);
         Task<List<ContratoEmpresaDTO>> ListaCompleta(int temporada);
+        Task<NoticiasDTOSmall> VerPorNombre(string nombre);
 
 
-        }
+    }   
 }

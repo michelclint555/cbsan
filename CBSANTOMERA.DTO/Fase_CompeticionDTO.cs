@@ -1,4 +1,5 @@
 ﻿using CBSANTOMERA.MODEL;
+
 using Microsoft.AspNetCore.Http;
 using System;
 using System.Collections.Generic;
@@ -15,6 +16,9 @@ namespace CBSANTOMERA.DTO
 
         public CompeticionDTO Competicion { get; set; }
 
+        public MODEL.TipoFase TipoFase { get; set; }
+
+        public int? FasePadre { get; set; }
         public string Nombre { get; set; }
 
         public int? NumEquipos { get; set; }
@@ -37,6 +41,8 @@ namespace CBSANTOMERA.DTO
                 NumPartidos = this.NumPartidos,
                 FechaCreacion = this.FechaCreacion,
                 FechaModificacion = this.FechaModificacion,
+                FasePadre = FasePadre,
+                TipoFase = TipoFase.Id
             };
         }
 
@@ -52,6 +58,8 @@ namespace CBSANTOMERA.DTO
                 NumPartidos = modelo.NumPartidos,
                 FechaCreacion = modelo.FechaCreacion,
                 FechaModificacion = modelo?.FechaModificacion,
+               //ipoFase = modelo.TipoFase,
+                FasePadre = modelo.FasePadre,
 
 
             };

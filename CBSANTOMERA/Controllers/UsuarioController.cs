@@ -8,10 +8,14 @@ using CBSANTOMERA.Utilidad;
 using Microsoft.EntityFrameworkCore.Query.SqlExpressions;
 using System.Security.Claims;
 using CBSANTOMERA.MODEL;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.EntityFrameworkCore;
+using CBSANTOMERA.UTILITY.Mappers;
 namespace CBSANTOMERA.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    [Authorize]   // ⬅️ Todas las rutas requieren JWT
     public class UsuarioController : ControllerBase
     {
         private readonly IUsuarioService _usuarioService;
@@ -24,7 +28,7 @@ namespace CBSANTOMERA.Controllers
             _rolService = rolService;
             this._sessionService = _sessionService;
         }
-
+        
 
         [HttpGet]
         [Route("Lista")]
@@ -70,6 +74,7 @@ namespace CBSANTOMERA.Controllers
 
         [HttpPost]
         [Route("IniciarSesion")]
+        [AllowAnonymous]   // ⬅️ Esta acción NO requiere token
         public async Task<IActionResult> IniciarSesion([FromBody] LoginDTO login)
         {
 
@@ -224,6 +229,64 @@ namespace CBSANTOMERA.Controllers
             }
             return Ok(rsp);
         }
+
+        [HttpPost]
+        [Route("RefreshToken")]
+        [AllowAnonymous] // No requiere JWT
+        public async Task<IActionResult> RefreshToken([FromBody] TokenApiDTO tokenDto)
+        {
+            var rsp = new Response<TokenApiDTO>();
+
+            try
+            {
+                var refreshToken = tokenDto.RefreshToken;
+
+                var query = await _sessionService.Consultar(x => x.Token == refreshToken);
+                var session = await query.FirstOrDefaultAsync();
+
+                if (session == null || session.FechaExpiracion < DateTime.UtcNow || session.Usado.GetValueOrDefault())
+                {
+                    rsp.status = false;
+                    rsp.msg = "Refresh token inválido o expirado";
+                    return Ok(rsp);
+                }
+
+                // Marcar como usado
+                session.Usado = true;
+                await _sessionService.Editar(session);
+
+                // Generar nuevos tokens
+                var user = await _usuarioService.Ver(session.IdUsuario ?? 0);
+                Usuario modelo = UsuarioMapper.ToModel(user);
+                var newAccessToken = _sessionService.CreateJwt(modelo);
+                var newRefreshToken = await _sessionService.CreateRefreshToken();
+
+                // Guardar nuevo token
+                await _sessionService.Crear(new Session
+                {
+                    Token = newRefreshToken,
+                    IdUsuario = user.IdUsuario,
+                    FechaCreacion = DateTime.UtcNow,
+                    FechaExpiracion = DateTime.UtcNow.AddDays(7),
+                    Usado = false
+                });
+
+                rsp.status = true;
+                rsp.value = new TokenApiDTO()
+                {
+                    AccessToken = newAccessToken,
+                    RefreshToken = newRefreshToken
+                };
+            }
+            catch (Exception ex)
+            {
+                rsp.status = false;
+                rsp.msg = ex.Message;
+            }
+
+            return Ok(rsp);
+        }
+
 
     }
 }

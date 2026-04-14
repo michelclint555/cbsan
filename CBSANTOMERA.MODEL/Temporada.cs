@@ -23,7 +23,7 @@ public partial class Temporada
 
     public bool? Visible { get; set; }
 
-    public virtual ICollection<Albume> Albumes { get; set; } = new List<Albume>();
+    public virtual ICollection<Album> Albumes { get; set; } = new List<Album>();
 
     public virtual ICollection<Competicione> Competiciones { get; set; } = new List<Competicione>();
 

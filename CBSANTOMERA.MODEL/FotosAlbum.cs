@@ -27,7 +27,7 @@ public partial class FotosAlbum
 
     public DateTime? FechaRegistro { get; set; }
 
-    public virtual Albume IdAlbumNavigation { get; set; } = null!;
+    public virtual Album IdAlbumNavigation { get; set; } = null!;
 
     public virtual Temporada? TemporadaNavigation { get; set; }
 }

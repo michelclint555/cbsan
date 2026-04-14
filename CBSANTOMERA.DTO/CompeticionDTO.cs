@@ -30,7 +30,10 @@ namespace CBSANTOMERA.DTO
         public DateTime? FechaRegistro { get; set; }
 
         public DateTime? FechaModificacion { get; set; }
+        public int PartidosPlayoff { get; set; }
 
+
+        public bool? TienePlayoff { get; set; }
         public int? Categoria { get; set; }
 
         public string? Estado { get; set; }
@@ -47,7 +50,7 @@ namespace CBSANTOMERA.DTO
             {
                 Id = modelo.Id,
                 Nombre = modelo.Nombre,
-               IdTipo = modelo.Idtipo,
+             //  IdTipo = modelo.Idtipo,
                 NumEquipos = modelo.NumEquipos,
                 Logo = modelo.Logo,
                 FechaCreacion = modelo.FechaCreacion,
@@ -56,8 +59,11 @@ namespace CBSANTOMERA.DTO
                 FechaRegistro = modelo.FechaRegistro,
                 FechaModificacion = modelo.FechaModificacion,
                 Categoria = modelo.Categoria,
-                Estado = modelo.Estado
-            };
+                Estado = modelo.Estado,
+                PartidosPlayoff = modelo.PartidosPlayoff ?? 0,
+                TienePlayoff = modelo.TienePlayoff
+                
+    };
         }
 
         public  Competicione ToModel( )
@@ -66,8 +72,8 @@ namespace CBSANTOMERA.DTO
             {
                 Id = this.Id,
                 Nombre = this.Nombre,
-                Idtipo = this.IdTipo,
-                Tipo = this.Tipo,
+               // Idtipo = this.IdTipo,
+               // Tipo = this.Tipo,
                 NumEquipos = this.NumEquipos,
                 Logo = this.Logo,
                 FechaCreacion = this.FechaCreacion,
@@ -76,7 +82,10 @@ namespace CBSANTOMERA.DTO
                 FechaRegistro = this.FechaRegistro,
                 FechaModificacion = this.FechaModificacion,
                 Categoria = this.Categoria,
-                Estado = this.Estado
+                Estado = this.Estado,
+                PartidosPlayoff = this.PartidosPlayoff,
+                TienePlayoff = this.TienePlayoff
+                
             };
         }
 

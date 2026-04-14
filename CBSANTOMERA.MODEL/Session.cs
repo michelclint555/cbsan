@@ -11,7 +11,11 @@ public partial class Session
 
     public string? RefreshToken { get; set; }
 
-    public DateTime? RefreshTokenExpiryTime { get; set; }
+    public DateTime? FechaExpiracion { get; set; }
 
     public string? Token { get; set; }
+
+    public DateTime? FechaCreacion { get; set; }
+
+    public bool? Usado { get; set; }
 }

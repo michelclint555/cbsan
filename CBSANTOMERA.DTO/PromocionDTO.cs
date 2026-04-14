@@ -25,8 +25,9 @@ namespace CBSANTOMERA.DTO
 
         public string Portada { get; set; } = null!;
         public int? Orden { get; set; }
+        public bool EnlaceExterno { get; set; }
 
-        
+
 
 
 
@@ -68,6 +69,7 @@ namespace CBSANTOMERA.DTO
         public DateTime? FechaRegistro { get; set; }
 
         public required IFormFile? imagen { get; set; } = null;
+        public bool EnlaceExterno { get; set; }
 
     }
 

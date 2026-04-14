@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CBSANTOMERA.DAL")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d5376689ff272c146081c4fa579b37c5c57fe046")]
 [assembly: System.Reflection.AssemblyProductAttribute("CBSANTOMERA.DAL")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CBSANTOMERA.DAL")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

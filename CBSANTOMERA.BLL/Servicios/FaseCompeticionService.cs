@@ -13,163 +13,76 @@ namespace CBSANTOMERA.BLL.Servicios
 {
     public class FaseCompeticionService : IFaseCompeticionService
     {
-        private readonly IGenericRepository<FasesCompeticion> _Repository;
-        
-        private string rutaServidor = @"wwwroot\archivos\Temporadas\";
-        private string carpetaLocal = @"Competiciones\";
-        private readonly ITemporadaService _TemporadaRepository;
-        private readonly ICategoriaJugadorService _CategoriaRepository;
-        private readonly IEquipoService _EquipoRepository;
-        private readonly IMapper _mapper;
-        private readonly IArchivosService _ArchivoService;
-       // private readonly ILigaService _LigaRepository;
-        public FaseCompeticionService(IGenericRepository<FasesCompeticion> repository)
+        private readonly IGenericRepository<FasesCompeticion> _repository;
+
+        public FaseCompeticionService(
+            IGenericRepository<FasesCompeticion> repository)
         {
-            _Repository = repository;
-            
-            /*this._LigaRepository = _LigaRepository;*/
-            
-           
+            _repository = repository;
         }
 
-        public async Task<FaseCompeticionDTO> Crear(FaseCompeticionDTO modelo, CompeticionDTO competicion)
+        public async Task<FaseCompeticionDTO> Crear(
+            FaseCompeticionDTO modelo,
+            CompeticionDTO competicion)
         {
-            try
-            {
-                FasesCompeticion fase = new FasesCompeticion();
-                modelo.FechaCreacion = DateTime.Now;
-                modelo.FechaModificacion = DateTime.Now;
-                //modelo.NumEquipos = 0;
-                fase = modelo.ToModel();
-                fase.Competicion = competicion.Id;
+            modelo.FechaCreacion = DateTime.UtcNow;
+            modelo.FechaModificacion = DateTime.UtcNow;
 
-                var faseCreado = await _Repository.Crear(fase);
-                FaseCompeticionDTO faseDTO = FaseCompeticionDTO.ToDTO(faseCreado);
-                return faseDTO;
+            var fase = modelo.ToModel();
+            fase.Competicion = competicion.Id;
+            fase.Estado ??= "Pendiente";
 
-            }
-            catch (Exception ex) { throw; }
-
+            var creada = await _repository.Crear(fase);
+            return FaseCompeticionDTO.ToDTO(creada);
         }
 
         public async Task<bool> Editar(FaseCompeticionDTO modelo)
         {
-            try
-            {
-                FasesCompeticion fase = new FasesCompeticion();
-
-                modelo.FechaModificacion = DateTime.Now;
-                //modelo.NumEquipos = 0;
-                fase = modelo.ToModel();
-
-                var faseCreado = await _Repository.Editar(fase);
-                //FaseCompeticionDTO faseDTO = FaseCompeticionDTO.ToDTO(faseCreado);
-                return faseCreado;
-            }
-            catch (Exception ex)
-            {
-                throw;
-            }
-
+            modelo.FechaModificacion = DateTime.UtcNow;
+            return await _repository.Editar(modelo.ToModel());
         }
-
 
         public async Task<FaseCompeticionDTO> Ver(int idFase)
         {
-            try
-            {
-                FasesCompeticion fase = new FasesCompeticion();
-                fase = await this._Repository.ObtenerUnModelo(f => f.Id == idFase);
+            var fase = await _repository.ObtenerUnModelo(f => f.Id == idFase)
+                ?? throw new Exception("La fase no existe");
 
-                if (fase == null) {
-                    throw new Exception("La fase no existe");
-                }
-                FaseCompeticionDTO fase0 = FaseCompeticionDTO.ToDTO(fase);
-                
-               
-
-                
-                return fase0;
-            }
-            catch (Exception ex)
-            {
-                throw;
-            }
-
+            return FaseCompeticionDTO.ToDTO(fase);
         }
-
-        public async Task<bool> EliminarCompeticion(int id)
-        {
-            try
-            {
-                var fase = await _Repository.ObtenerUnModelo(f => f.Id == id);
-                if (fase == null)
-                {
-                    throw new Exception("La fase de competición no existe");
-                }
-                if (!await _Repository.Eliminar(fase))
-                {
-                    throw new Exception("No se ha podido eliminar la fase");
-                }
-                
-                return true;
-
-            }
-            catch (Exception ex)
-            {
-                throw;
-            }
-        }
-
 
         public async Task<bool> Eliminar(int id)
         {
-            try
-            {
-                var fase0 = await _Repository.ObtenerUnModelo(f => f.Id == id);
-               
-                if (fase0 == null)
-                {
-                    throw new Exception("La fase de competición no existe");
-                }
-                if (!await _Repository.Eliminar(fase0))
-                {
-                    throw new Exception("No se ha podido eliminar la fase");
-                }
+            var fase = await _repository.ObtenerUnModelo(f => f.Id == id)
+                ?? throw new Exception("La fase no existe");
 
-                return true;
-
-            }
-            catch (Exception ex)
-            {
-                throw;
-            }
-        }
-
-        public async Task<List<FaseCompeticionDTO>> Listar()
-        {
-            var fases = await _Repository.Consultar();
-            List<FaseCompeticionDTO> lista = new List<FaseCompeticionDTO>();
-            foreach (var item in fases)
-            {
-
-                lista.Add(FaseCompeticionDTO.ToDTO(item));
-            }
-            return lista;
+            return await _repository.Eliminar(fase);
         }
 
         public async Task<List<FaseCompeticionDTO>> Listar(int idCompeticion)
         {
-            var fases = await _Repository.Consultar(f => f.Competicion == idCompeticion);
-            List<FaseCompeticionDTO> lista = new List<FaseCompeticionDTO>();
-            foreach (var item in fases)
-            {
+            var fases = await _repository.Consultar(f => f.Competicion == idCompeticion);
+            return fases.Select(FaseCompeticionDTO.ToDTO).ToList();
+        }
 
-                lista.Add(FaseCompeticionDTO.ToDTO(item));
 
-            }
-            return lista;
+       
 
+        public async Task CerrarFaseAsync(int faseId)
+        {
+            var fase = await _repository.ObtenerUnModelo(f => f.Id == faseId);
+            if (fase == null || fase.Estado == "Cerrada") return;
+
+            fase.Estado = "Cerrada";
+            fase.FechaModificacion = DateTime.UtcNow;
+
+            await _repository.Editar(fase);
+        }
+
+        public Task<List<FaseCompeticionDTO>> Listar()
+        {
+            throw new NotImplementedException();
         }
     }
+
+
 }

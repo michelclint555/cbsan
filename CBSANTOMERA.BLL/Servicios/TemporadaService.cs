@@ -217,7 +217,7 @@ namespace CBSANTOMERA.BLL.Servicios
             }
             catch
             {
-                throw new TaskCanceledException("No se pudo obtener la lista de la temporada.");
+                throw new TaskCanceledException("No se pudo obtener la temporada activa, selecciona una temporada como activa activa");
 
             }
         }

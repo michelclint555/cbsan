@@ -30,4 +30,6 @@ public partial class Promocione
     public DateTime? FechaModificacion { get; set; }
 
     public DateTime? FechaRegistro { get; set; }
+
+    public bool? EnlaceExterno { get; set; }
 }

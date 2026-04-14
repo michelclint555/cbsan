@@ -4,10 +4,12 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using CBSANTOMERA.Utilidad;
 using CBSANTOMERA.MODEL;
+using Microsoft.AspNetCore.Authorization;
 namespace CBSANTOMERA.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    [Authorize]   // ⬅️ Todas las rutas requieren JWT
     public class ContratoEmpresaController : ControllerBase
     {
 
@@ -18,6 +20,7 @@ namespace CBSANTOMERA.Controllers
         }
         [HttpGet]
         [Route("Lista")] //Para el Fronted usuario obtenenemos la lista de empresas contrato con el club de la temporada introducida
+        [AllowAnonymous]   // ⬅️ Esta acción NO requiere token
         public async Task<IActionResult> Lista()
         {
 
@@ -35,6 +38,28 @@ namespace CBSANTOMERA.Controllers
 
             return Ok(rsp);
 
+        }
+
+        [AllowAnonymous]
+        [HttpGet]
+        [Route("Buscar")]
+        public async Task<IActionResult> Buscar(string nombre)
+        {
+            var rsp = new Response<NoticiasDTOSmall>();
+
+            try
+            {
+                rsp.status = true;
+                rsp.value = await _Service.VerPorNombre(nombre);
+                rsp.msg = "La empresa se ha cargado correctamente";
+            }
+            catch (Exception ex)
+            {
+                rsp.status = false;
+                rsp.msg = ex.Message;
+            }
+
+            return Ok(rsp);
         }
 
         [HttpGet]

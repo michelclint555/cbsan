@@ -3,10 +3,12 @@ using CBSANTOMERA.DTO;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using CBSANTOMERA.Utilidad;
+using Microsoft.AspNetCore.Authorization;
 namespace CBSANTOMERA.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    [Authorize]   // ⬅️ Todas las rutas requieren JWT
     public class PromocionController : ControllerBase
     {
         
@@ -19,6 +21,7 @@ namespace CBSANTOMERA.Controllers
 
         [HttpGet]
         [Route("Lista")]
+        [AllowAnonymous]   // ⬅️ Esta acción NO requiere token
         public async Task<IActionResult> Lista()
         {
 

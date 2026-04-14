@@ -3,94 +3,228 @@
   "WorkspaceRootPath": "C:\\Users\\OREO\\Desktop\\TFG RESOURCE\\pagina web\\CBSANTOMERA_WEB\\CBSANTOMERA_WEB_API\\CBSANTOMERA\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{1FF370E7-0380-4C98-8D3F-49A1DFA9ADA7}|..\\CBSANTOMERA.BLL\\CBSANTOMERA.BLL.csproj|c:\\users\\oreo\\desktop\\tfg resource\\pagina web\\cbsantomera_web\\cbsantomera_web_api\\cbsantomera.bll\\servicios\\usuarioservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E56BF2DF-927F-470F-8DF7-93C493DF1165}|CBSANTOMERA_WEB_API.csproj|c:\\users\\oreo\\desktop\\tfg resource\\pagina web\\cbsantomera_web\\cbsantomera_web_api\\cbsantomera\\controllers\\usuariocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E56BF2DF-927F-470F-8DF7-93C493DF1165}|CBSANTOMERA_WEB_API.csproj|solutionrelative:controllers\\usuariocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1FF370E7-0380-4C98-8D3F-49A1DFA9ADA7}|..\\CBSANTOMERA.BLL\\CBSANTOMERA.BLL.csproj|c:\\users\\oreo\\desktop\\tfg resource\\pagina web\\cbsantomera_web\\cbsantomera_web_api\\cbsantomera.bll\\servicios\\sessionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{E56BF2DF-927F-470F-8DF7-93C493DF1165}|CBSANTOMERA_WEB_API.csproj|c:\\users\\oreo\\desktop\\tfg resource\\pagina web\\cbsantomera_web\\cbsantomera_web_api\\cbsantomera\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{E56BF2DF-927F-470F-8DF7-93C493DF1165}|CBSANTOMERA_WEB_API.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4CC315E5-F781-4878-BCE2-7450AF5782B2}|..\\CBSANTOMERA.DTO\\CBSANTOMERA.DTO.csproj|c:\\users\\oreo\\desktop\\tfg resource\\pagina web\\cbsantomera_web\\cbsantomera_web_api\\cbsantomera.dto\\jwtdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E56BF2DF-927F-470F-8DF7-93C493DF1165}|CBSANTOMERA_WEB_API.csproj|c:\\users\\oreo\\desktop\\tfg resource\\pagina web\\cbsantomera_web\\cbsantomera_web_api\\cbsantomera\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{E56BF2DF-927F-470F-8DF7-93C493DF1165}|CBSANTOMERA_WEB_API.csproj|solutionrelative:properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4CC315E5-F781-4878-BCE2-7450AF5782B2}|..\\CBSANTOMERA.DTO\\CBSANTOMERA.DTO.csproj|c:\\users\\oreo\\desktop\\tfg resource\\pagina web\\cbsantomera_web\\cbsantomera_web_api\\cbsantomera.dto\\jugadordto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2C4310FA-BFA9-48FC-B3FB-3FFC8F8AE3E7}|..\\CBSANTOMERA.DAL\\CBSANTOMERA.DAL.csproj|c:\\users\\oreo\\desktop\\tfg resource\\pagina web\\cbsantomera_web\\cbsantomera_web_api\\cbsantomera.dal\\dbcontext\\cbsantomeracontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1FF370E7-0380-4C98-8D3F-49A1DFA9ADA7}|..\\CBSANTOMERA.BLL\\CBSANTOMERA.BLL.csproj|c:\\users\\oreo\\desktop\\tfg resource\\pagina web\\cbsantomera_web\\cbsantomera_web_api\\cbsantomera.bll\\servicios\\jugadorservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E56BF2DF-927F-470F-8DF7-93C493DF1165}|CBSANTOMERA_WEB_API.csproj|c:\\users\\oreo\\desktop\\tfg resource\\pagina web\\cbsantomera_web\\cbsantomera_web_api\\cbsantomera\\controllers\\contratoempresacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E56BF2DF-927F-470F-8DF7-93C493DF1165}|CBSANTOMERA_WEB_API.csproj|solutionrelative:controllers\\contratoempresacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1FF370E7-0380-4C98-8D3F-49A1DFA9ADA7}|..\\CBSANTOMERA.BLL\\CBSANTOMERA.BLL.csproj|c:\\users\\oreo\\desktop\\tfg resource\\pagina web\\cbsantomera_web\\cbsantomera_web_api\\cbsantomera.bll\\servicios\\equiposervice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E56BF2DF-927F-470F-8DF7-93C493DF1165}|CBSANTOMERA_WEB_API.csproj|c:\\users\\oreo\\desktop\\tfg resource\\pagina web\\cbsantomera_web\\cbsantomera_web_api\\cbsantomera\\controllers\\empresacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E56BF2DF-927F-470F-8DF7-93C493DF1165}|CBSANTOMERA_WEB_API.csproj|solutionrelative:controllers\\empresacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E56BF2DF-927F-470F-8DF7-93C493DF1165}|CBSANTOMERA_WEB_API.csproj|c:\\users\\oreo\\desktop\\tfg resource\\pagina web\\cbsantomera_web\\cbsantomera_web_api\\cbsantomera\\controllers\\jugadorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E56BF2DF-927F-470F-8DF7-93C493DF1165}|CBSANTOMERA_WEB_API.csproj|solutionrelative:controllers\\jugadorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1FF370E7-0380-4C98-8D3F-49A1DFA9ADA7}|..\\CBSANTOMERA.BLL\\CBSANTOMERA.BLL.csproj|c:\\users\\oreo\\desktop\\tfg resource\\pagina web\\cbsantomera_web\\cbsantomera_web_api\\cbsantomera.bll\\servicios\\contratoempresaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2C4310FA-BFA9-48FC-B3FB-3FFC8F8AE3E7}|..\\CBSANTOMERA.DAL\\CBSANTOMERA.DAL.csproj|c:\\users\\oreo\\desktop\\tfg resource\\pagina web\\cbsantomera_web\\cbsantomera_web_api\\cbsantomera.dal\\repositorios\\genericrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1FF370E7-0380-4C98-8D3F-49A1DFA9ADA7}|..\\CBSANTOMERA.BLL\\CBSANTOMERA.BLL.csproj|c:\\users\\oreo\\desktop\\tfg resource\\pagina web\\cbsantomera_web\\cbsantomera_web_api\\cbsantomera.bll\\servicios\\contrato\\icontratoempresaservice .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E56BF2DF-927F-470F-8DF7-93C493DF1165}|CBSANTOMERA_WEB_API.csproj|c:\\users\\oreo\\desktop\\tfg resource\\pagina web\\cbsantomera_web\\cbsantomera_web_api\\cbsantomera\\controllers\\equipocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E56BF2DF-927F-470F-8DF7-93C493DF1165}|CBSANTOMERA_WEB_API.csproj|solutionrelative:controllers\\equipocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1FF370E7-0380-4C98-8D3F-49A1DFA9ADA7}|..\\CBSANTOMERA.BLL\\CBSANTOMERA.BLL.csproj|c:\\users\\oreo\\desktop\\tfg resource\\pagina web\\cbsantomera_web\\cbsantomera_web_api\\cbsantomera.bll\\servicios\\empresaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4CC315E5-F781-4878-BCE2-7450AF5782B2}|..\\CBSANTOMERA.DTO\\CBSANTOMERA.DTO.csproj|c:\\users\\oreo\\desktop\\tfg resource\\pagina web\\cbsantomera_web\\cbsantomera_web_api\\cbsantomera.dto\\equipodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1FF370E7-0380-4C98-8D3F-49A1DFA9ADA7}|..\\CBSANTOMERA.BLL\\CBSANTOMERA.BLL.csproj|c:\\users\\oreo\\desktop\\tfg resource\\pagina web\\cbsantomera_web\\cbsantomera_web_api\\cbsantomera.bll\\servicios\\clubservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1FF370E7-0380-4C98-8D3F-49A1DFA9ADA7}|..\\CBSANTOMERA.BLL\\CBSANTOMERA.BLL.csproj|c:\\users\\oreo\\desktop\\tfg resource\\pagina web\\cbsantomera_web\\cbsantomera_web_api\\cbsantomera.bll\\servicios\\contrato\\iempresaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E56BF2DF-927F-470F-8DF7-93C493DF1165}|CBSANTOMERA_WEB_API.csproj|c:\\users\\oreo\\desktop\\tfg resource\\pagina web\\cbsantomera_web\\cbsantomera_web_api\\cbsantomera\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E56BF2DF-927F-470F-8DF7-93C493DF1165}|CBSANTOMERA_WEB_API.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1FF370E7-0380-4C98-8D3F-49A1DFA9ADA7}|..\\CBSANTOMERA.BLL\\CBSANTOMERA.BLL.csproj|c:\\users\\oreo\\desktop\\tfg resource\\pagina web\\cbsantomera_web\\cbsantomera_web_api\\cbsantomera.bll\\servicios\\ligaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{1FF370E7-0380-4C98-8D3F-49A1DFA9ADA7}|..\\CBSANTOMERA.BLL\\CBSANTOMERA.BLL.csproj|c:\\users\\oreo\\desktop\\tfg resource\\pagina web\\cbsantomera_web\\cbsantomera_web_api\\cbsantomera.bll\\servicios\\competicionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4CC315E5-F781-4878-BCE2-7450AF5782B2}|..\\CBSANTOMERA.DTO\\CBSANTOMERA.DTO.csproj|c:\\users\\oreo\\desktop\\tfg resource\\pagina web\\cbsantomera_web\\cbsantomera_web_api\\cbsantomera.dto\\ligadto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E56BF2DF-927F-470F-8DF7-93C493DF1165}|CBSANTOMERA_WEB_API.csproj|c:\\users\\oreo\\desktop\\tfg resource\\pagina web\\cbsantomera_web\\cbsantomera_web_api\\cbsantomera\\controllers\\competicioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E56BF2DF-927F-470F-8DF7-93C493DF1165}|CBSANTOMERA_WEB_API.csproj|solutionrelative:controllers\\competicioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1FF370E7-0380-4C98-8D3F-49A1DFA9ADA7}|..\\CBSANTOMERA.BLL\\CBSANTOMERA.BLL.csproj|c:\\users\\oreo\\desktop\\tfg resource\\pagina web\\cbsantomera_web\\cbsantomera_web_api\\cbsantomera.bll\\servicios\\contrato\\isessionservice .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0A9044CD-026C-44F1-9E87-8EAD68C86CAD}|..\\CBSANTOMERA.MODEL\\CBSANTOMERA.MODEL.csproj|c:\\users\\oreo\\desktop\\tfg resource\\pagina web\\cbsantomera_web\\cbsantomera_web_api\\cbsantomera.model\\competicione.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4CC315E5-F781-4878-BCE2-7450AF5782B2}|..\\CBSANTOMERA.DTO\\CBSANTOMERA.DTO.csproj|c:\\users\\oreo\\desktop\\tfg resource\\pagina web\\cbsantomera_web\\cbsantomera_web_api\\cbsantomera.dto\\usuariodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4CC315E5-F781-4878-BCE2-7450AF5782B2}|..\\CBSANTOMERA.DTO\\CBSANTOMERA.DTO.csproj|c:\\users\\oreo\\desktop\\tfg resource\\pagina web\\cbsantomera_web\\cbsantomera_web_api\\cbsantomera.dto\\competiciondto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1FF370E7-0380-4C98-8D3F-49A1DFA9ADA7}|..\\CBSANTOMERA.BLL\\CBSANTOMERA.BLL.csproj|c:\\users\\oreo\\desktop\\tfg resource\\pagina web\\cbsantomera_web\\cbsantomera_web_api\\cbsantomera.bll\\cbsantomera.bll.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+      "AbsoluteMoniker": "D:0:0:{0A9044CD-026C-44F1-9E87-8EAD68C86CAD}|..\\CBSANTOMERA.MODEL\\CBSANTOMERA.MODEL.csproj|c:\\users\\oreo\\desktop\\tfg resource\\pagina web\\cbsantomera_web\\cbsantomera_web_api\\cbsantomera.model\\tipofase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4CC315E5-F781-4878-BCE2-7450AF5782B2}|..\\CBSANTOMERA.DTO\\CBSANTOMERA.DTO.csproj|c:\\users\\oreo\\desktop\\tfg resource\\pagina web\\cbsantomera_web\\cbsantomera_web_api\\cbsantomera.dto\\categoriadto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2C4310FA-BFA9-48FC-B3FB-3FFC8F8AE3E7}|..\\CBSANTOMERA.DAL\\CBSANTOMERA.DAL.csproj|c:\\users\\oreo\\desktop\\tfg resource\\pagina web\\cbsantomera_web\\cbsantomera_web_api\\cbsantomera.dal\\repositorios\\genericrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0A9044CD-026C-44F1-9E87-8EAD68C86CAD}|..\\CBSANTOMERA.MODEL\\CBSANTOMERA.MODEL.csproj|c:\\users\\oreo\\desktop\\tfg resource\\pagina web\\cbsantomera_web\\cbsantomera_web_api\\cbsantomera.model\\album.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1FF370E7-0380-4C98-8D3F-49A1DFA9ADA7}|..\\CBSANTOMERA.BLL\\CBSANTOMERA.BLL.csproj|c:\\users\\oreo\\desktop\\tfg resource\\pagina web\\cbsantomera_web\\cbsantomera_web_api\\cbsantomera.bll\\servicios\\cierrecompeticionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4CC315E5-F781-4878-BCE2-7450AF5782B2}|..\\CBSANTOMERA.DTO\\CBSANTOMERA.DTO.csproj|c:\\users\\oreo\\desktop\\tfg resource\\pagina web\\cbsantomera_web\\cbsantomera_web_api\\cbsantomera.dto\\fase_competiciondto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1FF370E7-0380-4C98-8D3F-49A1DFA9ADA7}|..\\CBSANTOMERA.BLL\\CBSANTOMERA.BLL.csproj|c:\\users\\oreo\\desktop\\tfg resource\\pagina web\\cbsantomera_web\\cbsantomera_web_api\\cbsantomera.bll\\servicios\\playoffservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0A9044CD-026C-44F1-9E87-8EAD68C86CAD}|..\\CBSANTOMERA.MODEL\\CBSANTOMERA.MODEL.csproj|c:\\users\\oreo\\desktop\\tfg resource\\pagina web\\cbsantomera_web\\cbsantomera_web_api\\cbsantomera.model\\fasescompeticion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4CC315E5-F781-4878-BCE2-7450AF5782B2}|..\\CBSANTOMERA.DTO\\CBSANTOMERA.DTO.csproj|c:\\users\\oreo\\desktop\\tfg resource\\pagina web\\cbsantomera_web\\cbsantomera_web_api\\cbsantomera.dto\\partidodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0A9044CD-026C-44F1-9E87-8EAD68C86CAD}|..\\CBSANTOMERA.MODEL\\CBSANTOMERA.MODEL.csproj|c:\\users\\oreo\\desktop\\tfg resource\\pagina web\\cbsantomera_web\\cbsantomera_web_api\\cbsantomera.model\\liga.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1FF370E7-0380-4C98-8D3F-49A1DFA9ADA7}|..\\CBSANTOMERA.BLL\\CBSANTOMERA.BLL.csproj|c:\\users\\oreo\\desktop\\tfg resource\\pagina web\\cbsantomera_web\\cbsantomera_web_api\\cbsantomera.bll\\servicios\\sessionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4CC315E5-F781-4878-BCE2-7450AF5782B2}|..\\CBSANTOMERA.DTO\\CBSANTOMERA.DTO.csproj|c:\\users\\oreo\\desktop\\tfg resource\\pagina web\\cbsantomera_web\\cbsantomera_web_api\\cbsantomera.dto\\sesiondto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0A9044CD-026C-44F1-9E87-8EAD68C86CAD}|..\\CBSANTOMERA.MODEL\\CBSANTOMERA.MODEL.csproj|c:\\users\\oreo\\desktop\\tfg resource\\pagina web\\cbsantomera_web\\cbsantomera_web_api\\cbsantomera.model\\session.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E56BF2DF-927F-470F-8DF7-93C493DF1165}|CBSANTOMERA_WEB_API.csproj|c:\\users\\oreo\\desktop\\tfg resource\\pagina web\\cbsantomera_web\\cbsantomera_web_api\\cbsantomera\\controllers\\albumcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E56BF2DF-927F-470F-8DF7-93C493DF1165}|CBSANTOMERA_WEB_API.csproj|solutionrelative:controllers\\albumcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1FF370E7-0380-4C98-8D3F-49A1DFA9ADA7}|..\\CBSANTOMERA.BLL\\CBSANTOMERA.BLL.csproj|c:\\users\\oreo\\desktop\\tfg resource\\pagina web\\cbsantomera_web\\cbsantomera_web_api\\cbsantomera.bll\\servicios\\contrato\\icompeticionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1FF370E7-0380-4C98-8D3F-49A1DFA9ADA7}|..\\CBSANTOMERA.BLL\\CBSANTOMERA.BLL.csproj|c:\\users\\oreo\\desktop\\tfg resource\\pagina web\\cbsantomera_web\\cbsantomera_web_api\\cbsantomera.bll\\servicios\\jornadaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1FF370E7-0380-4C98-8D3F-49A1DFA9ADA7}|..\\CBSANTOMERA.BLL\\CBSANTOMERA.BLL.csproj|c:\\users\\oreo\\desktop\\tfg resource\\pagina web\\cbsantomera_web\\cbsantomera_web_api\\cbsantomera.bll\\servicios\\partidoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1FF370E7-0380-4C98-8D3F-49A1DFA9ADA7}|..\\CBSANTOMERA.BLL\\CBSANTOMERA.BLL.csproj|c:\\users\\oreo\\desktop\\tfg resource\\pagina web\\cbsantomera_web\\cbsantomera_web_api\\cbsantomera.bll\\servicios\\ligaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1FF370E7-0380-4C98-8D3F-49A1DFA9ADA7}|..\\CBSANTOMERA.BLL\\CBSANTOMERA.BLL.csproj|c:\\users\\oreo\\desktop\\tfg resource\\pagina web\\cbsantomera_web\\cbsantomera_web_api\\cbsantomera.bll\\servicios\\fasecompeticionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1FF370E7-0380-4C98-8D3F-49A1DFA9ADA7}|..\\CBSANTOMERA.BLL\\CBSANTOMERA.BLL.csproj|c:\\users\\oreo\\desktop\\tfg resource\\pagina web\\cbsantomera_web\\cbsantomera_web_api\\cbsantomera.bll\\servicios\\contrato\\iligaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1FF370E7-0380-4C98-8D3F-49A1DFA9ADA7}|..\\CBSANTOMERA.BLL\\CBSANTOMERA.BLL.csproj|c:\\users\\oreo\\desktop\\tfg resource\\pagina web\\cbsantomera_web\\cbsantomera_web_api\\cbsantomera.bll\\servicios\\contrato\\ipartidoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1FF370E7-0380-4C98-8D3F-49A1DFA9ADA7}|..\\CBSANTOMERA.BLL\\CBSANTOMERA.BLL.csproj|c:\\users\\oreo\\desktop\\tfg resource\\pagina web\\cbsantomera_web\\cbsantomera_web_api\\cbsantomera.bll\\servicios\\contrato\\iplayoffservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0A9044CD-026C-44F1-9E87-8EAD68C86CAD}|..\\CBSANTOMERA.MODEL\\CBSANTOMERA.MODEL.csproj|c:\\users\\oreo\\desktop\\tfg resource\\pagina web\\cbsantomera_web\\cbsantomera_web_api\\cbsantomera.model\\cbsantomera.model.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1FF370E7-0380-4C98-8D3F-49A1DFA9ADA7}|..\\CBSANTOMERA.BLL\\CBSANTOMERA.BLL.csproj|c:\\users\\oreo\\desktop\\tfg resource\\pagina web\\cbsantomera_web\\cbsantomera_web_api\\cbsantomera.bll\\servicios\\fotojugadorequiposervice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1FF370E7-0380-4C98-8D3F-49A1DFA9ADA7}|..\\CBSANTOMERA.BLL\\CBSANTOMERA.BLL.csproj|c:\\users\\oreo\\desktop\\tfg resource\\pagina web\\cbsantomera_web\\cbsantomera_web_api\\cbsantomera.bll\\servicios\\contrato\\ifasecompeticionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{456A2C1C-26B0-455C-A767-6AD05A040E2C}|..\\CBSANTOMERA.IOC\\CBSANTOMERA.IOC.csproj|c:\\users\\oreo\\desktop\\tfg resource\\pagina web\\cbsantomera_web\\cbsantomera_web_api\\cbsantomera.ioc\\dependencia.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1FF370E7-0380-4C98-8D3F-49A1DFA9ADA7}|..\\CBSANTOMERA.BLL\\CBSANTOMERA.BLL.csproj|c:\\users\\oreo\\desktop\\tfg resource\\pagina web\\cbsantomera_web\\cbsantomera_web_api\\cbsantomera.bll\\servicios\\contrato\\ijornadaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1FF370E7-0380-4C98-8D3F-49A1DFA9ADA7}|..\\CBSANTOMERA.BLL\\CBSANTOMERA.BLL.csproj|c:\\users\\oreo\\desktop\\tfg resource\\pagina web\\cbsantomera_web\\cbsantomera_web_api\\cbsantomera.bll\\servicios\\contrato\\ifotoalbumservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4CC315E5-F781-4878-BCE2-7450AF5782B2}|..\\CBSANTOMERA.DTO\\CBSANTOMERA.DTO.csproj|c:\\users\\oreo\\desktop\\tfg resource\\pagina web\\cbsantomera_web\\cbsantomera_web_api\\cbsantomera.dto\\ligadto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4CC315E5-F781-4878-BCE2-7450AF5782B2}|..\\CBSANTOMERA.DTO\\CBSANTOMERA.DTO.csproj|c:\\users\\oreo\\desktop\\tfg resource\\pagina web\\cbsantomera_web\\cbsantomera_web_api\\cbsantomera.dto\\jornadadto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4CC315E5-F781-4878-BCE2-7450AF5782B2}|..\\CBSANTOMERA.DTO\\CBSANTOMERA.DTO.csproj|c:\\users\\oreo\\desktop\\tfg resource\\pagina web\\cbsantomera_web\\cbsantomera_web_api\\cbsantomera.dto\\equipocompeticiondto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0A9044CD-026C-44F1-9E87-8EAD68C86CAD}|..\\CBSANTOMERA.MODEL\\CBSANTOMERA.MODEL.csproj|c:\\users\\oreo\\desktop\\tfg resource\\pagina web\\cbsantomera_web\\cbsantomera_web_api\\cbsantomera.model\\temporada.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0A9044CD-026C-44F1-9E87-8EAD68C86CAD}|..\\CBSANTOMERA.MODEL\\CBSANTOMERA.MODEL.csproj|c:\\users\\oreo\\desktop\\tfg resource\\pagina web\\cbsantomera_web\\cbsantomera_web_api\\cbsantomera.model\\noticia.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0A9044CD-026C-44F1-9E87-8EAD68C86CAD}|..\\CBSANTOMERA.MODEL\\CBSANTOMERA.MODEL.csproj|c:\\users\\oreo\\desktop\\tfg resource\\pagina web\\cbsantomera_web\\cbsantomera_web_api\\cbsantomera.model\\fotosalbum.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{1FF370E7-0380-4C98-8D3F-49A1DFA9ADA7}|..\\CBSANTOMERA.BLL\\CBSANTOMERA.BLL.csproj|c:\\users\\oreo\\desktop\\tfg resource\\pagina web\\cbsantomera_web\\cbsantomera_web_api\\cbsantomera.bll\\servicios\\albumservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{4CC315E5-F781-4878-BCE2-7450AF5782B2}|..\\CBSANTOMERA.DTO\\CBSANTOMERA.DTO.csproj|c:\\users\\oreo\\desktop\\tfg resource\\pagina web\\cbsantomera_web\\cbsantomera_web_api\\cbsantomera.dto\\albumdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E56BF2DF-927F-470F-8DF7-93C493DF1165}|CBSANTOMERA_WEB_API.csproj|c:\\users\\oreo\\desktop\\tfg resource\\pagina web\\cbsantomera_web\\cbsantomera_web_api\\cbsantomera\\controllers\\noticiascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E56BF2DF-927F-470F-8DF7-93C493DF1165}|CBSANTOMERA_WEB_API.csproj|solutionrelative:controllers\\noticiascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E56BF2DF-927F-470F-8DF7-93C493DF1165}|CBSANTOMERA_WEB_API.csproj|c:\\users\\oreo\\desktop\\tfg resource\\pagina web\\cbsantomera_web\\cbsantomera_web_api\\cbsantomera\\controllers\\tecnicocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E56BF2DF-927F-470F-8DF7-93C493DF1165}|CBSANTOMERA_WEB_API.csproj|solutionrelative:controllers\\tecnicocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E56BF2DF-927F-470F-8DF7-93C493DF1165}|CBSANTOMERA_WEB_API.csproj|c:\\users\\oreo\\desktop\\tfg resource\\pagina web\\cbsantomera_web\\cbsantomera_web_api\\cbsantomera\\controllers\\equipojugadorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E56BF2DF-927F-470F-8DF7-93C493DF1165}|CBSANTOMERA_WEB_API.csproj|solutionrelative:controllers\\equipojugadorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E56BF2DF-927F-470F-8DF7-93C493DF1165}|CBSANTOMERA_WEB_API.csproj|c:\\users\\oreo\\desktop\\tfg resource\\pagina web\\cbsantomera_web\\cbsantomera_web_api\\cbsantomera\\controllers\\equipocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E56BF2DF-927F-470F-8DF7-93C493DF1165}|CBSANTOMERA_WEB_API.csproj|solutionrelative:controllers\\equipocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E56BF2DF-927F-470F-8DF7-93C493DF1165}|CBSANTOMERA_WEB_API.csproj|c:\\users\\oreo\\desktop\\tfg resource\\pagina web\\cbsantomera_web\\cbsantomera_web_api\\cbsantomera\\controllers\\promocioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E56BF2DF-927F-470F-8DF7-93C493DF1165}|CBSANTOMERA_WEB_API.csproj|solutionrelative:controllers\\promocioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E56BF2DF-927F-470F-8DF7-93C493DF1165}|CBSANTOMERA_WEB_API.csproj|c:\\users\\oreo\\desktop\\tfg resource\\pagina web\\cbsantomera_web\\cbsantomera_web_api\\cbsantomera\\controllers\\temporadacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E56BF2DF-927F-470F-8DF7-93C493DF1165}|CBSANTOMERA_WEB_API.csproj|solutionrelative:controllers\\temporadacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E56BF2DF-927F-470F-8DF7-93C493DF1165}|CBSANTOMERA_WEB_API.csproj|c:\\users\\oreo\\desktop\\tfg resource\\pagina web\\cbsantomera_web\\cbsantomera_web_api\\cbsantomera\\controllers\\usuariocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E56BF2DF-927F-470F-8DF7-93C493DF1165}|CBSANTOMERA_WEB_API.csproj|solutionrelative:controllers\\usuariocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1FF370E7-0380-4C98-8D3F-49A1DFA9ADA7}|..\\CBSANTOMERA.BLL\\CBSANTOMERA.BLL.csproj|c:\\users\\oreo\\desktop\\tfg resource\\pagina web\\cbsantomera_web\\cbsantomera_web_api\\cbsantomera.bll\\servicios\\usuarioservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E56BF2DF-927F-470F-8DF7-93C493DF1165}|CBSANTOMERA_WEB_API.csproj|c:\\users\\oreo\\desktop\\tfg resource\\pagina web\\cbsantomera_web\\cbsantomera_web_api\\cbsantomera\\controllers\\jugadorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E56BF2DF-927F-470F-8DF7-93C493DF1165}|CBSANTOMERA_WEB_API.csproj|solutionrelative:controllers\\jugadorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E56BF2DF-927F-470F-8DF7-93C493DF1165}|CBSANTOMERA_WEB_API.csproj|c:\\users\\oreo\\desktop\\tfg resource\\pagina web\\cbsantomera_web\\cbsantomera_web_api\\cbsantomera\\controllers\\iacontroler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E56BF2DF-927F-470F-8DF7-93C493DF1165}|CBSANTOMERA_WEB_API.csproj|solutionrelative:controllers\\iacontroler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E56BF2DF-927F-470F-8DF7-93C493DF1165}|CBSANTOMERA_WEB_API.csproj|c:\\users\\oreo\\desktop\\tfg resource\\pagina web\\cbsantomera_web\\cbsantomera_web_api\\cbsantomera\\controllers\\fotosalbumcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E56BF2DF-927F-470F-8DF7-93C493DF1165}|CBSANTOMERA_WEB_API.csproj|solutionrelative:controllers\\fotosalbumcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E56BF2DF-927F-470F-8DF7-93C493DF1165}|CBSANTOMERA_WEB_API.csproj|c:\\users\\oreo\\desktop\\tfg resource\\pagina web\\cbsantomera_web\\cbsantomera_web_api\\cbsantomera\\controllers\\clubcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E56BF2DF-927F-470F-8DF7-93C493DF1165}|CBSANTOMERA_WEB_API.csproj|solutionrelative:controllers\\clubcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E56BF2DF-927F-470F-8DF7-93C493DF1165}|CBSANTOMERA_WEB_API.csproj|c:\\users\\oreo\\desktop\\tfg resource\\pagina web\\cbsantomera_web\\cbsantomera_web_api\\cbsantomera\\controllers\\chatcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E56BF2DF-927F-470F-8DF7-93C493DF1165}|CBSANTOMERA_WEB_API.csproj|solutionrelative:controllers\\chatcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E56BF2DF-927F-470F-8DF7-93C493DF1165}|CBSANTOMERA_WEB_API.csproj|c:\\users\\oreo\\desktop\\tfg resource\\pagina web\\cbsantomera_web\\cbsantomera_web_api\\cbsantomera\\controllers\\categoriajugadorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E56BF2DF-927F-470F-8DF7-93C493DF1165}|CBSANTOMERA_WEB_API.csproj|solutionrelative:controllers\\categoriajugadorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{0A9044CD-026C-44F1-9E87-8EAD68C86CAD}|..\\CBSANTOMERA.MODEL\\CBSANTOMERA.MODEL.csproj|c:\\users\\oreo\\desktop\\tfg resource\\pagina web\\cbsantomera_web\\cbsantomera_web_api\\cbsantomera.model\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1FF370E7-0380-4C98-8D3F-49A1DFA9ADA7}|..\\CBSANTOMERA.BLL\\CBSANTOMERA.BLL.csproj|c:\\users\\oreo\\desktop\\tfg resource\\pagina web\\cbsantomera_web\\cbsantomera_web_api\\cbsantomera.bll\\servicios\\contrato\\iusuarioservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{34126776-0B89-4AA6-B5CF-17EEFDA40B0C}|..\\CBSANTOMERA.UTILITY\\CBSANTOMERA.UTILITY.csproj|c:\\users\\oreo\\desktop\\tfg resource\\pagina web\\cbsantomera_web\\cbsantomera_web_api\\cbsantomera.utility\\mappers\\rolmapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1FF370E7-0380-4C98-8D3F-49A1DFA9ADA7}|..\\CBSANTOMERA.BLL\\CBSANTOMERA.BLL.csproj|c:\\users\\oreo\\desktop\\tfg resource\\pagina web\\cbsantomera_web\\cbsantomera_web_api\\cbsantomera.bll\\servicios\\archivosservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4CC315E5-F781-4878-BCE2-7450AF5782B2}|..\\CBSANTOMERA.DTO\\CBSANTOMERA.DTO.csproj|c:\\users\\oreo\\desktop\\tfg resource\\pagina web\\cbsantomera_web\\cbsantomera_web_api\\cbsantomera.dto\\roldto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1FF370E7-0380-4C98-8D3F-49A1DFA9ADA7}|..\\CBSANTOMERA.BLL\\CBSANTOMERA.BLL.csproj|c:\\users\\oreo\\desktop\\tfg resource\\pagina web\\cbsantomera_web\\cbsantomera_web_api\\cbsantomera.bll\\servicios\\passwordhasher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0A9044CD-026C-44F1-9E87-8EAD68C86CAD}|..\\CBSANTOMERA.MODEL\\CBSANTOMERA.MODEL.csproj|c:\\users\\oreo\\desktop\\tfg resource\\pagina web\\cbsantomera_web\\cbsantomera_web_api\\cbsantomera.model\\rol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2C4310FA-BFA9-48FC-B3FB-3FFC8F8AE3E7}|..\\CBSANTOMERA.DAL\\CBSANTOMERA.DAL.csproj|c:\\users\\oreo\\desktop\\tfg resource\\pagina web\\cbsantomera_web\\cbsantomera_web_api\\cbsantomera.dal\\dbcontext\\cbsantomeracontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1FF370E7-0380-4C98-8D3F-49A1DFA9ADA7}|..\\CBSANTOMERA.BLL\\CBSANTOMERA.BLL.csproj|c:\\users\\oreo\\desktop\\tfg resource\\pagina web\\cbsantomera_web\\cbsantomera_web_api\\cbsantomera.bll\\servicios\\contrato\\isessionservice .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -100,7 +234,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 10,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -108,352 +242,828 @@
             },
             {
               "$type": "Bookmark",
-              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "EquipoDTO.cs",
-              "DocumentMoniker": "C:\\Users\\OREO\\Desktop\\TFG RESOURCE\\pagina web\\CBSANTOMERA_WEB\\CBSANTOMERA_WEB_API\\CBSANTOMERA.DTO\\EquipoDTO.cs",
-              "RelativeDocumentMoniker": "..\\CBSANTOMERA.DTO\\EquipoDTO.cs",
-              "ToolTip": "C:\\Users\\OREO\\Desktop\\TFG RESOURCE\\pagina web\\CBSANTOMERA_WEB\\CBSANTOMERA_WEB_API\\CBSANTOMERA.DTO\\EquipoDTO.cs",
-              "RelativeToolTip": "..\\CBSANTOMERA.DTO\\EquipoDTO.cs",
-              "ViewState": "AQIAADkAAAAAAAAAAAAEwEwAAAAVAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-26T22:55:18.127Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "LigaService.cs",
-              "DocumentMoniker": "C:\\Users\\OREO\\Desktop\\TFG RESOURCE\\pagina web\\CBSANTOMERA_WEB\\CBSANTOMERA_WEB_API\\CBSANTOMERA.BLL\\Servicios\\LigaService.cs",
-              "RelativeDocumentMoniker": "..\\CBSANTOMERA.BLL\\Servicios\\LigaService.cs",
-              "ToolTip": "C:\\Users\\OREO\\Desktop\\TFG RESOURCE\\pagina web\\CBSANTOMERA_WEB\\CBSANTOMERA_WEB_API\\CBSANTOMERA.BLL\\Servicios\\LigaService.cs",
-              "RelativeToolTip": "..\\CBSANTOMERA.BLL\\Servicios\\LigaService.cs",
-              "ViewState": "AQIAAHkGAAAAAAAAAAAewIgGAABDAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-26T09:07:37.785Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "CompeticionController.cs",
-              "DocumentMoniker": "C:\\Users\\OREO\\Desktop\\TFG RESOURCE\\pagina web\\CBSANTOMERA_WEB\\CBSANTOMERA_WEB_API\\CBSANTOMERA\\Controllers\\CompeticionController.cs",
-              "RelativeDocumentMoniker": "Controllers\\CompeticionController.cs",
-              "ToolTip": "C:\\Users\\OREO\\Desktop\\TFG RESOURCE\\pagina web\\CBSANTOMERA_WEB\\CBSANTOMERA_WEB_API\\CBSANTOMERA\\Controllers\\CompeticionController.cs",
-              "RelativeToolTip": "Controllers\\CompeticionController.cs",
-              "ViewState": "AQIAADAAAAAAAAAAAAAAADoAAAA4AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-26T09:07:37.864Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "JugadorDTO.cs",
-              "DocumentMoniker": "C:\\Users\\OREO\\Desktop\\TFG RESOURCE\\pagina web\\CBSANTOMERA_WEB\\CBSANTOMERA_WEB_API\\CBSANTOMERA.DTO\\JugadorDTO.cs",
-              "RelativeDocumentMoniker": "..\\CBSANTOMERA.DTO\\JugadorDTO.cs",
-              "ToolTip": "C:\\Users\\OREO\\Desktop\\TFG RESOURCE\\pagina web\\CBSANTOMERA_WEB\\CBSANTOMERA_WEB_API\\CBSANTOMERA.DTO\\JugadorDTO.cs",
-              "RelativeToolTip": "..\\CBSANTOMERA.DTO\\JugadorDTO.cs",
-              "ViewState": "AQIAAEgAAAAAAAAAAAAgwGQAAAAQAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-29T10:44:48.762Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "JugadorController.cs",
-              "DocumentMoniker": "C:\\Users\\OREO\\Desktop\\TFG RESOURCE\\pagina web\\CBSANTOMERA_WEB\\CBSANTOMERA_WEB_API\\CBSANTOMERA\\Controllers\\JugadorController.cs",
-              "RelativeDocumentMoniker": "Controllers\\JugadorController.cs",
-              "ToolTip": "C:\\Users\\OREO\\Desktop\\TFG RESOURCE\\pagina web\\CBSANTOMERA_WEB\\CBSANTOMERA_WEB_API\\CBSANTOMERA\\Controllers\\JugadorController.cs",
-              "RelativeToolTip": "Controllers\\JugadorController.cs",
-              "ViewState": "AQIAACcAAAAAAAAAAAAowDQAAAA1AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-06T18:10:51.455Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "JugadorService.cs",
-              "DocumentMoniker": "C:\\Users\\OREO\\Desktop\\TFG RESOURCE\\pagina web\\CBSANTOMERA_WEB\\CBSANTOMERA_WEB_API\\CBSANTOMERA.BLL\\Servicios\\JugadorService.cs",
-              "RelativeDocumentMoniker": "..\\CBSANTOMERA.BLL\\Servicios\\JugadorService.cs",
-              "ToolTip": "C:\\Users\\OREO\\Desktop\\TFG RESOURCE\\pagina web\\CBSANTOMERA_WEB\\CBSANTOMERA_WEB_API\\CBSANTOMERA.BLL\\Servicios\\JugadorService.cs",
-              "RelativeToolTip": "..\\CBSANTOMERA.BLL\\Servicios\\JugadorService.cs",
-              "ViewState": "AQIAAEIBAAAAAAAAAAAkwDkBAAA6AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-06T18:10:57.397Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "CompeticionService.cs",
-              "DocumentMoniker": "C:\\Users\\OREO\\Desktop\\TFG RESOURCE\\pagina web\\CBSANTOMERA_WEB\\CBSANTOMERA_WEB_API\\CBSANTOMERA.BLL\\Servicios\\CompeticionService.cs",
-              "RelativeDocumentMoniker": "..\\CBSANTOMERA.BLL\\Servicios\\CompeticionService.cs",
-              "ToolTip": "C:\\Users\\OREO\\Desktop\\TFG RESOURCE\\pagina web\\CBSANTOMERA_WEB\\CBSANTOMERA_WEB_API\\CBSANTOMERA.BLL\\Servicios\\CompeticionService.cs",
-              "RelativeToolTip": "..\\CBSANTOMERA.BLL\\Servicios\\CompeticionService.cs",
-              "ViewState": "AQIAAKMAAAAAAAAAAAApwOYAAAAMAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-26T09:07:37.885Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "UsuarioController.cs",
-              "DocumentMoniker": "C:\\Users\\OREO\\Desktop\\TFG RESOURCE\\pagina web\\CBSANTOMERA_WEB\\CBSANTOMERA_WEB_API\\CBSANTOMERA\\Controllers\\UsuarioController.cs",
-              "RelativeDocumentMoniker": "Controllers\\UsuarioController.cs",
-              "ToolTip": "C:\\Users\\OREO\\Desktop\\TFG RESOURCE\\pagina web\\CBSANTOMERA_WEB\\CBSANTOMERA_WEB_API\\CBSANTOMERA\\Controllers\\UsuarioController.cs",
-              "RelativeToolTip": "Controllers\\UsuarioController.cs",
-              "ViewState": "AQIAAFgAAAAAAAAAAAAjwE8AAAAQAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-29T08:55:15.618Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "UsuarioService.cs",
-              "DocumentMoniker": "C:\\Users\\OREO\\Desktop\\TFG RESOURCE\\pagina web\\CBSANTOMERA_WEB\\CBSANTOMERA_WEB_API\\CBSANTOMERA.BLL\\Servicios\\UsuarioService.cs",
-              "RelativeDocumentMoniker": "..\\CBSANTOMERA.BLL\\Servicios\\UsuarioService.cs",
-              "ToolTip": "C:\\Users\\OREO\\Desktop\\TFG RESOURCE\\pagina web\\CBSANTOMERA_WEB\\CBSANTOMERA_WEB_API\\CBSANTOMERA.BLL\\Servicios\\UsuarioService.cs",
-              "RelativeToolTip": "..\\CBSANTOMERA.BLL\\Servicios\\UsuarioService.cs",
-              "ViewState": "AQIAAOgBAAAAAAAAAAAewOwBAAANAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-29T10:25:15.173Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "EquipoService.cs",
-              "DocumentMoniker": "C:\\Users\\OREO\\Desktop\\TFG RESOURCE\\pagina web\\CBSANTOMERA_WEB\\CBSANTOMERA_WEB_API\\CBSANTOMERA.BLL\\Servicios\\EquipoService.cs",
-              "RelativeDocumentMoniker": "..\\CBSANTOMERA.BLL\\Servicios\\EquipoService.cs",
-              "ToolTip": "C:\\Users\\OREO\\Desktop\\TFG RESOURCE\\pagina web\\CBSANTOMERA_WEB\\CBSANTOMERA_WEB_API\\CBSANTOMERA.BLL\\Servicios\\EquipoService.cs",
-              "RelativeToolTip": "..\\CBSANTOMERA.BLL\\Servicios\\EquipoService.cs",
-              "ViewState": "AQIAAOwCAAAAAAAAAAAiwPICAABEAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-26T22:56:39.569Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "ClubService.cs",
-              "DocumentMoniker": "C:\\Users\\OREO\\Desktop\\TFG RESOURCE\\pagina web\\CBSANTOMERA_WEB\\CBSANTOMERA_WEB_API\\CBSANTOMERA.BLL\\Servicios\\ClubService.cs",
-              "RelativeDocumentMoniker": "..\\CBSANTOMERA.BLL\\Servicios\\ClubService.cs",
-              "ToolTip": "C:\\Users\\OREO\\Desktop\\TFG RESOURCE\\pagina web\\CBSANTOMERA_WEB\\CBSANTOMERA_WEB_API\\CBSANTOMERA.BLL\\Servicios\\ClubService.cs",
-              "RelativeToolTip": "..\\CBSANTOMERA.BLL\\Servicios\\ClubService.cs",
-              "ViewState": "AQIAACAAAAAAAAAAAAArwBsAAAB+AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-26T23:02:49.148Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "EquipoController.cs",
-              "DocumentMoniker": "C:\\Users\\OREO\\Desktop\\TFG RESOURCE\\pagina web\\CBSANTOMERA_WEB\\CBSANTOMERA_WEB_API\\CBSANTOMERA\\Controllers\\EquipoController.cs",
-              "RelativeDocumentMoniker": "Controllers\\EquipoController.cs",
-              "ToolTip": "C:\\Users\\OREO\\Desktop\\TFG RESOURCE\\pagina web\\CBSANTOMERA_WEB\\CBSANTOMERA_WEB_API\\CBSANTOMERA\\Controllers\\EquipoController.cs",
-              "RelativeToolTip": "Controllers\\EquipoController.cs",
-              "ViewState": "AQIAAMwAAAAAAAAAAAAswNUAAAA6AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-06T15:56:01Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "LigaDTO.cs",
-              "DocumentMoniker": "C:\\Users\\OREO\\Desktop\\TFG RESOURCE\\pagina web\\CBSANTOMERA_WEB\\CBSANTOMERA_WEB_API\\CBSANTOMERA.DTO\\LigaDTO.cs",
-              "RelativeDocumentMoniker": "..\\CBSANTOMERA.DTO\\LigaDTO.cs",
-              "ToolTip": "C:\\Users\\OREO\\Desktop\\TFG RESOURCE\\pagina web\\CBSANTOMERA_WEB\\CBSANTOMERA_WEB_API\\CBSANTOMERA.DTO\\LigaDTO.cs",
-              "RelativeToolTip": "..\\CBSANTOMERA.DTO\\LigaDTO.cs",
-              "ViewState": "AQIAAB8AAAAAAAAAAAA2wCcAAAAYAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-26T22:05:27.069Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\OREO\\Desktop\\TFG RESOURCE\\pagina web\\CBSANTOMERA_WEB\\CBSANTOMERA_WEB_API\\CBSANTOMERA\\appsettings.json",
-              "RelativeDocumentMoniker": "appsettings.json",
-              "ToolTip": "C:\\Users\\OREO\\Desktop\\TFG RESOURCE\\pagina web\\CBSANTOMERA_WEB\\CBSANTOMERA_WEB_API\\CBSANTOMERA\\appsettings.json",
-              "RelativeToolTip": "appsettings.json",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAAABkAAABSAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-06-22T10:28:32.389Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "JwtDTO.cs",
-              "DocumentMoniker": "C:\\Users\\OREO\\Desktop\\TFG RESOURCE\\pagina web\\CBSANTOMERA_WEB\\CBSANTOMERA_WEB_API\\CBSANTOMERA.DTO\\JwtDTO.cs",
-              "RelativeDocumentMoniker": "..\\CBSANTOMERA.DTO\\JwtDTO.cs",
-              "ToolTip": "C:\\Users\\OREO\\Desktop\\TFG RESOURCE\\pagina web\\CBSANTOMERA_WEB\\CBSANTOMERA_WEB_API\\CBSANTOMERA.DTO\\JwtDTO.cs",
-              "RelativeToolTip": "..\\CBSANTOMERA.DTO\\JwtDTO.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAAB0AAACuAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-22T10:34:11.565Z"
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "SessionService.cs",
-              "DocumentMoniker": "C:\\Users\\OREO\\Desktop\\TFG RESOURCE\\pagina web\\CBSANTOMERA_WEB\\CBSANTOMERA_WEB_API\\CBSANTOMERA.BLL\\Servicios\\SessionService.cs",
-              "RelativeDocumentMoniker": "..\\CBSANTOMERA.BLL\\Servicios\\SessionService.cs",
-              "ToolTip": "C:\\Users\\OREO\\Desktop\\TFG RESOURCE\\pagina web\\CBSANTOMERA_WEB\\CBSANTOMERA_WEB_API\\CBSANTOMERA.BLL\\Servicios\\SessionService.cs",
-              "RelativeToolTip": "..\\CBSANTOMERA.BLL\\Servicios\\SessionService.cs",
-              "ViewState": "AQIAAIIAAAAAAAAAAAAowJYAAAAQAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-21T22:38:46.741Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "UsuarioDTO.cs",
-              "DocumentMoniker": "C:\\Users\\OREO\\Desktop\\TFG RESOURCE\\pagina web\\CBSANTOMERA_WEB\\CBSANTOMERA_WEB_API\\CBSANTOMERA.DTO\\UsuarioDTO.cs",
-              "RelativeDocumentMoniker": "..\\CBSANTOMERA.DTO\\UsuarioDTO.cs",
-              "ToolTip": "C:\\Users\\OREO\\Desktop\\TFG RESOURCE\\pagina web\\CBSANTOMERA_WEB\\CBSANTOMERA_WEB_API\\CBSANTOMERA.DTO\\UsuarioDTO.cs",
-              "RelativeToolTip": "..\\CBSANTOMERA.DTO\\UsuarioDTO.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAApAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-29T18:54:17.641Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\OREO\\Desktop\\TFG RESOURCE\\pagina web\\CBSANTOMERA_WEB\\CBSANTOMERA_WEB_API\\CBSANTOMERA\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Users\\OREO\\Desktop\\TFG RESOURCE\\pagina web\\CBSANTOMERA_WEB\\CBSANTOMERA_WEB_API\\CBSANTOMERA\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AQIAACgAAAAAAAAAAAAjwC8AAAAHAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-22T10:31:16.493Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "CBSANTOMERA.BLL.csproj",
-              "DocumentMoniker": "C:\\Users\\OREO\\Desktop\\TFG RESOURCE\\pagina web\\CBSANTOMERA_WEB\\CBSANTOMERA_WEB_API\\CBSANTOMERA.BLL\\CBSANTOMERA.BLL.csproj",
-              "RelativeDocumentMoniker": "..\\CBSANTOMERA.BLL\\CBSANTOMERA.BLL.csproj",
-              "ToolTip": "C:\\Users\\OREO\\Desktop\\TFG RESOURCE\\pagina web\\CBSANTOMERA_WEB\\CBSANTOMERA_WEB_API\\CBSANTOMERA.BLL\\CBSANTOMERA.BLL.csproj",
-              "RelativeToolTip": "..\\CBSANTOMERA.BLL\\CBSANTOMERA.BLL.csproj",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-06-21T22:26:02.152Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "ISessionService .cs",
-              "DocumentMoniker": "C:\\Users\\OREO\\Desktop\\TFG RESOURCE\\pagina web\\CBSANTOMERA_WEB\\CBSANTOMERA_WEB_API\\CBSANTOMERA.BLL\\Servicios\\Contrato\\ISessionService .cs",
-              "RelativeDocumentMoniker": "..\\CBSANTOMERA.BLL\\Servicios\\Contrato\\ISessionService .cs",
-              "ToolTip": "C:\\Users\\OREO\\Desktop\\TFG RESOURCE\\pagina web\\CBSANTOMERA_WEB\\CBSANTOMERA_WEB_API\\CBSANTOMERA.BLL\\Servicios\\Contrato\\ISessionService .cs",
-              "RelativeToolTip": "..\\CBSANTOMERA.BLL\\Servicios\\Contrato\\ISessionService .cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAsAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-22T11:34:28.492Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "GenericRepository.cs",
-              "DocumentMoniker": "C:\\Users\\OREO\\Desktop\\TFG RESOURCE\\pagina web\\CBSANTOMERA_WEB\\CBSANTOMERA_WEB_API\\CBSANTOMERA.DAL\\Repositorios\\GenericRepository.cs",
-              "RelativeDocumentMoniker": "..\\CBSANTOMERA.DAL\\Repositorios\\GenericRepository.cs",
-              "ToolTip": "C:\\Users\\OREO\\Desktop\\TFG RESOURCE\\pagina web\\CBSANTOMERA_WEB\\CBSANTOMERA_WEB_API\\CBSANTOMERA.DAL\\Repositorios\\GenericRepository.cs",
-              "RelativeToolTip": "..\\CBSANTOMERA.DAL\\Repositorios\\GenericRepository.cs",
-              "ViewState": "AQIAACkAAAAAAAAAAAAiwDUAAAA4AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-29T10:28:38.376Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "CategoriaDTO.cs",
-              "DocumentMoniker": "C:\\Users\\OREO\\Desktop\\TFG RESOURCE\\pagina web\\CBSANTOMERA_WEB\\CBSANTOMERA_WEB_API\\CBSANTOMERA.DTO\\CategoriaDTO.cs",
-              "RelativeDocumentMoniker": "..\\CBSANTOMERA.DTO\\CategoriaDTO.cs",
-              "ToolTip": "C:\\Users\\OREO\\Desktop\\TFG RESOURCE\\pagina web\\CBSANTOMERA_WEB\\CBSANTOMERA_WEB_API\\CBSANTOMERA.DTO\\CategoriaDTO.cs",
-              "RelativeToolTip": "..\\CBSANTOMERA.DTO\\CategoriaDTO.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-21T22:35:57.013Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "AlbumService.cs",
-              "DocumentMoniker": "C:\\Users\\OREO\\Desktop\\TFG RESOURCE\\pagina web\\CBSANTOMERA_WEB\\CBSANTOMERA_WEB_API\\CBSANTOMERA.BLL\\Servicios\\AlbumService.cs",
-              "RelativeDocumentMoniker": "..\\CBSANTOMERA.BLL\\Servicios\\AlbumService.cs",
-              "ToolTip": "C:\\Users\\OREO\\Desktop\\TFG RESOURCE\\pagina web\\CBSANTOMERA_WEB\\CBSANTOMERA_WEB_API\\CBSANTOMERA.BLL\\Servicios\\AlbumService.cs",
-              "RelativeToolTip": "..\\CBSANTOMERA.BLL\\Servicios\\AlbumService.cs",
-              "ViewState": "AQIAACIAAAAAAAAAAAAAwC0AAAAzAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-21T22:35:20.939Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 25,
-              "Title": "ArchivosService.cs",
-              "DocumentMoniker": "C:\\Users\\OREO\\Desktop\\TFG RESOURCE\\pagina web\\CBSANTOMERA_WEB\\CBSANTOMERA_WEB_API\\CBSANTOMERA.BLL\\Servicios\\ArchivosService.cs",
-              "RelativeDocumentMoniker": "..\\CBSANTOMERA.BLL\\Servicios\\ArchivosService.cs",
-              "ToolTip": "C:\\Users\\OREO\\Desktop\\TFG RESOURCE\\pagina web\\CBSANTOMERA_WEB\\CBSANTOMERA_WEB_API\\CBSANTOMERA.BLL\\Servicios\\ArchivosService.cs",
-              "RelativeToolTip": "..\\CBSANTOMERA.BLL\\Servicios\\ArchivosService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAfAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-21T22:25:53.507Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 26,
-              "Title": "PasswordHasher.cs",
-              "DocumentMoniker": "C:\\Users\\OREO\\Desktop\\TFG RESOURCE\\pagina web\\CBSANTOMERA_WEB\\CBSANTOMERA_WEB_API\\CBSANTOMERA.BLL\\Servicios\\PasswordHasher.cs",
-              "RelativeDocumentMoniker": "..\\CBSANTOMERA.BLL\\Servicios\\PasswordHasher.cs",
-              "ToolTip": "C:\\Users\\OREO\\Desktop\\TFG RESOURCE\\pagina web\\CBSANTOMERA_WEB\\CBSANTOMERA_WEB_API\\CBSANTOMERA.BLL\\Servicios\\PasswordHasher.cs",
-              "RelativeToolTip": "..\\CBSANTOMERA.BLL\\Servicios\\PasswordHasher.cs",
-              "ViewState": "AQIAABAAAAAAAAAAAAAgwAoAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-21T21:09:22.494Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 24,
-              "Title": "IUsuarioService.cs",
-              "DocumentMoniker": "C:\\Users\\OREO\\Desktop\\TFG RESOURCE\\pagina web\\CBSANTOMERA_WEB\\CBSANTOMERA_WEB_API\\CBSANTOMERA.BLL\\Servicios\\Contrato\\IUsuarioService.cs",
-              "RelativeDocumentMoniker": "..\\CBSANTOMERA.BLL\\Servicios\\Contrato\\IUsuarioService.cs",
-              "ToolTip": "C:\\Users\\OREO\\Desktop\\TFG RESOURCE\\pagina web\\CBSANTOMERA_WEB\\CBSANTOMERA_WEB_API\\CBSANTOMERA.BLL\\Servicios\\Contrato\\IUsuarioService.cs",
-              "RelativeToolTip": "..\\CBSANTOMERA.BLL\\Servicios\\Contrato\\IUsuarioService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAATAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-29T19:47:55.088Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 23,
-              "Title": "Usuario.cs",
-              "DocumentMoniker": "C:\\Users\\OREO\\Desktop\\TFG RESOURCE\\pagina web\\CBSANTOMERA_WEB\\CBSANTOMERA_WEB_API\\CBSANTOMERA.MODEL\\Usuario.cs",
-              "RelativeDocumentMoniker": "..\\CBSANTOMERA.MODEL\\Usuario.cs",
-              "ToolTip": "C:\\Users\\OREO\\Desktop\\TFG RESOURCE\\pagina web\\CBSANTOMERA_WEB\\CBSANTOMERA_WEB_API\\CBSANTOMERA.MODEL\\Usuario.cs",
-              "RelativeToolTip": "..\\CBSANTOMERA.MODEL\\Usuario.cs",
-              "ViewState": "AQIAAAgAAAAAAAAAAAAnwBEAAAAgAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-29T18:59:39.246Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 27,
               "Title": "CbsantomeraContext.cs",
               "DocumentMoniker": "C:\\Users\\OREO\\Desktop\\TFG RESOURCE\\pagina web\\CBSANTOMERA_WEB\\CBSANTOMERA_WEB_API\\CBSANTOMERA.DAL\\DBContext\\CbsantomeraContext.cs",
               "RelativeDocumentMoniker": "..\\CBSANTOMERA.DAL\\DBContext\\CbsantomeraContext.cs",
               "ToolTip": "C:\\Users\\OREO\\Desktop\\TFG RESOURCE\\pagina web\\CBSANTOMERA_WEB\\CBSANTOMERA_WEB_API\\CBSANTOMERA.DAL\\DBContext\\CbsantomeraContext.cs",
               "RelativeToolTip": "..\\CBSANTOMERA.DAL\\DBContext\\CbsantomeraContext.cs",
-              "ViewState": "AQIAAIwEAAAAAAAAAADwv5gEAABPAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-29T10:43:54.635Z"
+              "WhenOpened": "2026-04-14T12:33:47.111Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\OREO\\Desktop\\TFG RESOURCE\\pagina web\\CBSANTOMERA_WEB\\CBSANTOMERA_WEB_API\\CBSANTOMERA\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "C:\\Users\\OREO\\Desktop\\TFG RESOURCE\\pagina web\\CBSANTOMERA_WEB\\CBSANTOMERA_WEB_API\\CBSANTOMERA\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB4AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-12-09T16:02:57.909Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ContratoEmpresaController.cs",
+              "DocumentMoniker": "C:\\Users\\OREO\\Desktop\\TFG RESOURCE\\pagina web\\CBSANTOMERA_WEB\\CBSANTOMERA_WEB_API\\CBSANTOMERA\\Controllers\\ContratoEmpresaController.cs",
+              "RelativeDocumentMoniker": "Controllers\\ContratoEmpresaController.cs",
+              "ToolTip": "C:\\Users\\OREO\\Desktop\\TFG RESOURCE\\pagina web\\CBSANTOMERA_WEB\\CBSANTOMERA_WEB_API\\CBSANTOMERA\\Controllers\\ContratoEmpresaController.cs",
+              "RelativeToolTip": "Controllers\\ContratoEmpresaController.cs",
+              "ViewState": "AQIAADAAAAAAAAAAAAAuwEgAAAAiAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-14T20:26:16.146Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "IContratoEmpresaService .cs",
+              "DocumentMoniker": "C:\\Users\\OREO\\Desktop\\TFG RESOURCE\\pagina web\\CBSANTOMERA_WEB\\CBSANTOMERA_WEB_API\\CBSANTOMERA.BLL\\Servicios\\Contrato\\IContratoEmpresaService .cs",
+              "RelativeDocumentMoniker": "..\\CBSANTOMERA.BLL\\Servicios\\Contrato\\IContratoEmpresaService .cs",
+              "ToolTip": "C:\\Users\\OREO\\Desktop\\TFG RESOURCE\\pagina web\\CBSANTOMERA_WEB\\CBSANTOMERA_WEB_API\\CBSANTOMERA.BLL\\Servicios\\Contrato\\IContratoEmpresaService .cs",
+              "RelativeToolTip": "..\\CBSANTOMERA.BLL\\Servicios\\Contrato\\IContratoEmpresaService .cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAmwBUAAAAdAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-10T14:18:01.81Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "EmpresaService.cs",
+              "DocumentMoniker": "C:\\Users\\OREO\\Desktop\\TFG RESOURCE\\pagina web\\CBSANTOMERA_WEB\\CBSANTOMERA_WEB_API\\CBSANTOMERA.BLL\\Servicios\\EmpresaService.cs",
+              "RelativeDocumentMoniker": "..\\CBSANTOMERA.BLL\\Servicios\\EmpresaService.cs",
+              "ToolTip": "C:\\Users\\OREO\\Desktop\\TFG RESOURCE\\pagina web\\CBSANTOMERA_WEB\\CBSANTOMERA_WEB_API\\CBSANTOMERA.BLL\\Servicios\\EmpresaService.cs",
+              "RelativeToolTip": "..\\CBSANTOMERA.BLL\\Servicios\\EmpresaService.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAABcAAAA6AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-10T13:19:40.968Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "IEmpresaService.cs",
+              "DocumentMoniker": "C:\\Users\\OREO\\Desktop\\TFG RESOURCE\\pagina web\\CBSANTOMERA_WEB\\CBSANTOMERA_WEB_API\\CBSANTOMERA.BLL\\Servicios\\Contrato\\IEmpresaService.cs",
+              "RelativeDocumentMoniker": "..\\CBSANTOMERA.BLL\\Servicios\\Contrato\\IEmpresaService.cs",
+              "ToolTip": "C:\\Users\\OREO\\Desktop\\TFG RESOURCE\\pagina web\\CBSANTOMERA_WEB\\CBSANTOMERA_WEB_API\\CBSANTOMERA.BLL\\Servicios\\Contrato\\IEmpresaService.cs",
+              "RelativeToolTip": "..\\CBSANTOMERA.BLL\\Servicios\\Contrato\\IEmpresaService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-10T13:25:00.063Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "CompeticionService.cs",
+              "DocumentMoniker": "C:\\Users\\OREO\\Desktop\\TFG RESOURCE\\pagina web\\CBSANTOMERA_WEB\\CBSANTOMERA_WEB_API\\CBSANTOMERA.BLL\\Servicios\\CompeticionService.cs",
+              "RelativeDocumentMoniker": "..\\CBSANTOMERA.BLL\\Servicios\\CompeticionService.cs",
+              "ToolTip": "C:\\Users\\OREO\\Desktop\\TFG RESOURCE\\pagina web\\CBSANTOMERA_WEB\\CBSANTOMERA_WEB_API\\CBSANTOMERA.BLL\\Servicios\\CompeticionService.cs",
+              "RelativeToolTip": "..\\CBSANTOMERA.BLL\\Servicios\\CompeticionService.cs",
+              "ViewState": "AQIAAMsBAAAAAAAAAIAzwM8BAAAQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-14T20:24:05.012Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "C:\\Users\\OREO\\Desktop\\TFG RESOURCE\\pagina web\\CBSANTOMERA_WEB\\CBSANTOMERA_WEB_API\\CBSANTOMERA\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "Properties\\launchSettings.json",
+              "ToolTip": "C:\\Users\\OREO\\Desktop\\TFG RESOURCE\\pagina web\\CBSANTOMERA_WEB\\CBSANTOMERA_WEB_API\\CBSANTOMERA\\Properties\\launchSettings.json",
+              "RelativeToolTip": "Properties\\launchSettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-12-09T16:53:18.569Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "EmpresaController.cs",
+              "DocumentMoniker": "C:\\Users\\OREO\\Desktop\\TFG RESOURCE\\pagina web\\CBSANTOMERA_WEB\\CBSANTOMERA_WEB_API\\CBSANTOMERA\\Controllers\\EmpresaController.cs",
+              "RelativeDocumentMoniker": "Controllers\\EmpresaController.cs",
+              "ToolTip": "C:\\Users\\OREO\\Desktop\\TFG RESOURCE\\pagina web\\CBSANTOMERA_WEB\\CBSANTOMERA_WEB_API\\CBSANTOMERA\\Controllers\\EmpresaController.cs",
+              "RelativeToolTip": "Controllers\\EmpresaController.cs",
+              "ViewState": "AQIAAIQAAAAAAAAAAAAswI8AAAAQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-14T20:26:21.425Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ContratoEmpresaService.cs",
+              "DocumentMoniker": "C:\\Users\\OREO\\Desktop\\TFG RESOURCE\\pagina web\\CBSANTOMERA_WEB\\CBSANTOMERA_WEB_API\\CBSANTOMERA.BLL\\Servicios\\ContratoEmpresaService.cs",
+              "RelativeDocumentMoniker": "..\\CBSANTOMERA.BLL\\Servicios\\ContratoEmpresaService.cs",
+              "ToolTip": "C:\\Users\\OREO\\Desktop\\TFG RESOURCE\\pagina web\\CBSANTOMERA_WEB\\CBSANTOMERA_WEB_API\\CBSANTOMERA.BLL\\Servicios\\ContratoEmpresaService.cs",
+              "RelativeToolTip": "..\\CBSANTOMERA.BLL\\Servicios\\ContratoEmpresaService.cs",
+              "ViewState": "AQIAAGwBAAAAAAAAAAAswIsBAAAtAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-14T20:24:04.987Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "TipoFase.cs",
+              "DocumentMoniker": "C:\\Users\\OREO\\Desktop\\TFG RESOURCE\\pagina web\\CBSANTOMERA_WEB\\CBSANTOMERA_WEB_API\\CBSANTOMERA.MODEL\\TipoFase.cs",
+              "RelativeDocumentMoniker": "..\\CBSANTOMERA.MODEL\\TipoFase.cs",
+              "ToolTip": "C:\\Users\\OREO\\Desktop\\TFG RESOURCE\\pagina web\\CBSANTOMERA_WEB\\CBSANTOMERA_WEB_API\\CBSANTOMERA.MODEL\\TipoFase.cs",
+              "RelativeToolTip": "..\\CBSANTOMERA.MODEL\\TipoFase.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-18T02:38:07.8Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "CompeticionController.cs",
+              "DocumentMoniker": "C:\\Users\\OREO\\Desktop\\TFG RESOURCE\\pagina web\\CBSANTOMERA_WEB\\CBSANTOMERA_WEB_API\\CBSANTOMERA\\Controllers\\CompeticionController.cs",
+              "RelativeDocumentMoniker": "Controllers\\CompeticionController.cs",
+              "ToolTip": "C:\\Users\\OREO\\Desktop\\TFG RESOURCE\\pagina web\\CBSANTOMERA_WEB\\CBSANTOMERA_WEB_API\\CBSANTOMERA\\Controllers\\CompeticionController.cs",
+              "RelativeToolTip": "Controllers\\CompeticionController.cs",
+              "ViewState": "AQIAAD8AAAAAAAAAAAAgwEkAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-14T20:26:11.152Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\OREO\\Desktop\\TFG RESOURCE\\pagina web\\CBSANTOMERA_WEB\\CBSANTOMERA_WEB_API\\CBSANTOMERA\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\OREO\\Desktop\\TFG RESOURCE\\pagina web\\CBSANTOMERA_WEB\\CBSANTOMERA_WEB_API\\CBSANTOMERA\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AQIAABsAAAAAAAAAAAAvwDQAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-09T15:58:18.034Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "GenericRepository.cs",
+              "DocumentMoniker": "C:\\Users\\OREO\\Desktop\\TFG RESOURCE\\pagina web\\CBSANTOMERA_WEB\\CBSANTOMERA_WEB_API\\CBSANTOMERA.DAL\\Repositorios\\GenericRepository.cs",
+              "RelativeDocumentMoniker": "..\\CBSANTOMERA.DAL\\Repositorios\\GenericRepository.cs",
+              "ToolTip": "C:\\Users\\OREO\\Desktop\\TFG RESOURCE\\pagina web\\CBSANTOMERA_WEB\\CBSANTOMERA_WEB_API\\CBSANTOMERA.DAL\\Repositorios\\GenericRepository.cs",
+              "RelativeToolTip": "..\\CBSANTOMERA.DAL\\Repositorios\\GenericRepository.cs",
+              "ViewState": "AQIAACIAAAAAAAAAAAAawCwAAAAQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-18T03:31:12.745Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Competicione.cs",
+              "DocumentMoniker": "C:\\Users\\OREO\\Desktop\\TFG RESOURCE\\pagina web\\CBSANTOMERA_WEB\\CBSANTOMERA_WEB_API\\CBSANTOMERA.MODEL\\Competicione.cs",
+              "RelativeDocumentMoniker": "..\\CBSANTOMERA.MODEL\\Competicione.cs",
+              "ToolTip": "C:\\Users\\OREO\\Desktop\\TFG RESOURCE\\pagina web\\CBSANTOMERA_WEB\\CBSANTOMERA_WEB_API\\CBSANTOMERA.MODEL\\Competicione.cs",
+              "RelativeToolTip": "..\\CBSANTOMERA.MODEL\\Competicione.cs",
+              "ViewState": "AQIAABkAAAAAAAAAAAAgwCEAAAACAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-14T21:34:50.908Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "PartidoDTO.cs",
+              "DocumentMoniker": "C:\\Users\\OREO\\Desktop\\TFG RESOURCE\\pagina web\\CBSANTOMERA_WEB\\CBSANTOMERA_WEB_API\\CBSANTOMERA.DTO\\PartidoDTO.cs",
+              "RelativeDocumentMoniker": "..\\CBSANTOMERA.DTO\\PartidoDTO.cs",
+              "ToolTip": "C:\\Users\\OREO\\Desktop\\TFG RESOURCE\\pagina web\\CBSANTOMERA_WEB\\CBSANTOMERA_WEB_API\\CBSANTOMERA.DTO\\PartidoDTO.cs",
+              "RelativeToolTip": "..\\CBSANTOMERA.DTO\\PartidoDTO.cs",
+              "ViewState": "AQIAADYAAAAAAAAAAAAIwE4AAAAtAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-14T23:02:51.425Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Album.cs",
+              "DocumentMoniker": "C:\\Users\\OREO\\Desktop\\TFG RESOURCE\\pagina web\\CBSANTOMERA_WEB\\CBSANTOMERA_WEB_API\\CBSANTOMERA.MODEL\\Album.cs",
+              "RelativeDocumentMoniker": "..\\CBSANTOMERA.MODEL\\Album.cs",
+              "ToolTip": "C:\\Users\\OREO\\Desktop\\TFG RESOURCE\\pagina web\\CBSANTOMERA_WEB\\CBSANTOMERA_WEB_API\\CBSANTOMERA.MODEL\\Album.cs",
+              "RelativeToolTip": "..\\CBSANTOMERA.MODEL\\Album.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-18T03:05:19.049Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "CompeticionDTO.cs",
+              "DocumentMoniker": "C:\\Users\\OREO\\Desktop\\TFG RESOURCE\\pagina web\\CBSANTOMERA_WEB\\CBSANTOMERA_WEB_API\\CBSANTOMERA.DTO\\CompeticionDTO.cs",
+              "RelativeDocumentMoniker": "..\\CBSANTOMERA.DTO\\CompeticionDTO.cs",
+              "ToolTip": "C:\\Users\\OREO\\Desktop\\TFG RESOURCE\\pagina web\\CBSANTOMERA_WEB\\CBSANTOMERA_WEB_API\\CBSANTOMERA.DTO\\CompeticionDTO.cs",
+              "RelativeToolTip": "..\\CBSANTOMERA.DTO\\CompeticionDTO.cs",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAowFgAAAAOAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-14T21:35:35.659Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "PlayoffService.cs",
+              "DocumentMoniker": "C:\\Users\\OREO\\Desktop\\TFG RESOURCE\\pagina web\\CBSANTOMERA_WEB\\CBSANTOMERA_WEB_API\\CBSANTOMERA.BLL\\Servicios\\PlayoffService.cs",
+              "RelativeDocumentMoniker": "..\\CBSANTOMERA.BLL\\Servicios\\PlayoffService.cs",
+              "ToolTip": "C:\\Users\\OREO\\Desktop\\TFG RESOURCE\\pagina web\\CBSANTOMERA_WEB\\CBSANTOMERA_WEB_API\\CBSANTOMERA.BLL\\Servicios\\PlayoffService.cs",
+              "RelativeToolTip": "..\\CBSANTOMERA.BLL\\Servicios\\PlayoffService.cs",
+              "ViewState": "AQIAAGgAAAAAAAAAAAAjwIQAAAAmAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-15T02:46:27.561Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "CierreCompeticionService.cs",
+              "DocumentMoniker": "C:\\Users\\OREO\\Desktop\\TFG RESOURCE\\pagina web\\CBSANTOMERA_WEB\\CBSANTOMERA_WEB_API\\CBSANTOMERA.BLL\\Servicios\\CierreCompeticionService.cs",
+              "RelativeDocumentMoniker": "..\\CBSANTOMERA.BLL\\Servicios\\CierreCompeticionService.cs",
+              "ToolTip": "C:\\Users\\OREO\\Desktop\\TFG RESOURCE\\pagina web\\CBSANTOMERA_WEB\\CBSANTOMERA_WEB_API\\CBSANTOMERA.BLL\\Servicios\\CierreCompeticionService.cs",
+              "RelativeToolTip": "..\\CBSANTOMERA.BLL\\Servicios\\CierreCompeticionService.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAABcAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-18T02:20:53.482Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "FasesCompeticion.cs",
+              "DocumentMoniker": "C:\\Users\\OREO\\Desktop\\TFG RESOURCE\\pagina web\\CBSANTOMERA_WEB\\CBSANTOMERA_WEB_API\\CBSANTOMERA.MODEL\\FasesCompeticion.cs",
+              "RelativeDocumentMoniker": "..\\CBSANTOMERA.MODEL\\FasesCompeticion.cs",
+              "ToolTip": "C:\\Users\\OREO\\Desktop\\TFG RESOURCE\\pagina web\\CBSANTOMERA_WEB\\CBSANTOMERA_WEB_API\\CBSANTOMERA.MODEL\\FasesCompeticion.cs",
+              "RelativeToolTip": "..\\CBSANTOMERA.MODEL\\FasesCompeticion.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAIAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-15T03:04:15.851Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Fase_CompeticionDTO.cs",
+              "DocumentMoniker": "C:\\Users\\OREO\\Desktop\\TFG RESOURCE\\pagina web\\CBSANTOMERA_WEB\\CBSANTOMERA_WEB_API\\CBSANTOMERA.DTO\\Fase_CompeticionDTO.cs",
+              "RelativeDocumentMoniker": "..\\CBSANTOMERA.DTO\\Fase_CompeticionDTO.cs",
+              "ToolTip": "C:\\Users\\OREO\\Desktop\\TFG RESOURCE\\pagina web\\CBSANTOMERA_WEB\\CBSANTOMERA_WEB_API\\CBSANTOMERA.DTO\\Fase_CompeticionDTO.cs",
+              "RelativeToolTip": "..\\CBSANTOMERA.DTO\\Fase_CompeticionDTO.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAEAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-14T21:45:44.981Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "Liga.cs",
+              "DocumentMoniker": "C:\\Users\\OREO\\Desktop\\TFG RESOURCE\\pagina web\\CBSANTOMERA_WEB\\CBSANTOMERA_WEB_API\\CBSANTOMERA.MODEL\\Liga.cs",
+              "RelativeDocumentMoniker": "..\\CBSANTOMERA.MODEL\\Liga.cs",
+              "ToolTip": "C:\\Users\\OREO\\Desktop\\TFG RESOURCE\\pagina web\\CBSANTOMERA_WEB\\CBSANTOMERA_WEB_API\\CBSANTOMERA.MODEL\\Liga.cs",
+              "RelativeToolTip": "..\\CBSANTOMERA.MODEL\\Liga.cs",
+              "ViewState": "AQIAAA0AAAAAAAAAAAA9wCUAAAAuAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-14T22:11:43.625Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "SessionService.cs",
+              "DocumentMoniker": "C:\\Users\\OREO\\Desktop\\TFG RESOURCE\\pagina web\\CBSANTOMERA_WEB\\CBSANTOMERA_WEB_API\\CBSANTOMERA.BLL\\Servicios\\SessionService.cs",
+              "RelativeDocumentMoniker": "..\\CBSANTOMERA.BLL\\Servicios\\SessionService.cs",
+              "ToolTip": "C:\\Users\\OREO\\Desktop\\TFG RESOURCE\\pagina web\\CBSANTOMERA_WEB\\CBSANTOMERA_WEB_API\\CBSANTOMERA.BLL\\Servicios\\SessionService.cs",
+              "RelativeToolTip": "..\\CBSANTOMERA.BLL\\Servicios\\SessionService.cs",
+              "ViewState": "AQIAADcAAAAAAAAAAADwv3QAAABFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-09T16:00:27.133Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "LigaService.cs",
+              "DocumentMoniker": "C:\\Users\\OREO\\Desktop\\TFG RESOURCE\\pagina web\\CBSANTOMERA_WEB\\CBSANTOMERA_WEB_API\\CBSANTOMERA.BLL\\Servicios\\LigaService.cs",
+              "RelativeDocumentMoniker": "..\\CBSANTOMERA.BLL\\Servicios\\LigaService.cs",
+              "ToolTip": "C:\\Users\\OREO\\Desktop\\TFG RESOURCE\\pagina web\\CBSANTOMERA_WEB\\CBSANTOMERA_WEB_API\\CBSANTOMERA.BLL\\Servicios\\LigaService.cs",
+              "RelativeToolTip": "..\\CBSANTOMERA.BLL\\Servicios\\LigaService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-14T20:24:04.955Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "PartidoService.cs",
+              "DocumentMoniker": "C:\\Users\\OREO\\Desktop\\TFG RESOURCE\\pagina web\\CBSANTOMERA_WEB\\CBSANTOMERA_WEB_API\\CBSANTOMERA.BLL\\Servicios\\PartidoService.cs",
+              "RelativeDocumentMoniker": "..\\CBSANTOMERA.BLL\\Servicios\\PartidoService.cs",
+              "ToolTip": "C:\\Users\\OREO\\Desktop\\TFG RESOURCE\\pagina web\\CBSANTOMERA_WEB\\CBSANTOMERA_WEB_API\\CBSANTOMERA.BLL\\Servicios\\PartidoService.cs",
+              "RelativeToolTip": "..\\CBSANTOMERA.BLL\\Servicios\\PartidoService.cs",
+              "ViewState": "AQIAAFEAAAAAAAAAAAAxwH4AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-16T23:16:17.686Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "SesionDTO.cs",
+              "DocumentMoniker": "C:\\Users\\OREO\\Desktop\\TFG RESOURCE\\pagina web\\CBSANTOMERA_WEB\\CBSANTOMERA_WEB_API\\CBSANTOMERA.DTO\\SesionDTO.cs",
+              "RelativeDocumentMoniker": "..\\CBSANTOMERA.DTO\\SesionDTO.cs",
+              "ToolTip": "C:\\Users\\OREO\\Desktop\\TFG RESOURCE\\pagina web\\CBSANTOMERA_WEB\\CBSANTOMERA_WEB_API\\CBSANTOMERA.DTO\\SesionDTO.cs",
+              "RelativeToolTip": "..\\CBSANTOMERA.DTO\\SesionDTO.cs",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAAwBQAAAA0AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-18T01:50:52.828Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "Session.cs",
+              "DocumentMoniker": "C:\\Users\\OREO\\Desktop\\TFG RESOURCE\\pagina web\\CBSANTOMERA_WEB\\CBSANTOMERA_WEB_API\\CBSANTOMERA.MODEL\\Session.cs",
+              "RelativeDocumentMoniker": "..\\CBSANTOMERA.MODEL\\Session.cs",
+              "ToolTip": "C:\\Users\\OREO\\Desktop\\TFG RESOURCE\\pagina web\\CBSANTOMERA_WEB\\CBSANTOMERA_WEB_API\\CBSANTOMERA.MODEL\\Session.cs",
+              "RelativeToolTip": "..\\CBSANTOMERA.MODEL\\Session.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-09T16:23:14.274Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "ICompeticionService.cs",
+              "DocumentMoniker": "C:\\Users\\OREO\\Desktop\\TFG RESOURCE\\pagina web\\CBSANTOMERA_WEB\\CBSANTOMERA_WEB_API\\CBSANTOMERA.BLL\\Servicios\\Contrato\\ICompeticionService.cs",
+              "RelativeDocumentMoniker": "..\\CBSANTOMERA.BLL\\Servicios\\Contrato\\ICompeticionService.cs",
+              "ToolTip": "C:\\Users\\OREO\\Desktop\\TFG RESOURCE\\pagina web\\CBSANTOMERA_WEB\\CBSANTOMERA_WEB_API\\CBSANTOMERA.BLL\\Servicios\\Contrato\\ICompeticionService.cs",
+              "RelativeToolTip": "..\\CBSANTOMERA.BLL\\Servicios\\Contrato\\ICompeticionService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABcAAAAzAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-16T22:25:37.701Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "JornadaService.cs",
+              "DocumentMoniker": "C:\\Users\\OREO\\Desktop\\TFG RESOURCE\\pagina web\\CBSANTOMERA_WEB\\CBSANTOMERA_WEB_API\\CBSANTOMERA.BLL\\Servicios\\JornadaService.cs",
+              "RelativeDocumentMoniker": "..\\CBSANTOMERA.BLL\\Servicios\\JornadaService.cs",
+              "ToolTip": "C:\\Users\\OREO\\Desktop\\TFG RESOURCE\\pagina web\\CBSANTOMERA_WEB\\CBSANTOMERA_WEB_API\\CBSANTOMERA.BLL\\Servicios\\JornadaService.cs",
+              "RelativeToolTip": "..\\CBSANTOMERA.BLL\\Servicios\\JornadaService.cs",
+              "ViewState": "AQIAAD4AAAAAAAAAAAAzwGwAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-16T23:16:12.006Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "AlbumController.cs",
+              "DocumentMoniker": "C:\\Users\\OREO\\Desktop\\TFG RESOURCE\\pagina web\\CBSANTOMERA_WEB\\CBSANTOMERA_WEB_API\\CBSANTOMERA\\Controllers\\AlbumController.cs",
+              "RelativeDocumentMoniker": "Controllers\\AlbumController.cs",
+              "ToolTip": "C:\\Users\\OREO\\Desktop\\TFG RESOURCE\\pagina web\\CBSANTOMERA_WEB\\CBSANTOMERA_WEB_API\\CBSANTOMERA\\Controllers\\AlbumController.cs",
+              "RelativeToolTip": "Controllers\\AlbumController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAASAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-17T00:23:03.818Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "IPlayoffService.cs",
+              "DocumentMoniker": "C:\\Users\\OREO\\Desktop\\TFG RESOURCE\\pagina web\\CBSANTOMERA_WEB\\CBSANTOMERA_WEB_API\\CBSANTOMERA.BLL\\Servicios\\Contrato\\IPlayoffService.cs",
+              "RelativeDocumentMoniker": "..\\CBSANTOMERA.BLL\\Servicios\\Contrato\\IPlayoffService.cs",
+              "ToolTip": "C:\\Users\\OREO\\Desktop\\TFG RESOURCE\\pagina web\\CBSANTOMERA_WEB\\CBSANTOMERA_WEB_API\\CBSANTOMERA.BLL\\Servicios\\Contrato\\IPlayoffService.cs",
+              "RelativeToolTip": "..\\CBSANTOMERA.BLL\\Servicios\\Contrato\\IPlayoffService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAA0AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-15T02:45:52.901Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "FaseCompeticionService.cs",
+              "DocumentMoniker": "C:\\Users\\OREO\\Desktop\\TFG RESOURCE\\pagina web\\CBSANTOMERA_WEB\\CBSANTOMERA_WEB_API\\CBSANTOMERA.BLL\\Servicios\\FaseCompeticionService.cs",
+              "RelativeDocumentMoniker": "..\\CBSANTOMERA.BLL\\Servicios\\FaseCompeticionService.cs",
+              "ToolTip": "C:\\Users\\OREO\\Desktop\\TFG RESOURCE\\pagina web\\CBSANTOMERA_WEB\\CBSANTOMERA_WEB_API\\CBSANTOMERA.BLL\\Servicios\\FaseCompeticionService.cs",
+              "RelativeToolTip": "..\\CBSANTOMERA.BLL\\Servicios\\FaseCompeticionService.cs",
+              "ViewState": "AQIAACwAAAAAAAAAAAAAAFgAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-14T21:43:25.821Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "ILigaService.cs",
+              "DocumentMoniker": "C:\\Users\\OREO\\Desktop\\TFG RESOURCE\\pagina web\\CBSANTOMERA_WEB\\CBSANTOMERA_WEB_API\\CBSANTOMERA.BLL\\Servicios\\Contrato\\ILigaService.cs",
+              "RelativeDocumentMoniker": "..\\CBSANTOMERA.BLL\\Servicios\\Contrato\\ILigaService.cs",
+              "ToolTip": "C:\\Users\\OREO\\Desktop\\TFG RESOURCE\\pagina web\\CBSANTOMERA_WEB\\CBSANTOMERA_WEB_API\\CBSANTOMERA.BLL\\Servicios\\Contrato\\ILigaService.cs",
+              "RelativeToolTip": "..\\CBSANTOMERA.BLL\\Servicios\\Contrato\\ILigaService.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAABMAAAAbAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-14T23:24:14.035Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "IPartidoService.cs",
+              "DocumentMoniker": "C:\\Users\\OREO\\Desktop\\TFG RESOURCE\\pagina web\\CBSANTOMERA_WEB\\CBSANTOMERA_WEB_API\\CBSANTOMERA.BLL\\Servicios\\Contrato\\IPartidoService.cs",
+              "RelativeDocumentMoniker": "..\\CBSANTOMERA.BLL\\Servicios\\Contrato\\IPartidoService.cs",
+              "ToolTip": "C:\\Users\\OREO\\Desktop\\TFG RESOURCE\\pagina web\\CBSANTOMERA_WEB\\CBSANTOMERA_WEB_API\\CBSANTOMERA.BLL\\Servicios\\Contrato\\IPartidoService.cs",
+              "RelativeToolTip": "..\\CBSANTOMERA.BLL\\Servicios\\Contrato\\IPartidoService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAuwAkAAAAVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-14T23:54:24.124Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "FotoJugadorEquipoService.cs",
+              "DocumentMoniker": "C:\\Users\\OREO\\Desktop\\TFG RESOURCE\\pagina web\\CBSANTOMERA_WEB\\CBSANTOMERA_WEB_API\\CBSANTOMERA.BLL\\Servicios\\FotoJugadorEquipoService.cs",
+              "RelativeDocumentMoniker": "..\\CBSANTOMERA.BLL\\Servicios\\FotoJugadorEquipoService.cs",
+              "ToolTip": "C:\\Users\\OREO\\Desktop\\TFG RESOURCE\\pagina web\\CBSANTOMERA_WEB\\CBSANTOMERA_WEB_API\\CBSANTOMERA.BLL\\Servicios\\FotoJugadorEquipoService.cs",
+              "RelativeToolTip": "..\\CBSANTOMERA.BLL\\Servicios\\FotoJugadorEquipoService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-14T20:24:05.081Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "IFaseCompeticionService.cs",
+              "DocumentMoniker": "C:\\Users\\OREO\\Desktop\\TFG RESOURCE\\pagina web\\CBSANTOMERA_WEB\\CBSANTOMERA_WEB_API\\CBSANTOMERA.BLL\\Servicios\\Contrato\\IFaseCompeticionService.cs",
+              "RelativeDocumentMoniker": "..\\CBSANTOMERA.BLL\\Servicios\\Contrato\\IFaseCompeticionService.cs",
+              "ToolTip": "C:\\Users\\OREO\\Desktop\\TFG RESOURCE\\pagina web\\CBSANTOMERA_WEB\\CBSANTOMERA_WEB_API\\CBSANTOMERA.BLL\\Servicios\\Contrato\\IFaseCompeticionService.cs",
+              "RelativeToolTip": "..\\CBSANTOMERA.BLL\\Servicios\\Contrato\\IFaseCompeticionService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAuwAkAAAAVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-15T02:42:05.529Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "CBSANTOMERA.MODEL.csproj",
+              "DocumentMoniker": "C:\\Users\\OREO\\Desktop\\TFG RESOURCE\\pagina web\\CBSANTOMERA_WEB\\CBSANTOMERA_WEB_API\\CBSANTOMERA.MODEL\\CBSANTOMERA.MODEL.csproj",
+              "RelativeDocumentMoniker": "..\\CBSANTOMERA.MODEL\\CBSANTOMERA.MODEL.csproj",
+              "ToolTip": "C:\\Users\\OREO\\Desktop\\TFG RESOURCE\\pagina web\\CBSANTOMERA_WEB\\CBSANTOMERA_WEB_API\\CBSANTOMERA.MODEL\\CBSANTOMERA.MODEL.csproj",
+              "RelativeToolTip": "..\\CBSANTOMERA.MODEL\\CBSANTOMERA.MODEL.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-12-15T03:06:29.272Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "Dependencia.cs",
+              "DocumentMoniker": "C:\\Users\\OREO\\Desktop\\TFG RESOURCE\\pagina web\\CBSANTOMERA_WEB\\CBSANTOMERA_WEB_API\\CBSANTOMERA.IOC\\Dependencia.cs",
+              "RelativeDocumentMoniker": "..\\CBSANTOMERA.IOC\\Dependencia.cs",
+              "ToolTip": "C:\\Users\\OREO\\Desktop\\TFG RESOURCE\\pagina web\\CBSANTOMERA_WEB\\CBSANTOMERA_WEB_API\\CBSANTOMERA.IOC\\Dependencia.cs",
+              "RelativeToolTip": "..\\CBSANTOMERA.IOC\\Dependencia.cs",
+              "ViewState": "AQIAADIAAAAAAAAAAAAIwEcAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-09T17:11:43.456Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "IJornadaService.cs",
+              "DocumentMoniker": "C:\\Users\\OREO\\Desktop\\TFG RESOURCE\\pagina web\\CBSANTOMERA_WEB\\CBSANTOMERA_WEB_API\\CBSANTOMERA.BLL\\Servicios\\Contrato\\IJornadaService.cs",
+              "RelativeDocumentMoniker": "..\\CBSANTOMERA.BLL\\Servicios\\Contrato\\IJornadaService.cs",
+              "ToolTip": "C:\\Users\\OREO\\Desktop\\TFG RESOURCE\\pagina web\\CBSANTOMERA_WEB\\CBSANTOMERA_WEB_API\\CBSANTOMERA.BLL\\Servicios\\Contrato\\IJornadaService.cs",
+              "RelativeToolTip": "..\\CBSANTOMERA.BLL\\Servicios\\Contrato\\IJornadaService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAuwBIAAAAKAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-15T01:51:09.64Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "IFotoAlbumService.cs",
+              "DocumentMoniker": "C:\\Users\\OREO\\Desktop\\TFG RESOURCE\\pagina web\\CBSANTOMERA_WEB\\CBSANTOMERA_WEB_API\\CBSANTOMERA.BLL\\Servicios\\Contrato\\IFotoAlbumService.cs",
+              "RelativeDocumentMoniker": "..\\CBSANTOMERA.BLL\\Servicios\\Contrato\\IFotoAlbumService.cs",
+              "ToolTip": "C:\\Users\\OREO\\Desktop\\TFG RESOURCE\\pagina web\\CBSANTOMERA_WEB\\CBSANTOMERA_WEB_API\\CBSANTOMERA.BLL\\Servicios\\Contrato\\IFotoAlbumService.cs",
+              "RelativeToolTip": "..\\CBSANTOMERA.BLL\\Servicios\\Contrato\\IFotoAlbumService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-15T00:59:11.283Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "LigaDTO.cs",
+              "DocumentMoniker": "C:\\Users\\OREO\\Desktop\\TFG RESOURCE\\pagina web\\CBSANTOMERA_WEB\\CBSANTOMERA_WEB_API\\CBSANTOMERA.DTO\\LigaDTO.cs",
+              "RelativeDocumentMoniker": "..\\CBSANTOMERA.DTO\\LigaDTO.cs",
+              "ToolTip": "C:\\Users\\OREO\\Desktop\\TFG RESOURCE\\pagina web\\CBSANTOMERA_WEB\\CBSANTOMERA_WEB_API\\CBSANTOMERA.DTO\\LigaDTO.cs",
+              "RelativeToolTip": "..\\CBSANTOMERA.DTO\\LigaDTO.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAHsAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-14T21:46:15.833Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 43,
+              "Title": "EquipoCompeticionDTO.cs",
+              "DocumentMoniker": "C:\\Users\\OREO\\Desktop\\TFG RESOURCE\\pagina web\\CBSANTOMERA_WEB\\CBSANTOMERA_WEB_API\\CBSANTOMERA.DTO\\EquipoCompeticionDTO.cs",
+              "RelativeDocumentMoniker": "..\\CBSANTOMERA.DTO\\EquipoCompeticionDTO.cs",
+              "ToolTip": "C:\\Users\\OREO\\Desktop\\TFG RESOURCE\\pagina web\\CBSANTOMERA_WEB\\CBSANTOMERA_WEB_API\\CBSANTOMERA.DTO\\EquipoCompeticionDTO.cs",
+              "RelativeToolTip": "..\\CBSANTOMERA.DTO\\EquipoCompeticionDTO.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAUwBAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-14T23:46:48.439Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 45,
+              "Title": "Noticia.cs",
+              "DocumentMoniker": "C:\\Users\\OREO\\Desktop\\TFG RESOURCE\\pagina web\\CBSANTOMERA_WEB\\CBSANTOMERA_WEB_API\\CBSANTOMERA.MODEL\\Noticia.cs",
+              "RelativeDocumentMoniker": "..\\CBSANTOMERA.MODEL\\Noticia.cs",
+              "ToolTip": "C:\\Users\\OREO\\Desktop\\TFG RESOURCE\\pagina web\\CBSANTOMERA_WEB\\CBSANTOMERA_WEB_API\\CBSANTOMERA.MODEL\\Noticia.cs",
+              "RelativeToolTip": "..\\CBSANTOMERA.MODEL\\Noticia.cs",
+              "ViewState": "AQIAABcAAAAAAAAAAIA3wCEAAAAZAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-14T23:45:14.032Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 46,
+              "Title": "FotosAlbum.cs",
+              "DocumentMoniker": "C:\\Users\\OREO\\Desktop\\TFG RESOURCE\\pagina web\\CBSANTOMERA_WEB\\CBSANTOMERA_WEB_API\\CBSANTOMERA.MODEL\\FotosAlbum.cs",
+              "RelativeDocumentMoniker": "..\\CBSANTOMERA.MODEL\\FotosAlbum.cs",
+              "ToolTip": "C:\\Users\\OREO\\Desktop\\TFG RESOURCE\\pagina web\\CBSANTOMERA_WEB\\CBSANTOMERA_WEB_API\\CBSANTOMERA.MODEL\\FotosAlbum.cs",
+              "RelativeToolTip": "..\\CBSANTOMERA.MODEL\\FotosAlbum.cs",
+              "ViewState": "AQIAABMAAAAAAAAAAIA3wB0AAAAYAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-14T23:45:02.921Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 47,
+              "Title": "AlbumService.cs",
+              "DocumentMoniker": "C:\\Users\\OREO\\Desktop\\TFG RESOURCE\\pagina web\\CBSANTOMERA_WEB\\CBSANTOMERA_WEB_API\\CBSANTOMERA.BLL\\Servicios\\AlbumService.cs",
+              "RelativeDocumentMoniker": "..\\CBSANTOMERA.BLL\\Servicios\\AlbumService.cs",
+              "ToolTip": "C:\\Users\\OREO\\Desktop\\TFG RESOURCE\\pagina web\\CBSANTOMERA_WEB\\CBSANTOMERA_WEB_API\\CBSANTOMERA.BLL\\Servicios\\AlbumService.cs",
+              "RelativeToolTip": "..\\CBSANTOMERA.BLL\\Servicios\\AlbumService.cs",
+              "ViewState": "AQIAAI0CAAAAAAAAAAAAABcAAAAsAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-14T23:44:47.056Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 48,
+              "Title": "AlbumDTO.cs",
+              "DocumentMoniker": "C:\\Users\\OREO\\Desktop\\TFG RESOURCE\\pagina web\\CBSANTOMERA_WEB\\CBSANTOMERA_WEB_API\\CBSANTOMERA.DTO\\AlbumDTO.cs",
+              "RelativeDocumentMoniker": "..\\CBSANTOMERA.DTO\\AlbumDTO.cs",
+              "ToolTip": "C:\\Users\\OREO\\Desktop\\TFG RESOURCE\\pagina web\\CBSANTOMERA_WEB\\CBSANTOMERA_WEB_API\\CBSANTOMERA.DTO\\AlbumDTO.cs",
+              "RelativeToolTip": "..\\CBSANTOMERA.DTO\\AlbumDTO.cs",
+              "ViewState": "AQIAABgAAAAAAAAAAIA7wB4AAAAVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-14T23:43:09.687Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 42,
+              "Title": "JornadaDTO.cs",
+              "DocumentMoniker": "C:\\Users\\OREO\\Desktop\\TFG RESOURCE\\pagina web\\CBSANTOMERA_WEB\\CBSANTOMERA_WEB_API\\CBSANTOMERA.DTO\\JornadaDTO.cs",
+              "RelativeDocumentMoniker": "..\\CBSANTOMERA.DTO\\JornadaDTO.cs",
+              "ToolTip": "C:\\Users\\OREO\\Desktop\\TFG RESOURCE\\pagina web\\CBSANTOMERA_WEB\\CBSANTOMERA_WEB_API\\CBSANTOMERA.DTO\\JornadaDTO.cs",
+              "RelativeToolTip": "..\\CBSANTOMERA.DTO\\JornadaDTO.cs",
+              "ViewState": "AQIAAEIAAAAAAAAAAAAIwBUAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-14T22:58:10.832Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 44,
+              "Title": "Temporada.cs",
+              "DocumentMoniker": "C:\\Users\\OREO\\Desktop\\TFG RESOURCE\\pagina web\\CBSANTOMERA_WEB\\CBSANTOMERA_WEB_API\\CBSANTOMERA.MODEL\\Temporada.cs",
+              "RelativeDocumentMoniker": "..\\CBSANTOMERA.MODEL\\Temporada.cs",
+              "ToolTip": "C:\\Users\\OREO\\Desktop\\TFG RESOURCE\\pagina web\\CBSANTOMERA_WEB\\CBSANTOMERA_WEB_API\\CBSANTOMERA.MODEL\\Temporada.cs",
+              "RelativeToolTip": "..\\CBSANTOMERA.MODEL\\Temporada.cs",
+              "ViewState": "AQIAABMAAAAAAAAAAADgvxkAAABQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-14T22:12:14.023Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 54,
+              "Title": "TemporadaController.cs",
+              "DocumentMoniker": "C:\\Users\\OREO\\Desktop\\TFG RESOURCE\\pagina web\\CBSANTOMERA_WEB\\CBSANTOMERA_WEB_API\\CBSANTOMERA\\Controllers\\TemporadaController.cs",
+              "RelativeDocumentMoniker": "Controllers\\TemporadaController.cs",
+              "ToolTip": "C:\\Users\\OREO\\Desktop\\TFG RESOURCE\\pagina web\\CBSANTOMERA_WEB\\CBSANTOMERA_WEB_API\\CBSANTOMERA\\Controllers\\TemporadaController.cs",
+              "RelativeToolTip": "Controllers\\TemporadaController.cs",
+              "ViewState": "AQIAANUAAAAAAAAAAAAIwLMAAAA+AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-14T20:27:02.41Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 53,
+              "Title": "PromocionController.cs",
+              "DocumentMoniker": "C:\\Users\\OREO\\Desktop\\TFG RESOURCE\\pagina web\\CBSANTOMERA_WEB\\CBSANTOMERA_WEB_API\\CBSANTOMERA\\Controllers\\PromocionController.cs",
+              "RelativeDocumentMoniker": "Controllers\\PromocionController.cs",
+              "ToolTip": "C:\\Users\\OREO\\Desktop\\TFG RESOURCE\\pagina web\\CBSANTOMERA_WEB\\CBSANTOMERA_WEB_API\\CBSANTOMERA\\Controllers\\PromocionController.cs",
+              "RelativeToolTip": "Controllers\\PromocionController.cs",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAxwB8AAAAsAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-14T20:24:04.93Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 49,
+              "Title": "NoticiasController.cs",
+              "DocumentMoniker": "C:\\Users\\OREO\\Desktop\\TFG RESOURCE\\pagina web\\CBSANTOMERA_WEB\\CBSANTOMERA_WEB_API\\CBSANTOMERA\\Controllers\\NoticiasController.cs",
+              "RelativeDocumentMoniker": "Controllers\\NoticiasController.cs",
+              "ToolTip": "C:\\Users\\OREO\\Desktop\\TFG RESOURCE\\pagina web\\CBSANTOMERA_WEB\\CBSANTOMERA_WEB_API\\CBSANTOMERA\\Controllers\\NoticiasController.cs",
+              "RelativeToolTip": "Controllers\\NoticiasController.cs",
+              "ViewState": "AQIAAOEAAAAAAAAAAAAIwOsAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-14T20:26:48.275Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 57,
+              "Title": "JugadorController.cs",
+              "DocumentMoniker": "C:\\Users\\OREO\\Desktop\\TFG RESOURCE\\pagina web\\CBSANTOMERA_WEB\\CBSANTOMERA_WEB_API\\CBSANTOMERA\\Controllers\\JugadorController.cs",
+              "RelativeDocumentMoniker": "Controllers\\JugadorController.cs",
+              "ToolTip": "C:\\Users\\OREO\\Desktop\\TFG RESOURCE\\pagina web\\CBSANTOMERA_WEB\\CBSANTOMERA_WEB_API\\CBSANTOMERA\\Controllers\\JugadorController.cs",
+              "RelativeToolTip": "Controllers\\JugadorController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAA1AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-14T20:26:42.765Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 58,
+              "Title": "IAControler.cs",
+              "DocumentMoniker": "C:\\Users\\OREO\\Desktop\\TFG RESOURCE\\pagina web\\CBSANTOMERA_WEB\\CBSANTOMERA_WEB_API\\CBSANTOMERA\\Controllers\\IAControler.cs",
+              "RelativeDocumentMoniker": "Controllers\\IAControler.cs",
+              "ToolTip": "C:\\Users\\OREO\\Desktop\\TFG RESOURCE\\pagina web\\CBSANTOMERA_WEB\\CBSANTOMERA_WEB_API\\CBSANTOMERA\\Controllers\\IAControler.cs",
+              "RelativeToolTip": "Controllers\\IAControler.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-14T20:26:39.798Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 59,
+              "Title": "FotosAlbumController.cs",
+              "DocumentMoniker": "C:\\Users\\OREO\\Desktop\\TFG RESOURCE\\pagina web\\CBSANTOMERA_WEB\\CBSANTOMERA_WEB_API\\CBSANTOMERA\\Controllers\\FotosAlbumController.cs",
+              "RelativeDocumentMoniker": "Controllers\\FotosAlbumController.cs",
+              "ToolTip": "C:\\Users\\OREO\\Desktop\\TFG RESOURCE\\pagina web\\CBSANTOMERA_WEB\\CBSANTOMERA_WEB_API\\CBSANTOMERA\\Controllers\\FotosAlbumController.cs",
+              "RelativeToolTip": "Controllers\\FotosAlbumController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAA1AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-14T20:26:35.39Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 51,
+              "Title": "EquipoJugadorController.cs",
+              "DocumentMoniker": "C:\\Users\\OREO\\Desktop\\TFG RESOURCE\\pagina web\\CBSANTOMERA_WEB\\CBSANTOMERA_WEB_API\\CBSANTOMERA\\Controllers\\EquipoJugadorController.cs",
+              "RelativeDocumentMoniker": "Controllers\\EquipoJugadorController.cs",
+              "ToolTip": "C:\\Users\\OREO\\Desktop\\TFG RESOURCE\\pagina web\\CBSANTOMERA_WEB\\CBSANTOMERA_WEB_API\\CBSANTOMERA\\Controllers\\EquipoJugadorController.cs",
+              "RelativeToolTip": "Controllers\\EquipoJugadorController.cs",
+              "ViewState": "AQIAAEQAAAAAAAAAAAAgwEYAAAA+AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-14T20:24:04.943Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 50,
+              "Title": "TecnicoController.cs",
+              "DocumentMoniker": "C:\\Users\\OREO\\Desktop\\TFG RESOURCE\\pagina web\\CBSANTOMERA_WEB\\CBSANTOMERA_WEB_API\\CBSANTOMERA\\Controllers\\TecnicoController.cs",
+              "RelativeDocumentMoniker": "Controllers\\TecnicoController.cs",
+              "ToolTip": "C:\\Users\\OREO\\Desktop\\TFG RESOURCE\\pagina web\\CBSANTOMERA_WEB\\CBSANTOMERA_WEB_API\\CBSANTOMERA\\Controllers\\TecnicoController.cs",
+              "RelativeToolTip": "Controllers\\TecnicoController.cs",
+              "ViewState": "AQIAAHUAAAAAAAAAAAAowI0AAAA+AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-14T20:24:05.145Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 52,
+              "Title": "EquipoController.cs",
+              "DocumentMoniker": "C:\\Users\\OREO\\Desktop\\TFG RESOURCE\\pagina web\\CBSANTOMERA_WEB\\CBSANTOMERA_WEB_API\\CBSANTOMERA\\Controllers\\EquipoController.cs",
+              "RelativeDocumentMoniker": "Controllers\\EquipoController.cs",
+              "ToolTip": "C:\\Users\\OREO\\Desktop\\TFG RESOURCE\\pagina web\\CBSANTOMERA_WEB\\CBSANTOMERA_WEB_API\\CBSANTOMERA\\Controllers\\EquipoController.cs",
+              "RelativeToolTip": "Controllers\\EquipoController.cs",
+              "ViewState": "AQIAAGIBAAAAAAAAAAAuwHoBAAA+AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-14T20:26:25.701Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 60,
+              "Title": "ClubController.cs",
+              "DocumentMoniker": "C:\\Users\\OREO\\Desktop\\TFG RESOURCE\\pagina web\\CBSANTOMERA_WEB\\CBSANTOMERA_WEB_API\\CBSANTOMERA\\Controllers\\ClubController.cs",
+              "RelativeDocumentMoniker": "Controllers\\ClubController.cs",
+              "ToolTip": "C:\\Users\\OREO\\Desktop\\TFG RESOURCE\\pagina web\\CBSANTOMERA_WEB\\CBSANTOMERA_WEB_API\\CBSANTOMERA\\Controllers\\ClubController.cs",
+              "RelativeToolTip": "Controllers\\ClubController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAA1AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-14T20:26:05.961Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 61,
+              "Title": "ChatController.cs",
+              "DocumentMoniker": "C:\\Users\\OREO\\Desktop\\TFG RESOURCE\\pagina web\\CBSANTOMERA_WEB\\CBSANTOMERA_WEB_API\\CBSANTOMERA\\Controllers\\ChatController.cs",
+              "RelativeDocumentMoniker": "Controllers\\ChatController.cs",
+              "ToolTip": "C:\\Users\\OREO\\Desktop\\TFG RESOURCE\\pagina web\\CBSANTOMERA_WEB\\CBSANTOMERA_WEB_API\\CBSANTOMERA\\Controllers\\ChatController.cs",
+              "RelativeToolTip": "Controllers\\ChatController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAA1AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-14T20:25:53.204Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 62,
+              "Title": "CategoriaJugadorController.cs",
+              "DocumentMoniker": "C:\\Users\\OREO\\Desktop\\TFG RESOURCE\\pagina web\\CBSANTOMERA_WEB\\CBSANTOMERA_WEB_API\\CBSANTOMERA\\Controllers\\CategoriaJugadorController.cs",
+              "RelativeDocumentMoniker": "Controllers\\CategoriaJugadorController.cs",
+              "ToolTip": "C:\\Users\\OREO\\Desktop\\TFG RESOURCE\\pagina web\\CBSANTOMERA_WEB\\CBSANTOMERA_WEB_API\\CBSANTOMERA\\Controllers\\CategoriaJugadorController.cs",
+              "RelativeToolTip": "Controllers\\CategoriaJugadorController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAA1AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-14T20:25:48.426Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 64,
+              "Title": "RolMapper.cs",
+              "DocumentMoniker": "C:\\Users\\OREO\\Desktop\\TFG RESOURCE\\pagina web\\CBSANTOMERA_WEB\\CBSANTOMERA_WEB_API\\CBSANTOMERA.UTILITY\\Mappers\\RolMapper.cs",
+              "RelativeDocumentMoniker": "..\\CBSANTOMERA.UTILITY\\Mappers\\RolMapper.cs",
+              "ToolTip": "C:\\Users\\OREO\\Desktop\\TFG RESOURCE\\pagina web\\CBSANTOMERA_WEB\\CBSANTOMERA_WEB_API\\CBSANTOMERA.UTILITY\\Mappers\\RolMapper.cs",
+              "RelativeToolTip": "..\\CBSANTOMERA.UTILITY\\Mappers\\RolMapper.cs",
+              "ViewState": "AQIAAA4AAAAAAAAAAAAQwAcAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-09T16:40:38.643Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 65,
+              "Title": "RolDTO.cs",
+              "DocumentMoniker": "C:\\Users\\OREO\\Desktop\\TFG RESOURCE\\pagina web\\CBSANTOMERA_WEB\\CBSANTOMERA_WEB_API\\CBSANTOMERA.DTO\\RolDTO.cs",
+              "RelativeDocumentMoniker": "..\\CBSANTOMERA.DTO\\RolDTO.cs",
+              "ToolTip": "C:\\Users\\OREO\\Desktop\\TFG RESOURCE\\pagina web\\CBSANTOMERA_WEB\\CBSANTOMERA_WEB_API\\CBSANTOMERA.DTO\\RolDTO.cs",
+              "RelativeToolTip": "..\\CBSANTOMERA.DTO\\RolDTO.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-09T16:39:41.079Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 66,
+              "Title": "Rol.cs",
+              "DocumentMoniker": "C:\\Users\\OREO\\Desktop\\TFG RESOURCE\\pagina web\\CBSANTOMERA_WEB\\CBSANTOMERA_WEB_API\\CBSANTOMERA.MODEL\\Rol.cs",
+              "RelativeDocumentMoniker": "..\\CBSANTOMERA.MODEL\\Rol.cs",
+              "ToolTip": "C:\\Users\\OREO\\Desktop\\TFG RESOURCE\\pagina web\\CBSANTOMERA_WEB\\CBSANTOMERA_WEB_API\\CBSANTOMERA.MODEL\\Rol.cs",
+              "RelativeToolTip": "..\\CBSANTOMERA.MODEL\\Rol.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-09T16:39:32.248Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 63,
+              "Title": "Usuario.cs",
+              "DocumentMoniker": "C:\\Users\\OREO\\Desktop\\TFG RESOURCE\\pagina web\\CBSANTOMERA_WEB\\CBSANTOMERA_WEB_API\\CBSANTOMERA.MODEL\\Usuario.cs",
+              "RelativeDocumentMoniker": "..\\CBSANTOMERA.MODEL\\Usuario.cs",
+              "ToolTip": "C:\\Users\\OREO\\Desktop\\TFG RESOURCE\\pagina web\\CBSANTOMERA_WEB\\CBSANTOMERA_WEB_API\\CBSANTOMERA.MODEL\\Usuario.cs",
+              "RelativeToolTip": "..\\CBSANTOMERA.MODEL\\Usuario.cs",
+              "ViewState": "AQIAABAAAAAAAAAAAAAcwCAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-09T16:35:30.345Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 56,
+              "Title": "UsuarioService.cs",
+              "DocumentMoniker": "C:\\Users\\OREO\\Desktop\\TFG RESOURCE\\pagina web\\CBSANTOMERA_WEB\\CBSANTOMERA_WEB_API\\CBSANTOMERA.BLL\\Servicios\\UsuarioService.cs",
+              "RelativeDocumentMoniker": "..\\CBSANTOMERA.BLL\\Servicios\\UsuarioService.cs",
+              "ToolTip": "C:\\Users\\OREO\\Desktop\\TFG RESOURCE\\pagina web\\CBSANTOMERA_WEB\\CBSANTOMERA_WEB_API\\CBSANTOMERA.BLL\\Servicios\\UsuarioService.cs",
+              "RelativeToolTip": "..\\CBSANTOMERA.BLL\\Servicios\\UsuarioService.cs",
+              "ViewState": "AQIAAHIAAAAAAAAAAAAYwJgAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-09T16:10:53.274Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 67,
+              "Title": "ISessionService .cs",
+              "DocumentMoniker": "C:\\Users\\OREO\\Desktop\\TFG RESOURCE\\pagina web\\CBSANTOMERA_WEB\\CBSANTOMERA_WEB_API\\CBSANTOMERA.BLL\\Servicios\\Contrato\\ISessionService .cs",
+              "RelativeDocumentMoniker": "..\\CBSANTOMERA.BLL\\Servicios\\Contrato\\ISessionService .cs",
+              "ToolTip": "C:\\Users\\OREO\\Desktop\\TFG RESOURCE\\pagina web\\CBSANTOMERA_WEB\\CBSANTOMERA_WEB_API\\CBSANTOMERA.BLL\\Servicios\\Contrato\\ISessionService .cs",
+              "RelativeToolTip": "..\\CBSANTOMERA.BLL\\Servicios\\Contrato\\ISessionService .cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAABbAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-09T16:10:31.699Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 55,
+              "Title": "UsuarioController.cs",
+              "DocumentMoniker": "C:\\Users\\OREO\\Desktop\\TFG RESOURCE\\pagina web\\CBSANTOMERA_WEB\\CBSANTOMERA_WEB_API\\CBSANTOMERA\\Controllers\\UsuarioController.cs",
+              "RelativeDocumentMoniker": "Controllers\\UsuarioController.cs",
+              "ToolTip": "C:\\Users\\OREO\\Desktop\\TFG RESOURCE\\pagina web\\CBSANTOMERA_WEB\\CBSANTOMERA_WEB_API\\CBSANTOMERA\\Controllers\\UsuarioController.cs",
+              "RelativeToolTip": "Controllers\\UsuarioController.cs",
+              "ViewState": "AQIAADkAAAAAAAAAAAAYwEwAAAA+AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-09T15:48:18.8Z"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
             }
           ]
         }

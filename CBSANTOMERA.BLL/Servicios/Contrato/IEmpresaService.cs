@@ -17,6 +17,8 @@ namespace CBSANTOMERA.BLL.Servicios.Contrato
         Task<bool> Editar(EmpresaDTO modelo);
         //void Dimension(AlbumDTO album);
         Task<bool> Eliminar(int id);
+        Task<EmpresaDTOSmall> VerPorNombre(string nombre);
+     
 
 
 

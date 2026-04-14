@@ -67,14 +67,26 @@ namespace CBSANTOMERA.BLL.Servicios
                 {
                     throw new TaskCanceledException("No se pudo crear");
                 }
-                
-                if (modelo.fotos.Count != 0) {
 
-                   await this._fotoJugadorEquipoService.CrearFotos(modelo, modelo.fotos);
-
-
-
+                FotoJugadorEquipoDTO modelo1 = new FotoJugadorEquipoDTO();
+                modelo1.Jugador = modelo.Jugador.IdJugador;
+                modelo1.IdEquipo = modelo.Equipo;
+                modelo1.EquipoJugador = modelo.Id;
+                var te = _mapper.Map<Jugador>(modelo.Jugador);
+                var res = await this._fotoJugadorEquipoService.CrearFoto(modelo1, te);
+                if (res != null)
+                {
+                    var t = 10;
                 }
+                /* if (modelo.fotos.Count != 0) {
+
+                    await this._fotoJugadorEquipoService.CrearFoto(modelo, modelo.fotos);
+                     var te = _mapper.Map<Jugador>(modelo.Jugador);
+
+                     var res = await this._fotoJugadorEquipoService.CrearFoto(modelo.fotos[0], te);
+
+
+                 }*/
 
                 return modelo;
 
@@ -329,270 +341,110 @@ namespace CBSANTOMERA.BLL.Servicios
 
 
 
-        public async Task<EquipoDTO> ADDUpdateDeleteJugadoresEquipo(EquipoDTO equipo)
+        public async Task<EquipoDTO> SincronizarJugadoresEquipo(EquipoDTO equipo)
         {
-            //EquipoDTO equipo1 = await this._equipoService.BuscarEquipo(equipo.IdEquipo);
+            // 1. Lista actual en BD
+            var jugadoresBD = await this.ListaJugadoresUnEquipo(equipo.IdEquipo);
 
+            // Índices para comparación rápida
+            var dicBD = jugadoresBD.ToDictionary(j => j.Jugador.IdJugador);
+            var dicRequest = equipo.EquipoJugadores.ToDictionary(j => j.Jugador.IdJugador);
 
-            List<EquipoJugadorDTO> listaDTO = await this.ListaJugadoresUnEquipo(equipo.IdEquipo);
-            List<EquipoJugadorDTO> listaADD = new List<EquipoJugadorDTO>();
-            List<EquipoJugadorDTO> listaRemove = await this.ListaJugadoresUnEquipo(equipo.IdEquipo); 
+            // 2. Jugadores eliminados
+            var eliminados = jugadoresBD
+                .Where(j => !dicRequest.ContainsKey(j.Jugador.IdJugador))
+                .ToList();
 
-            var encontrado = false;
-            var rest = false;
+            // 3. Jugadores nuevos
+            var nuevos = equipo.EquipoJugadores
+                .Where(j => !dicBD.ContainsKey(j.Jugador.IdJugador))
+                .ToList();
 
-            if (listaDTO.Count != 0)
+            // 4. Jugadores comunes (posibles actualizaciones)
+            var comunes = equipo.EquipoJugadores
+                .Where(j => dicBD.ContainsKey(j.Jugador.IdJugador))
+                .ToList();
+
+            // ---------------------------------------
+            // ELIMINAR JUGADORES QUE YA NO ESTÁN
+            // ---------------------------------------
+            foreach (var jugador in eliminados)
             {
-                for (int i = 0; i < equipo.EquipoJugadores.Count; i++)
-                {
-
-
-                    encontrado = false;
-                    for (int j = 0; j < listaDTO.Count; j++)
-                    {
-                        encontrado = false;
-                        if (equipo.EquipoJugadores[i].Id == listaDTO[j].Id && equipo.EquipoJugadores[i].Jugador.IdJugador == listaDTO[j].Jugador.IdJugador)
-                        {
-                            encontrado = true;
-
-                            //jugadores mpdificados?
-                            if (equipo.EquipoJugadores[i].Dorsal != listaDTO[j].Dorsal)
-                            {
-
-
-                                try
-                                {
-
-                                    listaDTO[j].Dorsal = equipo.EquipoJugadores[i].Dorsal;
-
-                                    /*EquipoJugador jugador = new EquipoJugador();
-                                    jugador.Id = equipo.EquipoJugadores[i].Id;
-                                    jugador.IdEquipo= equipo.EquipoJugadores[i].Equipo;
-                                    jugador.IdJugador= equipo.EquipoJugadores[i].Jugador.IdJugador;
-                                    jugador.Dorsal= equipo.EquipoJugadores[i].Dorsal;*/
-                                    var jugadorModelo = _mapper.Map<EquipoJugador>(listaDTO[j]);
-                                    jugadorModelo.IdEquipo = listaDTO[j].Equipo;
-                                    jugadorModelo.IdJugador = listaDTO[j].Jugador.IdJugador;
-
-
-                                    bool respuesta = await this._equipoJugadorRepository.Editar(jugadorModelo);
-
-                                    //bool respuesta = await _equipoRepository.Editar(equipoEncontrado);
-                                    //if (!respuesta)
-                                    //{
-                                    //  throw new TaskCanceledException("No se pudo editar");
-                                    //}
-
-
-
-                                }
-                                catch (Exception ex) { }
-
-
-
-
-                            }
-                            else {
-                                foreach (EquipoJugadorDTO item in listaRemove) {
-                                    if (item.Id == listaDTO[j].Id) {
-                                        var t =  listaRemove.Remove(item);
-                                        break;
-                                    }
-                                }
-                               
-                            }
-
-                            if (equipo.EquipoJugadores[i].fotos.Count != 0)
-                            {
-
-                               /* foreach (FotoJugadorEquipoDTO foto in equipo.EquipoJugadores[i].fotos)
-                                {*/
-                                    if (equipo.EquipoJugadores[i].fotos[0].imagen != null)
-                                    {
-                                        try
-                                        {
-
-
-                                            if (equipo.EquipoJugadores[i].fotos[0].Id == 0)
-                                            {
-                                                var te = _mapper.Map<Jugador>(equipo.EquipoJugadores[i].Jugador);
-
-                                                var res = await this._fotoJugadorEquipoService.CrearFoto(equipo.EquipoJugadores[i].fotos[0], te);
-                                                if (res != null)
-                                                {
-                                                    var t = 10;
-                                                }
-                                            }
-                                            else
-                                            {
-                                                var res = await this._fotoJugadorEquipoService.Editar(equipo.EquipoJugadores[i].fotos[0]);
-
-                                            }
-
-                                        }
-                                        catch (Exception ex) { }
-
-                                        //Creamos la imagen y borramos la anterior
-
-                                    }
-                                    else {
-                                        var te = _mapper.Map<Jugador>(equipo.EquipoJugadores[i].Jugador);
-
-                                        var res = await this._fotoJugadorEquipoService.CrearFoto(equipo.EquipoJugadores[i].fotos[0], te);
-                                    }
-                                }
-                           /* }*/
-
-
-                        }
-
-                        if (encontrado == true)
-                        {
-                            encontrado = true;
-                            break;
-                        }
-
-
-                    }
-
-
-                    //sabemos que es un jugadorEquipo ya creado, ergo solo se podra modificar (dorsal e imagen) o dejar como esta
-                    if (encontrado == false)
-                    {
-                        //rest = equipo.EquipoJugadores.Remove(equipo.EquipoJugadores[i]);
-                        listaADD.Add(equipo.EquipoJugadores[i]);
-                        continue;
-
-                    }
-
-
-
-
-
-
-                    //ir eliminando de la lista los jugadores segun se vayan eliminando y añadiendo a la BBDD los que queden al final del recorrido seran los que no  esta y por lo tanto hay que eliminar
-
-
-
-                }
-
-
-
-                try
-                {
-
-
-                    if ( listaRemove.Count != 0) //?? 
-                    {
-
-
-
-                        foreach (EquipoJugadorDTO item in listaRemove)
-                        {
-
-
-                            encontrado = false;
-                          
-
-
-                                
-
-                                    await this.Eliminar(equipo, item);
-                                    
-                                
-
-                        }
-                    }
-                    //crear todos los jugadores
-
-
-
-                }
-                catch (Exception ex) { }
-
-
-
-
-                try
-                {
-
-
-                    if (listaADD.Count != 0) //?? 
-                    {
-
-
-
-                        foreach (EquipoJugadorDTO item in equipo.EquipoJugadores)
-                        {
-
-
-
-                            this.Crear(item);
-
-
-
-
-
-                        }
-                    }
-                    //crear todos los jugadores
-
-
-
-                }
-                catch (Exception ex) { }
-
-                return equipo;
+                // Eliminar fotos asociadas
+                var fotos = await _fotoJugadorEquipoService.BuscarFotoSJugadorEquipo(jugador);
+                foreach (var f in fotos)
+                    await _fotoJugadorEquipoService.Eliminar(f.Id);
+
+                // Eliminar jugador
+                await Eliminar(equipo, jugador);
             }
-            else {
 
-                foreach (EquipoJugadorDTO item in equipo.EquipoJugadores)
+            // ---------------------------------------
+            // CREAR NUEVOS JUGADORES
+            // ---------------------------------------
+            foreach (var jugadorNuevo in nuevos)
+            {
+                await Crear(jugadorNuevo);
+
+                // Crear foto si viene o crear foto vacía
+               // await _fotoJugadorEquipoService.CrearFoto(,jugadorNuevo);
+            }
+
+            // ---------------------------------------
+            // ACTUALIZAR JUGADORES EXISTENTES
+            // ---------------------------------------
+            foreach (var jugadorReq in comunes)
+            {
+                var jugadorBD = dicBD[jugadorReq.Jugador.IdJugador];
+
+                // Actualizar dorsal si cambió
+                if (jugadorReq.Dorsal != jugadorBD.Dorsal)
                 {
+                    var model = _mapper.Map<EquipoJugador>(jugadorReq);
+                    model.IdEquipo = jugadorReq.Equipo;
+                    model.IdJugador = jugadorReq.Jugador.IdJugador;
 
-
-
-                   await  this.Crear(item);
-
-
-
-
-
+                    await _equipoJugadorRepository.Editar(model);
                 }
 
+                // Actualizar foto si es necesario
+                await _fotoJugadorEquipoService.Editar(jugadorReq.fotos[0]);
             }
+
             return equipo;
         }
 
-   /*     public async Task<bool> Editar(FotoJugadorEquipoDTO modelo)
-        {
-            try
-            {
-                var equipoModelo = _mapper.Map<EquipoJugador>(modelo);
-                var equipoEncontrado = await _equipoJugadorRepository.Obtener(u => u.IdEquipo == equipoModelo.IdEquipo);
 
-                if (equipoEncontrado == null) { throw new TaskCanceledException("El equipo no existe"); }
+        /*     public async Task<bool> Editar(FotoJugadorEquipoDTO modelo)
+             {
+                 try
+                 {
+                     var equipoModelo = _mapper.Map<EquipoJugador>(modelo);
+                     var equipoEncontrado = await _equipoJugadorRepository.Obtener(u => u.IdEquipo == equipoModelo.IdEquipo);
 
-                equipoEncontrado.IdJugador = equipoModelo.IdJugador;
-                equipoEncontrado.Id = equipoModelo.Id;
-                equipoEncontrado.IdEquipo = equipoModelo.IdEquipo;
-                equipoEncontrado.Dorsal = equipoModelo.Dorsal;
-               
+                     if (equipoEncontrado == null) { throw new TaskCanceledException("El equipo no existe"); }
 
-                bool respuesta = await _equipoJugadorRepository.Editar(equipoEncontrado);
-                if (!respuesta)
-                {
-                    throw new TaskCanceledException("No se pudo editar");
-                }
+                     equipoEncontrado.IdJugador = equipoModelo.IdJugador;
+                     equipoEncontrado.Id = equipoModelo.Id;
+                     equipoEncontrado.IdEquipo = equipoModelo.IdEquipo;
+                     equipoEncontrado.Dorsal = equipoModelo.Dorsal;
 
-                return respuesta;
 
-            }
-            catch
-            {
-                throw;
+                     bool respuesta = await _equipoJugadorRepository.Editar(equipoEncontrado);
+                     if (!respuesta)
+                     {
+                         throw new TaskCanceledException("No se pudo editar");
+                     }
 
-            }
-        }*/
+                     return respuesta;
+
+                 }
+                 catch
+                 {
+                     throw;
+
+                 }
+             }*/
 
         public async Task<bool> Editar(EquipoJugadorDTO modelo)
         {

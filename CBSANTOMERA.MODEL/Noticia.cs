@@ -31,7 +31,7 @@ public partial class Noticia
 
     public bool? Nuevo { get; set; }
 
-    public virtual Albume? AlbumNavigation { get; set; }
+    public virtual Album? AlbumNavigation { get; set; }
 
     public virtual ICollection<ContratoEmpresa> ContratoEmpresas { get; set; } = new List<ContratoEmpresa>();
 }

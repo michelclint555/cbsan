@@ -21,9 +21,15 @@ public partial class FasesCompeticion
 
     public DateTime? FechaModificacion { get; set; }
 
+    public int? TipoFase { get; set; }
+
+    public int? FasePadre { get; set; }
+
+    public bool? IdaVuelta { get; set; }
+
     public virtual Competicione? CompeticionNavigation { get; set; }
 
-    public virtual ICollection<Jornada> Jornada { get; set; } = new List<Jornada>();
+    public virtual ICollection<Jornadum> Jornada { get; set; } = new List<Jornadum>();
 
     public virtual ICollection<Liga> Ligas { get; set; } = new List<Liga>();
 

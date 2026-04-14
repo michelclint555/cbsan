@@ -16,6 +16,7 @@ namespace CBSANTOMERA.BLL.Servicios.Contrato
         Task<List<EquipoJugadorDTO>> ListaJugadoresUnEquipo(int idEquipo);
         Task<List<EquipoJugadorDTO>> ListaTodosJugadores();
         Task<List<EquipoJugadorDTO>> ListaJugadoresEquipoNoEstan(int idEquipo);
-        Task<EquipoDTO> ADDUpdateDeleteJugadoresEquipo(EquipoDTO equipo);
+        //Task<EquipoDTO> ADDUpdateDeleteJugadoresEquipo(EquipoDTO equipo);
+        Task<EquipoDTO> SincronizarJugadoresEquipo(EquipoDTO equipo);
     }
 }

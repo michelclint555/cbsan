@@ -5,10 +5,12 @@ using Microsoft.AspNetCore.Mvc;
 
 using CBSANTOMERA.Utilidad;
 using CBSANTOMERA.BLL.Servicios;
+using Microsoft.AspNetCore.Authorization;
 namespace CBSANTOMERA.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    [Authorize]   // ⬅️ Todas las rutas requieren JWT
     public class TemporadaController : ControllerBase
     {
         private readonly ITemporadaService _Service;
@@ -40,6 +42,7 @@ namespace CBSANTOMERA.Controllers
 
         [HttpGet]
         [Route("Lista")]
+        [AllowAnonymous]   // ⬅️ Esta acción NO requiere token
         public async Task<IActionResult> Lista()
         {
 
@@ -61,6 +64,7 @@ namespace CBSANTOMERA.Controllers
 
         [HttpGet]
         [Route("Temporada-Activa")]
+        [AllowAnonymous]   // ⬅️ Esta acción NO requiere token
         public async Task<IActionResult> ListaFull()
         {
 
@@ -148,6 +152,7 @@ namespace CBSANTOMERA.Controllers
 
         [HttpGet]
         [Route("Ver/{id:int}")]
+        [AllowAnonymous]   // ⬅️ Esta acción NO requiere token
         public async Task<IActionResult> Ver(int id)
         {
 
@@ -172,6 +177,7 @@ namespace CBSANTOMERA.Controllers
 
         [HttpGet]
         [Route("Ver")]
+        [AllowAnonymous]   // ⬅️ Esta acción NO requiere token
         public async Task<IActionResult> TemporadaActiva()
         {
 

@@ -23,19 +23,20 @@ namespace CBSANTOMERA.BLL.Servicios
         private readonly IGenericRepository<ContratoEmpresa> _Repository;
         //private readonly IFotoPromocionService _FotosAlbumRepository;
         private readonly IArchivosService _ArchivosRepository;
-       
+        private readonly INoticiaService noticiaService;
         private readonly IEmpresaService _empresaService;
         private readonly ITemporadaService _TemporadaRepository;
         private readonly IMapper _mapper;
         private readonly string rutaServidor = @"wwwroot\archivos\Empresas\";
 
-        public ContratoEmpresaService(IGenericRepository<ContratoEmpresa> Repository, IMapper mapper,  IArchivosService _ArchivosRepository, ITemporadaService temporadaService, IEmpresaService empresaService)
+        public ContratoEmpresaService(IGenericRepository<ContratoEmpresa> Repository, IMapper mapper,  IArchivosService _ArchivosRepository, ITemporadaService temporadaService, IEmpresaService empresaService,  INoticiaService noticiaService)
         {
             this._ArchivosRepository = _ArchivosRepository;
             _Repository = Repository;
             this._empresaService = empresaService;
             this._TemporadaRepository = temporadaService;
             _mapper = mapper;
+            this.noticiaService = noticiaService;
            
 
 
@@ -268,6 +269,9 @@ namespace CBSANTOMERA.BLL.Servicios
         }
 
 
+
+
+
         public async Task<List<EmpresaDTOSmall>> Lista()
         {
             try
@@ -348,6 +352,103 @@ namespace CBSANTOMERA.BLL.Servicios
             int hash = cadena.GetHashCode() % 10000;
             return hash.ToString("0000");
         }
+
+
+        public async Task<NoticiasDTOSmall> VerPorNombre(string nombre)
+        {
+            try
+            {
+                string Normalizar(string texto)
+                {
+                    texto = texto.ToLower().Trim();
+
+                    texto = texto.Normalize(System.Text.NormalizationForm.FormD);
+                    var chars = texto.Where(c =>
+                        System.Globalization.CharUnicodeInfo.GetUnicodeCategory(c)
+                        != System.Globalization.UnicodeCategory.NonSpacingMark
+                    ).ToArray();
+
+                    return new string(chars);
+                }
+
+                // ⚠️ traemos empresas con contrato
+                var empresas = await this.ListaCompleta();
+
+                var encontrado = empresas.FirstOrDefault(e =>
+                    Normalizar(e.Empresa.Nombre) == Normalizar(nombre)
+                );
+
+                if (encontrado == null)
+                    throw new Exception("Empresa no encontrada");
+
+                if (encontrado.Noticia == null)
+                    throw new Exception("La empresa no tiene noticia asociada");
+
+                var noticia0 = await this.noticiaService.VerNoticia(encontrado.Noticia.Value);
+
+                if (noticia0 == null)
+                    throw new Exception("No se ha encontrado la noticia");
+
+                // 🔥 MAPEADO COMPLETO
+                NoticiasDTOSmall noticia = new NoticiasDTOSmall
+                {
+                    IdNoticia = noticia0.IdNoticia,
+                    Titulo = noticia0.Titulo,
+                    Subtitulo = noticia0.Subtitulo,
+                    Contenido = noticia0.Contenido,
+                    Portada = noticia0.Portada,
+                    TipoNoticia = noticia0.TipoNoticia,
+                    Fecha = noticia0.Fecha,
+                    ThumbnailImageSrc = noticia0.ThumbnailImageSrc,
+                    Nuevo = noticia0.Nuevo
+                };
+
+                return noticia;
+            }
+            catch (Exception ex)
+            {
+                throw new TaskCanceledException(
+                    "Error al consultar la empresa en la BBDD: " + ex.Message
+                );
+            }
+        }
+
+
+
+        /*  public async Task<NoticiasDTOSmall> ObtenerNoticiaPatrocinador(string nombre)
+          {
+              try
+              {
+                  var empresa = await VerPorNombre(nombre);
+
+                  if (empresa == null)
+                      throw new Exception("Empresa no encontrada: " + nombre);
+
+                  var patrocinador = await contratoEmpresaService.Ver(empresa.Id);
+
+                  if (patrocinador == null || patrocinador.Noticia == null)
+                      throw new Exception("No se ha encontrado el patrocinador de la empresa: " + nombre);
+
+                  var noticia0 = await noticiaService.VerNoticia(patrocinador.Noticia.Value);
+
+                  if (noticia0 == null)
+                      throw new Exception("No se ha encontrado la noticia asociada");
+
+                  return new NoticiasDTOSmall
+                  {
+                      Titulo = noticia0.Titulo,
+                      Subtitulo = noticia0.Subtitulo,
+                      TipoNoticia = noticia0.TipoNoticia,
+                      Portada = noticia0.Portada,
+                      Contenido = noticia0.Contenido,
+                      Fecha = noticia0.Fecha
+                  };
+              }
+              catch (Exception ex)
+              {
+                  throw new Exception("Error al obtener la noticia del patrocinador: " + ex.Message);
+              }
+          }*/
 
         public async Task<ContratoEmpresaDTOSmall> ContratoEmpresaSmall(int id)
         {

@@ -17,6 +17,7 @@ using CBSANTOMERA.BLL.Servicios.Contrato;
 using CBSANTOMERA.BLL.Servicios;
 
 using CBSANTOMERA.DAL;
+using CBSANTOMERA.DAL.DBContext;
 
 
 namespace CBSANTOMERA.IOC
@@ -61,9 +62,14 @@ namespace CBSANTOMERA.IOC
             services.AddScoped<IFaseCompeticionService, FaseCompeticionService>();
             services.AddScoped<IEquipoCompeticionService, EquipoCompeticionService>();
             services.AddScoped<ILigaService, LigaService>();
+            services.AddScoped<IPartidoService, PartidoService>();
             services.AddScoped<ICompeticionService, CompeticionService>();
-            
-            
+
+            services.AddScoped<IJornadaService, JornadaService>();
+            services.AddScoped<ICierreCompeticionService, CierreCompeticionService>();
+
+            services.AddScoped<IPlayoffService, PlayoffService>();
+
             //services.AddScoped<IOpenIAService, OpenIAService>();
         }
     }

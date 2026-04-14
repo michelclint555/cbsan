@@ -26,7 +26,7 @@ namespace CBSANTOMERA.Utility
             #endregion Club
 
             #region Albume
-            CreateMap<Albume,AlbumDTO>().ReverseMap();
+            CreateMap<Album,AlbumDTO>().ReverseMap();
             #endregion Albume
 
             #region Equipo

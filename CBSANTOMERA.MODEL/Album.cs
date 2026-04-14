@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace CBSANTOMERA.MODEL;
 
-public partial class Albume
+public partial class Album
 {
     public int IdAlbum { get; set; }
 

@@ -1,11 +1,14 @@
 ﻿using AutoMapper;
 using CBSANTOMERA.BLL.Servicios.Contrato;
+using CBSANTOMERA.DAL.Repositorios;
 using CBSANTOMERA.DAL.Repositorios.Contrato;
 using CBSANTOMERA.DTO;
 using CBSANTOMERA.MODEL;
+
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Transactions;
@@ -15,18 +18,24 @@ namespace CBSANTOMERA.BLL.Servicios
     public class CompeticionService : ICompeticionService
     {
         private readonly IGenericRepository<Competicione> _Repository;
-        private readonly IGenericRepository<TipoCompeticion> _RepositoryTipo;
+        private readonly IGenericRepository<TipoFase> _RepositoryTipo;
         private  ILigaService _LigaRepository;
         private string rutaServidor = @"wwwroot\archivos\Temporadas\";
         private string carpetaLocal = @"Competiciones\";
         private readonly ITemporadaService _TemporadaRepository;
         private readonly ICategoriaJugadorService _CategoriaRepository;
         private readonly IEquipoCompeticionService _EquipoCompeticionRepository;
+        private readonly IGenericRepository<EquipoCompeticion> _EquipoCompeticion;
         private readonly IEquipoService _EquipoRepository;
         private readonly IFaseCompeticionService _FaseCompeticionService;
         private readonly IMapper _mapper;
         private readonly IArchivosService _ArchivoService;
-        public CompeticionService(IGenericRepository<Competicione> jugadorRepository, ILigaService ligaRepository,IGenericRepository<TipoCompeticion> _RepositoryTipo, IMapper mapper, IArchivosService _ArchivoService, ITemporadaService temporadaService, IEquipoService equipoRepository, ICategoriaJugadorService categoriaRepository, IFaseCompeticionService faseCompeticionService, IEquipoCompeticionService equipòCompeticionRepository)
+        private readonly IPlayoffService _playoffService;
+        private readonly ILigaService _ligaService;
+        private readonly IGenericRepository<FasesCompeticion> _faseService;
+        private readonly IGenericRepository<Jornada>  _jornadaRepo;
+        private readonly IGenericRepository<Partido> _partidoRepo;
+        public CompeticionService(IGenericRepository<Competicione> jugadorRepository, ILigaService ligaRepository,IPlayoffService playoffService, IGenericRepository<TipoFase> _RepositoryTipo, IMapper mapper, IArchivosService _ArchivoService, ITemporadaService temporadaService, IEquipoService equipoRepository, ICategoriaJugadorService categoriaRepository, IFaseCompeticionService faseCompeticionService, IEquipoCompeticionService equipòCompeticionRepository, IGenericRepository<Jornada> jornadaRepo, IGenericRepository<Partido> partidoRepo, IFaseCompeticionService _faseService, IGenericRepository<EquipoCompeticion> _EquipoCompeticion )
         {
             _Repository = jugadorRepository;
             //_clubRepository = clubRepository;
@@ -39,134 +48,125 @@ namespace CBSANTOMERA.BLL.Servicios
             _FaseCompeticionService = faseCompeticionService;
             _EquipoCompeticionRepository = equipòCompeticionRepository;
             _LigaRepository = ligaRepository;
+            _playoffService = playoffService;
+            _jornadaRepo = jornadaRepo;
+            _partidoRepo = partidoRepo;
         }
         public async Task<CompeticionDTO> CrearCompeticion(CompeticionDTO modelo)
         {
-
-            Competicione competicion = new Competicione();
-            try {
-
-                var tipo = await this._RepositoryTipo.ObtenerUnModelo(t => t.Id == modelo.IdTipo);
-
+            try
+            {
+                // 1️⃣ Validar tipo de competición
+                var tipo = await _RepositoryTipo.ObtenerUnModelo(t => t.Id == modelo.IdTipo);
                 if (tipo == null)
-                {
                     throw new Exception("El tipo de competición no es válido");
-                }
 
-                modelo.FechaCreacion = DateTime.Now;
-                modelo.FechaModificacion = DateTime.Now;
-                modelo.EsActivo = false;
+                // 2️⃣ Obtener temporada activa
+                var temporada = (TemporadaDTO)await _TemporadaRepository.TemporadaActiva();
+                if (temporada == null)
+                    throw new Exception("No hay temporada activa");
+
+                // 3️⃣ Inicializar modelo
                 modelo.Estado = "Creado";
-                modelo.NumEquipos  = 0;
-                modelo.IdTipo = tipo.Id;//gestionar mejor
-                modelo.Tipo = tipo.Subtipo;
+                modelo.NumEquipos = 0;
+                modelo.EsActivo = false;
+                modelo.FechaCreacion = DateTime.UtcNow;
+                modelo.FechaModificacion = DateTime.UtcNow;
+                modelo.Temporada = temporada;
+                modelo.IdTipo = tipo.Id;
+                modelo.Nombre = tipo.Nombre;
 
-                if (modelo.imagen == null)
-                {
-                    modelo.Logo = "Logo_default.png";
+                modelo.Logo ??= "Logo_default.png";
 
-                }
-                try
-                {
-                    
-                    TemporadaDTO temporada = (TemporadaDTO)await this._TemporadaRepository.TemporadaActiva();
-                    modelo.Temporada = temporada;
-                    //rutaServidor = Path.Combine(rutaServidor, temporada.Nombre, "Albumes");
-                   
-                    competicion = await _Repository.Crear(modelo.ToModel());
-                }
-                catch (Exception e)
-                {
-                    throw new Exception("No se ha podido crear la competición en la BBDD", e);
-                }
+                // 4️⃣ Crear competición en BBDD
+                var competicion = await _Repository.Crear(modelo.ToModel());
+                if (competicion.Id == 0)
+                    throw new Exception("No se pudo crear la competición");
 
-                string filename = " ";
+                // 5️⃣ Guardar logo si existe
                 if (modelo.imagen != null)
                 {
                     string extension = Path.GetExtension(modelo.imagen.FileName);
+                    string nombreArchivo = $"{competicion.Id}_{DateTime.UtcNow.Ticks}{extension}";
 
-                    string hasha = competicion.ToString() + DateTime.Now;
-                    string name = hasha.GetHashCode().ToString();
+                    string rutaBase = Path.Combine(
+                        rutaServidor,
+                        temporada.Nombre,
+                        carpetaLocal,
+                        competicion.Id.ToString()
+                    );
 
+                    Directory.CreateDirectory(rutaBase);
 
-                    filename = name + extension;
-
-                    competicion.Logo = filename;
-
-                    string carpetaAlbum = competicion.Id+ "\\";
-
-                    string rutaImagen = this.carpetaLocal;
-
-                    try
+                    var accion = new AccionFile
                     {
-                        if (!Directory.Exists(rutaServidor))
-                        {
-                            Directory.CreateDirectory(rutaServidor);
-                        }
+                        accion = "Guardar",
+                        file = modelo.imagen,
+                        thumbnail = false,
+                        rutaDesten = Path.Combine(rutaBase, nombreArchivo)
+                    };
 
-                        if (!Directory.Exists(Path.Combine(rutaServidor, modelo.Temporada.Nombre)))
-                        {
-                            Directory.CreateDirectory(Path.Combine(rutaServidor, modelo.Temporada.Nombre));
-                        }
+                    _ArchivoService.Ejecutar(accion);
 
-                        rutaImagen = Path.Combine(rutaServidor, modelo.Temporada.Nombre);
+                    competicion.Logo = nombreArchivo;
+                    competicion.FechaModificacion = DateTime.UtcNow;
 
-                        if (!Directory.Exists(Path.Combine(rutaImagen, carpetaLocal)))
-                        {
-                            Directory.CreateDirectory(Path.Combine(rutaImagen, carpetaLocal));
-                        }
-                        if (!Directory.Exists(Path.Combine(rutaImagen, carpetaLocal, carpetaAlbum)))
-                        {
-                            Directory.CreateDirectory(Path.Combine(rutaImagen, carpetaLocal, carpetaAlbum));
-                        }
-                        rutaImagen = Path.Combine(rutaImagen, carpetaLocal, carpetaAlbum);
-
-
-                    }
-                    catch (Exception ex) { throw new Exception("Ha habido un error al crear la estructura de fichero de la competición."); }
-
-
-                    try
-                    {
-                        AccionFile accion = new AccionFile();
-
-                        accion.accion = "Guardar";
-                        accion.file = modelo.imagen;
-                        accion.thumbnail = false;
-                        accion.rutaDesten = rutaImagen + competicion.Logo;
-                        //accion.rutaDestenThumbnail = rutaImagen + jugadorCreado.Foto;
-                        // accion.sizeThumbnail = 120;
-                        this._ArchivoService.Ejecutar(accion);
-
-
-
-                    }
-                    catch (Exception e)
-                    {
-                        throw new TaskCanceledException("No se pudo Crear el Logo");
-                    }
-
-
-                }
-
-                bool respuesta = await _Repository.Editar(competicion);
-
-
-
-
-
-
-                if (competicion.Id == 0 && !respuesta)
-                {
-                    throw new TaskCanceledException("No se pudo crear la competición");
+                    await _Repository.Editar(competicion);
                 }
 
                 return CompeticionDTO.ToDTO(competicion);
-
             }
-            catch (Exception ex) { }
-            throw new NotImplementedException();
+            catch (Exception ex)
+            {
+                // 🔥 AQUÍ sí devolvemos error real
+                throw new Exception("Error al crear la competición", ex);
+            }
         }
+
+
+
+        public async Task IniciarCompeticionAsync(int competicionId)
+        {
+            var competicion = await _Repository.ObtenerUnModelo(c => c.Id == competicionId);
+
+            if (competicion == null)
+                throw new Exception("Competición no encontrada");
+
+            if (competicion.Estado != "Configurado")
+                throw new Exception("La competición no puede iniciarse");
+
+            var tipo = await _RepositoryTipo.ObtenerUnModelo(t => t.Id == competicion.Idtipo);
+
+            if (tipo == null)
+                throw new Exception("Tipo de competición inválido");
+
+            // 🔵 LIGA
+            if (tipo.Nombre == "Liga")
+            {
+                var faseLiga = await this._faseService.ObtenerUnModelo(f =>
+                    f.Competicion == competicionId &&
+f.TipoFase == 1); // Asumiendo que TipoFase es un enum y Liga es un valor válido
+
+                if (faseLiga == null)
+                    throw new Exception("No existe fase de liga");
+
+                var equipos = await _EquipoCompeticion.Consultar(e =>
+                    e.Competicion == competicionId);
+
+                await _ligaService.IniciarLigaAsync(
+                    competicion.Id,
+                    faseLiga.Id,
+                    equipos.Select(e => e.Equipo).ToList()
+                );
+            }
+
+            competicion.Estado = "EnCurso";
+            competicion.FechaModificacion = DateTime.UtcNow;
+
+            await _Repository.Editar(competicion);
+        }
+
+
 
 
 
@@ -249,8 +249,8 @@ namespace CBSANTOMERA.BLL.Servicios
             {
                 var competicione = await this._Repository.ObtenerUnModelo(c=> c.Id == modelo.Id);
 
-                if (modelo.calendario != null || modelo.IdTipo != competicione.Idtipo || modelo.Categoria != competicione.Categoria) {
-                    await this._LigaRepository.EliminarJornadaEnteraPorCompeticion(modelo.Id);
+                if (modelo.calendario != null /*|| modelo.IdTipo != competicione.Idtipo*/ || modelo.Categoria != competicione.Categoria) {
+                  // await this._LigaRepository.EliminarJornadaEnteraPorCompeticion(modelo.Id);
                     if (competicione.NumEquipos >= 3) {
                         competicione.Estado = "Configurado";
                       
@@ -279,9 +279,9 @@ namespace CBSANTOMERA.BLL.Servicios
                 rutaServidor = Path.Combine(rutaServidor, temporada.Nombre, this.carpetaLocal);
 
                 competicione.Categoria = modelo.Categoria;
-                competicione.Idtipo = modelo.IdTipo;
+              //  competicione.Idtipo = modelo.IdTipo;
                 
-                competicione.Tipo = tipo.Subtipo;
+                //competicione.Tipo = tipo.Subtipo;
                 competicione.Logo = modelo.Logo;
                 //competicione.Estado = modelo.Estado;
 
@@ -339,55 +339,91 @@ namespace CBSANTOMERA.BLL.Servicios
             }
         }
 
+
+        public async Task ResetearFasesAsync(int competicionId)
+        {
+            var competicion = await _Repository.ObtenerUnModelo(c => c.Id == competicionId);
+
+            if (competicion == null)
+                throw new Exception("Competición no encontrada");
+
+            if (competicion.Estado == EstadoCompeticion.EnCurso ||
+                competicion.Estado == EstadoCompeticion.Finalizada)
+            {
+                throw new InvalidOperationException(
+                    "No se pueden resetear fases con la competición iniciada o finalizada");
+            }
+
+            // 1️⃣ Obtener todas las fases
+            var fases = await this._FaseCompeticionService.Listar(competicionId);
+
+            foreach (var fase in fases)
+            {
+                // 2️⃣ Jornadas de la fase
+                var jornadas = await _jornadaRepo.Consultar(j => j.Fase == fase.Id);
+
+                foreach (var jornada in jornadas)
+                {
+                    // 3️⃣ Partidos
+                    var partidos = await _partidoRepo.Consultar(p => p.Jornada == jornada.Id);
+
+                    foreach (var partido in partidos)
+                    {
+                        await _partidoRepo.Eliminar(partido);
+                    }
+
+                    await _jornadaRepo.Eliminar(jornada);
+                }
+
+                await this._faseService.Eliminar(fase.ToModel());
+            }
+
+            // 4️⃣ Reset estado competición
+            competicion.Estado = EstadoCompeticion.Configurado;
+            competicion.FechaModificacion = DateTime.UtcNow;
+
+            await _Repository.Editar(competicion);
+        }
+
+
         public async Task<bool> EliminarCompeticion(int id)
         {
             try
             {
 
 
-                var modeloEncontrado = await _Repository.ObtenerUnModelo(p => p.Id == id);
+                var competicion = await _Repository.ObtenerUnModelo(c => c.Id == id);
 
                 //Eliminar Clasificacion, eliminar Jornadas, Eliminar fases, eliminar equipoCompeticion
 
-                
 
-                if (modeloEncontrado == null) { throw new TaskCanceledException("La competición no existe"); }
-                List<FaseCompeticionDTO> faseCompeticiones = await _FaseCompeticionService.Listar(modeloEncontrado.Id);
 
-                TipoCompeticion tipo = await this._RepositoryTipo.ObtenerUnModelo(t=> t.Id == modeloEncontrado.Idtipo);
-                
-                    if (!await this._LigaRepository.EliminarLigaEntera(id)) {
+                if (competicion == null)
+                    throw new Exception("La competición no existe");
 
-                        throw new TaskCanceledException("No se ha podido eliminar la clasificacion de la competición");
-                    }
-
-                foreach (var item in faseCompeticiones)
+                // 1️⃣ Resetear TODAS las fases (si no iniciada)
+                if (competicion.Estado != EstadoCompeticion.EnCurso &&
+                    competicion.Estado != EstadoCompeticion.Finalizada)
                 {
-                    await this._LigaRepository.EliminarJornadaEntera(item.Id, modeloEncontrado.Id);
+                    await ResetearFasesAsync(id);
                 }
+                // 2️⃣ Eliminar equipos competición
+                await _EquipoCompeticionRepository.EliminarEquiposCompeticion(id);
 
+                // 3️⃣ Eliminar competición
+                bool eliminado = await _Repository.Eliminar(competicion);
 
+                if (!eliminado)
+                    throw new Exception("No se pudo eliminar la competición");
 
-                if (!await this._EquipoCompeticionRepository.EliminarEquiposCompeticion(id)) {
-
-                    throw new TaskCanceledException("No se ha podido eliminar los equipos de la competición");
-                }
-                foreach (var item in faseCompeticiones)
-                {
-                    item.Competicion  = CompeticionDTO.ToDTO(modeloEncontrado);
-                    await this._FaseCompeticionService.EliminarCompeticion(item.Id);
-                }
-
-
-
-                bool respuesta = await _Repository.Eliminar(modeloEncontrado);
-                if (respuesta)
+              
+                if (eliminado)
                 {
 
-                    if (modeloEncontrado.Logo != "female_default_profile.png" && modeloEncontrado.Logo != "male_default_profile.png")//si el jugador tiene la foto predetermianada segun el sexo para crear la imagen porque hay una sola imagen predeterminada para todos
+                    if (competicion.Logo != "female_default_profile.png" && competicion.Logo != "male_default_profile.png")//si el jugador tiene la foto predetermianada segun el sexo para crear la imagen porque hay una sola imagen predeterminada para todos
                     {
-                        CompeticionDTO modelo = CompeticionDTO.ToDTO(modeloEncontrado);
-                        modelo.Temporada = await this._TemporadaRepository.Ver((int)modeloEncontrado.Temporada);
+                        CompeticionDTO modelo = CompeticionDTO.ToDTO(competicion);
+                        modelo.Temporada = await this._TemporadaRepository.Ver((int)competicion.Temporada);
                         string rutaImagen = Path.Combine(rutaServidor, modelo.Temporada.Nombre,carpetaLocal );
                         AccionFile accion = new AccionFile();
 
@@ -406,7 +442,7 @@ namespace CBSANTOMERA.BLL.Servicios
 
                 }
 
-                return respuesta;
+                return true;
 
             }
             catch
@@ -522,6 +558,7 @@ namespace CBSANTOMERA.BLL.Servicios
             }
         }
 
+        //PASA LA COMPETICION A ESTADO PREPARADO
         public async Task <List<List<JornadaDTOSimple>>> IniciarCompeticion(CompeticionDTO modelo)
         {
             List<List<JornadaDTOSimple>> jornadas = new List<List<JornadaDTOSimple>>();
@@ -530,20 +567,21 @@ namespace CBSANTOMERA.BLL.Servicios
 
                 if (competicion.Estado != "Configurado") {
 
-                    var listaLiga = await this._LigaRepository.ListaJornadas(competicion);
+                    throw new Exception("El estado de la competición no permite Iniciarla,el estado de la competicion ha de ser Configurado, dicho estado actual es " + competicion.Estado);
+                    /*var listaLiga = await this._LigaRepository.ListaJornadas(competicion);
                     if (listaLiga != null && competicion.Estado == "Creado") {
                         competicion.Estado = "Configurado";
                         await this._Repository.Editar(competicion.ToModel());
                         return listaLiga;
-                    }
-                    throw new Exception("El estado de la competición no permite Iniciarla, dicho estado actual es "+competicion.Estado);
+                    }*/
+                    //throw new Exception("El estado de la competición no permite Iniciarla, dicho estado actual es "+competicion.Estado);
                 }
                 var tipo = await this._RepositoryTipo.ObtenerUnModelo(t=> t.Id == competicion.IdTipo);
                 if (tipo == null) {
 
                     throw new Exception("La estructura de la competición es incorrecta");
                 }
-                if (tipo.Tipo == "Liga") {
+                if (tipo.Nombre == "Liga") {
                     var listaEquipos = await this._EquipoCompeticionRepository.Listar(competicion.Id );
                     if (listaEquipos == null)
                     {
@@ -575,11 +613,11 @@ namespace CBSANTOMERA.BLL.Servicios
                     fase.FechaCreacion = DateTime.Now;
                     fase.FechaModificacion = DateTime.Now;
 
-                    if (tipo.Tipo == "Liga")
+                    if (tipo.Nombre == "Liga")
                     {
 
-                        var listaLiga = await this._LigaRepository.EliminarLigaEntera(competicion.Id);
-                        var listaJorndas = await this._LigaRepository.EliminarJornadaEnteraPorCompeticion(competicion.Id);
+                        //var listaLiga = await this._LigaRepository.EliminarLigaEntera(competicion.Id);
+                       // var listaJorndas = await this._LigaRepository.EliminarJornadaEnteraPorCompeticion(competicion.Id);
                         var lista = await this._FaseCompeticionService.Listar(competicion.Id);
                         foreach (var item in lista)
                         {
@@ -587,7 +625,7 @@ namespace CBSANTOMERA.BLL.Servicios
                         }
 
                     }
-                    if (tipo.Subtipo== "Ida y Vuelta") { 
+                    if (tipo.Nombre== "Ida y Vuelta") { 
                         
                        
 
@@ -619,12 +657,12 @@ namespace CBSANTOMERA.BLL.Servicios
                         }*/
 
                         fase0.Competicion = competicion;
-                        jornadas = await this._LigaRepository.InicializarJornadasCalendarioPDF(listaEquipos, competicion, fase0);
-                        if (!await this._LigaRepository.InicializarLiga(equipos, fase0))
-                        {
+                        //jornadas = await this._LigaRepository.InicializarJornadasCalendarioPDF(listaEquipos, competicion, fase0);
+                       // if (!await this._LigaRepository.InicializarLiga(equipos, fase0))
+                       // {
 
                             throw new Exception("No se ha podido Iniciar la competición, se ha producido un error a la hora de crear la clasificación");
-                        }
+                       // }
                         //jornadas = await this._LigaRepository.InicializarJornadas(listaEquipos, competicion, fase0);
                         //await this._LigaRepository.InicializarLiga(equipos, fase0);
                         //fase.NumPartidos = jornadas.Count;
@@ -635,7 +673,7 @@ namespace CBSANTOMERA.BLL.Servicios
                         await this._Repository.Editar(competicion.ToModel());
                         return jornadas;
                     }
-                    if (tipo.Subtipo == "Ida") {
+                    if (tipo.Nombre == "Ida") {
                         //fase.NumPartidos = (listaEquipos.Count - 1);
                         var fase0 = await this._FaseCompeticionService.Crear(fase, modelo);
                         /*var lista = await this._LigaRepository.VerLiga(modelo.Id);
@@ -665,11 +703,11 @@ namespace CBSANTOMERA.BLL.Servicios
 
 
                         fase0.Competicion = competicion;
-                        jornadas = await this._LigaRepository.InicializarJornadas(listaEquipos, competicion, fase0);
-                        if (!await this._LigaRepository.InicializarLiga(equipos, fase0)) {
+                       // jornadas = await this._LigaRepository.InicializarJornadas(listaEquipos, competicion, fase0);
+                       // if (!await this._LigaRepository.InicializarLiga(equipos, fase0)) {
 
                             throw new Exception("No se ha podido Iniciar la competición, se ha producido un error a la hora de crear la clasificación");
-                        }
+                       // }
                         /*if (fase.NumPartidos != jornadas.Count)
                         {
                             throw new Exception("La liga se ha generado incorrectamente");
@@ -691,7 +729,7 @@ namespace CBSANTOMERA.BLL.Servicios
 
                 }
 
-                if (tipo.Tipo == "PlayOffs")
+                if (tipo.Nombre == "PlayOffs")
                 {
 
 
@@ -713,7 +751,7 @@ namespace CBSANTOMERA.BLL.Servicios
                 {
                     throw new Exception("El tipo de competición no es válido");
                 }
-                if (tipo.Tipo == "Liga")
+                if (tipo.Nombre == "Liga")
                 {
                     FaseCompeticionDTO fase = new FaseCompeticionDTO();
                     fase.Competicion = modelo;
@@ -747,7 +785,7 @@ namespace CBSANTOMERA.BLL.Servicios
 
 
 
-                if (tipo.Tipo == "PlayOffs")
+                if (tipo.Nombre == "PlayOffs")
                 {
 
 
@@ -809,4 +847,11 @@ namespace CBSANTOMERA.BLL.Servicios
             }
         }
     }
+}
+public static class EstadoCompeticion
+{
+    public const string Creado = "Creado";
+    public const string Configurado = "Configurado";
+    public const string EnCurso = "EnCurso";
+    public const string Finalizada = "Finalizada";
 }

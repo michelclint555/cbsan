@@ -28,10 +28,10 @@ namespace CBSANTOMERA.DTO
         public bool? Fijar { get; set; }
 
 
-        public Albume ToModelo()
+        public Album ToModelo()
         {
 
-            Albume album = new Albume();
+            Album album = new Album();
             album.IdAlbum = this.IdAlbum;
             album.Nombre = this.Nombre;
             album.Portada = this.Portada;
@@ -64,7 +64,7 @@ namespace CBSANTOMERA.DTO
 
         }
 
-        public static AlbumDTOSmall ToDto(Albume modelo)
+        public static AlbumDTOSmall ToDto(Album modelo)
         {
             AlbumDTOSmall album = new AlbumDTOSmall();
 
@@ -104,7 +104,7 @@ namespace CBSANTOMERA.DTO
         public virtual List<FotoAlbumDTO> FotosAlbum { get; set; } = new List<FotoAlbumDTO>();
 
 
-        public static AlbumDTO ToDto(Albume modelo)
+        public static AlbumDTO ToDto(Album modelo)
         {
             AlbumDTO album = new AlbumDTO();
             
@@ -124,10 +124,10 @@ namespace CBSANTOMERA.DTO
             return album;
         }
 
-        public Albume ToModelo()
+        public Album ToModelo()
         {
 
-            Albume album = new Albume();
+            Album album = new Album();
             album.IdAlbum = this.IdAlbum;
             album.Nombre = this.Nombre;
             album.Portada = this.Portada;

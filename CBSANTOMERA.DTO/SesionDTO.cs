@@ -17,6 +17,8 @@ namespace CBSANTOMERA.DTO
         public DateTime? RefreshTokenExpiryTime { get; set; }
 
         public string? Token { get; set; }
+        public DateTime? FechaExpiracion { get; set; }
+        public DateTime? FechaCreacion { get; set; }
 
     }
 }

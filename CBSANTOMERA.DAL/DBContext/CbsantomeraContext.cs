@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using CBSANTOMERA.MODEL;
 using Microsoft.EntityFrameworkCore;
 
-namespace CBSANTOMERA.DAL;
+namespace CBSANTOMERA.DAL.DBContext;
 
 public partial class CbsantomeraContext : DbContext
 {
@@ -16,7 +16,7 @@ public partial class CbsantomeraContext : DbContext
     {
     }
 
-    public virtual DbSet<Albume> Albumes { get; set; }
+    public virtual DbSet<Album> Albumes { get; set; }
 
     public virtual DbSet<CategoriaJugador> CategoriaJugadors { get; set; }
 
@@ -54,7 +54,7 @@ public partial class CbsantomeraContext : DbContext
 
     public virtual DbSet<FotosAlbum> FotosAlbums { get; set; }
 
-    public virtual DbSet<Jornada> Jornadas { get; set; }
+    public virtual DbSet<Jornadum> Jornada { get; set; }
 
     public virtual DbSet<Jugador> Jugadors { get; set; }
 
@@ -67,6 +67,8 @@ public partial class CbsantomeraContext : DbContext
     public virtual DbSet<Noticia> Noticias { get; set; }
 
     public virtual DbSet<NumeroDocumento> NumeroDocumentos { get; set; }
+
+    public virtual DbSet<Partido> Partidos { get; set; }
 
     public virtual DbSet<Producto> Productos { get; set; }
 
@@ -82,7 +84,7 @@ public partial class CbsantomeraContext : DbContext
 
     public virtual DbSet<Temporada> Temporadas { get; set; }
 
-    public virtual DbSet<TipoCompeticion> TipoCompeticions { get; set; }
+    public virtual DbSet<TipoFase> TipoFases { get; set; }
 
     public virtual DbSet<TipoNoticium> TipoNoticia { get; set; }
 
@@ -92,9 +94,10 @@ public partial class CbsantomeraContext : DbContext
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
     { }
+
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
-        modelBuilder.Entity<Albume>(entity =>
+        modelBuilder.Entity<Album>(entity =>
         {
             entity.HasKey(e => e.IdAlbum);
 
@@ -250,10 +253,6 @@ public partial class CbsantomeraContext : DbContext
                 .IsUnicode(false);
             entity.Property(e => e.NumEquipos).HasColumnName("Num_equipos");
             entity.Property(e => e.NumVuelta).HasColumnName("numVuelta");
-            entity.Property(e => e.Tipo)
-                .HasMaxLength(150)
-                .IsUnicode(false)
-                .HasColumnName("tipo");
 
             entity.HasOne(d => d.IdtipoNavigation).WithMany(p => p.Competiciones)
                 .HasForeignKey(d => d.Idtipo)
@@ -700,51 +699,25 @@ public partial class CbsantomeraContext : DbContext
                 .HasConstraintName("FK_FotosAlbum_Temporadas");
         });
 
-        modelBuilder.Entity<Jornada>(entity =>
+        modelBuilder.Entity<Jornadum>(entity =>
         {
-            entity.HasKey(e => e.Id).HasName("PK_Partidos_Ligas");
+            entity.HasIndex(e => e.Id, "IX_Jornada");
 
-            entity.Property(e => e.Id).HasColumnName("id");
-            entity.Property(e => e.Competicion).HasColumnName("competicion");
             entity.Property(e => e.Estado)
                 .HasMaxLength(150)
-                .IsUnicode(false)
-                .HasColumnName("estado");
-            entity.Property(e => e.Fecha)
-                .HasColumnType("datetime")
-                .HasColumnName("fecha");
-            entity.Property(e => e.FechaCreacion)
-                .HasColumnType("datetime")
-                .HasColumnName("fechaCreacion");
-            entity.Property(e => e.FechaModificacion)
-                .HasColumnType("datetime")
-                .HasColumnName("fechaModificacion");
-            entity.Property(e => e.Jornada1).HasColumnName("Jornada");
-            entity.Property(e => e.PuntosLocal).HasColumnName("Puntos_Local");
-            entity.Property(e => e.PuntosVisitante).HasColumnName("Puntos_Visitante");
-            entity.Property(e => e.Ubicacion)
-                .HasMaxLength(250)
-                .IsUnicode(false)
-                .HasColumnName("ubicacion");
+                .IsUnicode(false);
+            entity.Property(e => e.FechaCreacion).HasColumnType("datetime");
+            entity.Property(e => e.FechaFin).HasColumnType("datetime");
+            entity.Property(e => e.FechaInicio).HasColumnType("datetime");
+            entity.Property(e => e.FechaModificacion).HasColumnType("datetime");
 
             entity.HasOne(d => d.CompeticionNavigation).WithMany(p => p.Jornada)
                 .HasForeignKey(d => d.Competicion)
-                .OnDelete(DeleteBehavior.ClientSetNull)
-                .HasConstraintName("FK_Jornadas_Competiciones");
+                .HasConstraintName("FK_Jornada_Competicion");
 
             entity.HasOne(d => d.FaseNavigation).WithMany(p => p.Jornada)
                 .HasForeignKey(d => d.Fase)
-                .HasConstraintName("FK_Jornadas_Fases_Competicion");
-
-            entity.HasOne(d => d.LocalNavigation).WithMany(p => p.JornadaLocalNavigations)
-                .HasForeignKey(d => d.Local)
-                .OnDelete(DeleteBehavior.ClientSetNull)
-                .HasConstraintName("FK_Partidos_Ligas_Equipo_Local");
-
-            entity.HasOne(d => d.VisitanteNavigation).WithMany(p => p.JornadaVisitanteNavigations)
-                .HasForeignKey(d => d.Visitante)
-                .OnDelete(DeleteBehavior.ClientSetNull)
-                .HasConstraintName("FK_Partidos_Ligas_Equipo_Visitante");
+                .HasConstraintName("FK_Jornada_Fase");
         });
 
         modelBuilder.Entity<Jugador>(entity =>
@@ -938,6 +911,48 @@ public partial class CbsantomeraContext : DbContext
             entity.Property(e => e.UltimoNumero).HasColumnName("ultimo_numero");
         });
 
+        modelBuilder.Entity<Partido>(entity =>
+        {
+            entity.HasKey(e => e.Id).HasName("PK_Partidos_Ligas");
+
+            entity.ToTable("Partido");
+
+            entity.Property(e => e.Id).HasColumnName("id");
+            entity.Property(e => e.Estado)
+                .HasMaxLength(150)
+                .IsUnicode(false)
+                .HasColumnName("estado");
+            entity.Property(e => e.Fecha)
+                .HasColumnType("datetime")
+                .HasColumnName("fecha");
+            entity.Property(e => e.FechaCreacion)
+                .HasColumnType("datetime")
+                .HasColumnName("fechaCreacion");
+            entity.Property(e => e.FechaModificacion)
+                .HasColumnType("datetime")
+                .HasColumnName("fechaModificacion");
+            entity.Property(e => e.PuntosLocal).HasColumnName("Puntos_Local");
+            entity.Property(e => e.PuntosVisitante).HasColumnName("Puntos_Visitante");
+            entity.Property(e => e.Ubicacion)
+                .HasMaxLength(250)
+                .IsUnicode(false)
+                .HasColumnName("ubicacion");
+
+            entity.HasOne(d => d.JornadaNavigation).WithMany(p => p.Partidos)
+                .HasForeignKey(d => d.Jornada)
+                .HasConstraintName("FK_Partido_Jornada");
+
+            entity.HasOne(d => d.LocalNavigation).WithMany(p => p.PartidoLocalNavigations)
+                .HasForeignKey(d => d.Local)
+                .OnDelete(DeleteBehavior.ClientSetNull)
+                .HasConstraintName("FK_Partidos_Ligas_Equipo_Local");
+
+            entity.HasOne(d => d.VisitanteNavigation).WithMany(p => p.PartidoVisitanteNavigations)
+                .HasForeignKey(d => d.Visitante)
+                .OnDelete(DeleteBehavior.ClientSetNull)
+                .HasConstraintName("FK_Partidos_Ligas_Equipo_Visitante");
+        });
+
         modelBuilder.Entity<Producto>(entity =>
         {
             entity.HasKey(e => e.Id).HasName("PK__Producto__3213E83FCC6CBAC9");
@@ -974,6 +989,7 @@ public partial class CbsantomeraContext : DbContext
                 .HasMaxLength(250)
                 .IsUnicode(false)
                 .HasColumnName("enlace");
+            entity.Property(e => e.EnlaceExterno).HasColumnName("enlace_externo");
             entity.Property(e => e.FechaModificacion)
                 .HasColumnType("datetime")
                 .HasColumnName("fechaModificacion");
@@ -1024,11 +1040,12 @@ public partial class CbsantomeraContext : DbContext
             entity.ToTable("Session");
 
             entity.Property(e => e.IdSesion).HasColumnName("idSesion");
+            entity.Property(e => e.FechaCreacion).HasColumnType("datetime");
+            entity.Property(e => e.FechaExpiracion).HasColumnType("datetime");
             entity.Property(e => e.IdUsuario).HasColumnName("idUsuario");
             entity.Property(e => e.RefreshToken)
                 .HasMaxLength(600)
                 .IsUnicode(false);
-            entity.Property(e => e.RefreshTokenExpiryTime).HasColumnType("datetime");
             entity.Property(e => e.Token)
                 .HasMaxLength(600)
                 .IsUnicode(false);
@@ -1138,15 +1155,14 @@ public partial class CbsantomeraContext : DbContext
             entity.Property(e => e.Visible).HasColumnName("visible");
         });
 
-        modelBuilder.Entity<TipoCompeticion>(entity =>
+        modelBuilder.Entity<TipoFase>(entity =>
         {
-            entity.ToTable("Tipo_Competicion");
+            entity.HasKey(e => e.Id).HasName("PK_Tipo_Competicion");
 
-            entity.Property(e => e.Subtipo)
-                .HasMaxLength(150)
-                .IsUnicode(false);
-            entity.Property(e => e.Tipo)
-                .HasMaxLength(150)
+            entity.ToTable("TipoFase");
+
+            entity.Property(e => e.Nombre)
+                .HasMaxLength(100)
                 .IsUnicode(false);
         });
 

@@ -7,10 +7,12 @@ using CBSANTOMERA.Utilidad;
 using CBSANTOMERA.BLL.Servicios;
 using System.Text.Json;
 using CBSANTOMERA.MODEL;
+using Microsoft.AspNetCore.Authorization;
 namespace CBSANTOMERA.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    [Authorize]   // ⬅️ Todas las rutas requieren JWT
     public class NoticiasController : ControllerBase
     {
 
@@ -26,6 +28,7 @@ namespace CBSANTOMERA.Controllers
         }
         [HttpGet]
         [Route("Lista")]
+        [AllowAnonymous]   // ⬅️ Esta acción NO requiere token
         public async Task<IActionResult> Lista()
         {
 
@@ -95,6 +98,7 @@ namespace CBSANTOMERA.Controllers
 
         [HttpGet]
         [Route("Lista-Inicio")]
+        [AllowAnonymous]   // ⬅️ Esta acción NO requiere token
         public async Task<IActionResult> ListaInicio()
         {
 
@@ -233,6 +237,7 @@ namespace CBSANTOMERA.Controllers
         }
         [HttpGet]
         [Route("VerNoticia/{id:int}")]
+        [AllowAnonymous]   // ⬅️ Esta acción NO requiere token
         public async Task<IActionResult> VerNoticia(int id)
         {
 

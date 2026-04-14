@@ -20,7 +20,8 @@ namespace CBSANTOMERA.BLL.Servicios
     {
 
         private readonly IGenericRepository<Empresa> _Repository;
-        private readonly IContratoEmpresaService contratoEmpresaService;
+       // private readonly IContratoEmpresaService contratoEmpresaService;
+        //private readonly INoticiaService noticiaService;
         //private readonly IFotoPromocionService _FotosAlbumRepository;
         private readonly IArchivosService _ArchivosRepository;
         private readonly IMapper _mapper;
@@ -31,6 +32,8 @@ namespace CBSANTOMERA.BLL.Servicios
             this._ArchivosRepository = _ArchivosRepository;
             _Repository = Repository;
             _mapper = mapper;
+          // this.contratoEmpresaService = contratoEmpresaService;
+          //  this.noticiaService = noticiaService;
            
 
 
@@ -390,6 +393,54 @@ namespace CBSANTOMERA.BLL.Servicios
             int hash = cadena.GetHashCode() % 10000;
             return hash.ToString("0000");
         }
+
+
+ public async Task<EmpresaDTOSmall> VerPorNombre(string nombre)
+{
+    try
+    {
+        string Normalizar(string texto)
+        {
+            texto = texto.ToLower().Trim();
+
+            texto = texto.Normalize(System.Text.NormalizationForm.FormD);
+            var chars = texto.Where(c =>
+                System.Globalization.CharUnicodeInfo.GetUnicodeCategory(c)
+                != System.Globalization.UnicodeCategory.NonSpacingMark
+            ).ToArray();
+
+            return new string(chars);
+        }
+
+        // ⚠️ IMPORTANTE: traemos todos para comparar normalizado
+        var empresas = await this.ListaCompleta();
+
+        var encontrado = empresas.FirstOrDefault(e =>
+            Normalizar(e.Nombre) == Normalizar(nombre)
+        );
+
+        if (encontrado == null)
+            throw new Exception("Empresa no encontrada");
+
+        EmpresaDTOSmall empresa = new EmpresaDTOSmall();
+        empresa.Id = encontrado.Id;
+        empresa.Nombre = encontrado.Nombre;
+        empresa.Url = encontrado.Url;
+        empresa.Logo = encontrado.Logo;
+
+        return empresa;
+    }
+    catch (Exception)
+    {
+        throw new TaskCanceledException("Error al consultar la empresa en la BBDD.");
+    }
+}
+
+
+
+        
+
+
 
         public async Task<EmpresaDTOSmall> VerSmall(int id)
         {

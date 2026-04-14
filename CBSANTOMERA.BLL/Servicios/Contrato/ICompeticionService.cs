@@ -20,6 +20,9 @@ namespace CBSANTOMERA.BLL.Servicios.Contrato
         Task<bool> EliminarCompeticion(int id);
         Task<List<List<JornadaDTOSimple>>> IniciarCompeticion(CompeticionDTO modelo);
         Task<bool> GuardarCalendario(CompeticionDTO modelo);
+        Task IniciarCompeticionAsync(int competicionId);
+        Task ResetearFasesAsync(int competicionId);
+
 
     }
 }

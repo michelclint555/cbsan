@@ -5,10 +5,13 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
 using CBSANTOMERA.Utilidad;
+using CBSANTOMERA.MODEL;
+using Microsoft.AspNetCore.Authorization;
 namespace CBSANTOMERA.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    [Authorize]   // ⬅️ Todas las rutas requieren JWT
     public class EquipoController : ControllerBase
     {
 
@@ -199,8 +202,6 @@ namespace CBSANTOMERA.Controllers
         }
 
 
-
-
         [HttpPost]
         [Route("GuardarFotoEquipo")]
         public async Task<IActionResult> CrearFotoEquipo([FromForm] EquipoDTO equipo)
@@ -212,6 +213,36 @@ namespace CBSANTOMERA.Controllers
             {
                 rsp.status = true;
                 rsp.value = await _equipoService.CrearFotoEquipo(equipo);
+
+            }
+            catch (Exception ex)
+            {
+
+                rsp.status = false;
+                rsp.msg = ex.Message;
+            }
+            return Ok(rsp);
+        }
+
+
+
+        [HttpPost]
+        [Route("Add-Patrocinador")]
+        public async Task<IActionResult> AddPatrocinador([FromBody] patrocinadorEquipo equipo)
+        {
+
+            var rsp = new Response<EquipoDTO>();
+            patrocinadorEquipo equipo1 = new patrocinadorEquipo( );
+
+            equipo1.equipo = equipo.equipo;
+            equipo1.temporada = equipo.patrocinador;
+            equipo1.patrocinador = equipo.patrocinador;
+            try
+            {
+
+                
+                rsp.status = true;
+                rsp.value = await _equipoService.AddPatrocinador(equipo1.equipo, equipo1.temporada, equipo1.patrocinador);
 
             }
             catch (Exception ex)
@@ -345,6 +376,7 @@ namespace CBSANTOMERA.Controllers
 
         [HttpGet]
         [Route("BuscarPrimerEquipo")]
+        [AllowAnonymous]   // ⬅️ Esta acción NO requiere token
         public async Task<IActionResult> BuscarPrimerEquipo()
         {
 
@@ -389,6 +421,8 @@ namespace CBSANTOMERA.Controllers
             return Ok(rsp);
         }
 
-
+       
     }
+
+   
 }

@@ -74,14 +74,23 @@ namespace CBSANTOMERA.DTO
 
 
     }
-        public class EquipoDTO
+
+    public class patrocinadorEquipo
+    {
+       public int equipo { get; set; }
+        public int patrocinador { get; set; }
+        public int temporada { get; set; }
+        //Comprueba que el club es el nuestro
+
+    }
+    public class EquipoDTO
     {
         public int IdEquipo { get; set; }
 
         public bool Principal { get; set; }
         public string Nombre { get; set; }
-        public string logo { get; set; }
-
+        public string? logo { get; set; }
+        public ContratoEmpresaDTO? patrocinador { get; set; }
         public int IdClub { get; set; }
         public int idCategoria { get; set; }
         public CategoriaJugadorDTO? Categoria { get; set; }

@@ -2,10 +2,12 @@
 using CBSANTOMERA.DTO;
 using Microsoft.AspNetCore.Mvc;
 using CBSANTOMERA.Utilidad;
+using Microsoft.AspNetCore.Authorization;
 namespace CBSANTOMERA_WEB_API.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    [Authorize]   // ⬅️ Todas las rutas requieren JWT
     public class ChatController : Controller
     {
 

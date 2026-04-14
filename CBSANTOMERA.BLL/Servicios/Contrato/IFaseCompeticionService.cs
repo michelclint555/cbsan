@@ -11,11 +11,14 @@ namespace CBSANTOMERA.BLL.Servicios.Contrato
     {
         Task<bool> Editar(FaseCompeticionDTO modelo);
         Task<FaseCompeticionDTO> Crear(FaseCompeticionDTO modelo, CompeticionDTO competicion);
-        Task<bool> EliminarCompeticion(int id);
+       // Task<bool> EliminarCompeticion(int id);
         Task <List<FaseCompeticionDTO>> Listar();
         public Task<FaseCompeticionDTO> Ver(int idFase);
         Task<List<FaseCompeticionDTO>> Listar(int idCompeticion);//si es liga devolver listadao de clasificacion
         Task<bool> Eliminar(int id);//Elimina un fase con el id
+        Task CerrarFaseAsync(int faseId);
+        //Task GenerarPlayoffsAsync(int faseId);
+
 
     }
 }

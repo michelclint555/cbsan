@@ -25,6 +25,7 @@ namespace CBSANTOMERA.BLL.Servicios.Contrato
         Task<List<EquipoDTO>> ListaEquiposClub(int id, int temporada);
         Task<List<EquipoDTO>> ListaEquiposClubCategoria(int idClub, int idCategoria );
         Task<List<EquipoDTO>> ListaEquiposMiClub(int temporada);
+        Task<EquipoDTO> AddPatrocinador(int equipo, int temporada, int patrocinador);
         /*Task<bool> EliminarMiEquipo(int id);
 Task<List<EquipoDTO>> ListaMiEquipo();
 Task<EquipoDTO> CrearMiEquipo(EquipoDTO modelo);

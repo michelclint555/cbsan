@@ -21,7 +21,7 @@ namespace CBSANTOMERA.BLL.Servicios
     public class AlbumService : IAlbumService
     {
 
-        private readonly IGenericRepository<Albume> _albumRepository;
+        private readonly IGenericRepository<Album> _albumRepository;
         private readonly IFotoAlbumService _FotosAlbumRepository;
         private readonly IArchivosService _ArchivosRepository;
         private readonly ITemporadaService _TemporadaRepository;
@@ -31,7 +31,7 @@ namespace CBSANTOMERA.BLL.Servicios
         private string carpetaLocal = "Albumes";
 
 
-        public AlbumService(IGenericRepository<Albume> productoRepository, IMapper mapper, IFotoAlbumService _FotosAlbumRepository, IArchivosService _ArchivosRepository, ITemporadaService temporadaService)
+        public AlbumService(IGenericRepository<Album> productoRepository, IMapper mapper, IFotoAlbumService _FotosAlbumRepository, IArchivosService _ArchivosRepository, ITemporadaService temporadaService)
         {
             this._ArchivosRepository = _ArchivosRepository;
             this._albumRepository = productoRepository;
@@ -45,7 +45,7 @@ namespace CBSANTOMERA.BLL.Servicios
 
         public async Task<AlbumDTO> Crear(AlbumDTO modelo)
         {
-            var albumCreado = new Albume();
+            var albumCreado = new Album();
             string filename = "";
             string extension = "";
             string hasha = modelo.IdAlbum.ToString() + DateTime.Now;
@@ -209,7 +209,7 @@ namespace CBSANTOMERA.BLL.Servicios
                     throw new Exception("No se ha podido crear el album, porque no hay ninguna temporada activa.");
                 }
 
-                Albume album = await _albumRepository.ObtenerUnModelo(a => a.IdAlbum == modelo.IdAlbum);
+                Album album = await _albumRepository.ObtenerUnModelo(a => a.IdAlbum == modelo.IdAlbum);
 
                 if (album.IdAlbum== 0)
                 {
@@ -473,7 +473,7 @@ namespace CBSANTOMERA.BLL.Servicios
 
                 listaAlbumes = listaAlbumes.OrderByDescending(d => d.Fecha);
 
-                foreach(Albume item in listaAlbumes) {
+                foreach(Album item in listaAlbumes) {
 
                     AlbumDTO album = AlbumDTO.ToDto(item);
                     album.Temporada= await this._TemporadaRepository.Ver((int)item.Temporada);
@@ -510,7 +510,7 @@ namespace CBSANTOMERA.BLL.Servicios
 
                 listaAlbumes = listaAlbumes.OrderByDescending(d => d.Fecha);
 
-                foreach (Albume item in listaAlbumes)
+                foreach (Album item in listaAlbumes)
                 {
 
                     AlbumDTOSmall album = AlbumDTOSmall.ToDto(item);
@@ -549,7 +549,7 @@ namespace CBSANTOMERA.BLL.Servicios
 
                 listaAlbumes = listaAlbumes.OrderByDescending(d => d.Fecha);
 
-                foreach (Albume item in listaAlbumes)
+                foreach (Album item in listaAlbumes)
                 {
 
                     AlbumDTO album = AlbumDTO.ToDto(item);
@@ -590,7 +590,7 @@ namespace CBSANTOMERA.BLL.Servicios
 
                 listaAlbumes= listaAlbumes.OrderByDescending(d => d.Fecha);
                 List<AlbumDTOSmall> albumes = new List<AlbumDTOSmall>();
-                foreach (Albume item in listaAlbumes)
+                foreach (Album item in listaAlbumes)
                 {
 
                     AlbumDTOSmall album = AlbumDTOSmall.ToDto(item);
@@ -624,7 +624,7 @@ namespace CBSANTOMERA.BLL.Servicios
 
                 listaAlbumes = listaAlbumes.OrderByDescending(d => d.Fecha);
                 List<AlbumDTOSmall> albumes = new List<AlbumDTOSmall>();
-                foreach (Albume item in listaAlbumes)
+                foreach (Album item in listaAlbumes)
                 {
 
                     AlbumDTOSmall album = AlbumDTOSmall.ToDto(item);
