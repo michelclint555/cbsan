@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CBSANTOMERA.DTO")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d5376689ff272c146081c4fa579b37c5c57fe046")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0afe4dd4a0d2038b8bdec8d8fe416c1f1a50d224")]
 [assembly: System.Reflection.AssemblyProductAttribute("CBSANTOMERA.DTO")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CBSANTOMERA.DTO")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
