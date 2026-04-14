@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CBSANTOMERA.IOC")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0afe4dd4a0d2038b8bdec8d8fe416c1f1a50d224")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7c491e9a7b0578ceb3fc153ddb1930abfd682d46")]
 [assembly: System.Reflection.AssemblyProductAttribute("CBSANTOMERA.IOC")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CBSANTOMERA.IOC")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
