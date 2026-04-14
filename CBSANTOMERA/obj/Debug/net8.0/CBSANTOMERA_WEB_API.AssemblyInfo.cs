@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CBSANTOMERA_WEB_API")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7c491e9a7b0578ceb3fc153ddb1930abfd682d46")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+dc405b6049c5bf7211b294115752a422d3ae1e81")]
 [assembly: System.Reflection.AssemblyProductAttribute("CBSANTOMERA_WEB_API")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CBSANTOMERA_WEB_API")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
